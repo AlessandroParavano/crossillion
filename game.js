@@ -5,12 +5,12 @@
 
   // Same six tiers and values as Krillion (points x 10 = meters)
   const TIERS = {
-    plankton:    { name: "Pew Warmer",           pts: 100,  cls: "t-plankton" },
-    clever:      { name: "Pharisee",             pts: 150,  cls: "t-clever" },
-    schooler:    { name: "Sunday Schooler",      pts: 300,  cls: "t-schooler" },
-    rare:        { name: "Seminarian",           pts: 600,  cls: "t-rare" },
-    deepcut:     { name: "Desert Father",        pts: 850,  cls: "t-deepcut" },
-    crossillion: { name: "One in a Crossillion", pts: 1000, cls: "t-crossillion" },
+    plankton:    { name: "Flock",           pts: 100,  cls: "t-plankton" },
+    clever:      { name: "Pharisee",        pts: 150,  cls: "t-clever" },
+    schooler:    { name: "Sunday Schooler", pts: 300,  cls: "t-schooler" },
+    rare:        { name: "Seminarian",      pts: 600,  cls: "t-rare" },
+    deepcut:     { name: "Theologian",      pts: 850,  cls: "t-deepcut" },
+    crossillion: { name: "Burning Bush",    pts: 1000, cls: "t-crossillion" },
   };
   const zoneOf = h => CXWorld.zones[CXWorld.zoneIndex(h)].name;
 
@@ -168,7 +168,7 @@
     $("feedback").className = "feedback"; $("feedback").textContent = "";
     const badge = $("revBadge");
     badge.textContent = t ? t.name : "No answer";
-    badge.className = "badge " + (t ? t.cls : "");
+    badge.className = "badge " + (t ? t.cls : "") + (entry && entry.t === "crossillion" ? " fire" : "");
     $("revGain").textContent = t ? `+${fmt(gain)} m` : "+0 m";
     $("revAnswer").textContent = entry ? entry.n : "Time ran out";
     const rarest = cat.entries[cat.entries.length - 1];
@@ -178,6 +178,7 @@
     $("nextBtn").textContent = S.i === ROUNDS - 1 ? "See result" : "Next";
     $("reveal").classList.remove("hidden");
     $("nextBtn").focus();
+    if (entry && entry.t === "crossillion") setTimeout(burnCross, 250);
   }
 
   function offer(entry, raw) {
@@ -325,6 +326,26 @@
     setTimeout(() => h.remove(), 2700);
   }
 
+  // Burning Bush: the cross catches fire, but is not consumed
+  function burnCross() {
+    const dv = $("diver");
+    const visible = dv.getClientRects().length > 0;          // the big cross is hidden on narrow screens
+    let cx = innerWidth * 0.45, cy = innerHeight * 0.38;
+    if (visible) { const r = dv.getBoundingClientRect(); cx = r.left + r.width / 2; cy = r.top + r.height / 2; }
+    const rnd = (a, b) => a + Math.random() * (b - a);
+    const o = document.createElement("div");
+    o.className = "burn"; o.style.setProperty("--x", cx + "px"); o.style.setProperty("--y", cy + "px");
+    let html = `<b class="bn-flash"></b><b class="bn-glow"></b>` + (visible ? "" : `<svg class="bn-cross" viewBox="0 0 32 32"><use href="#crossShape"/></svg>`);
+    for (let i = 0; i < 20; i++)
+      html += `<i class="fl" style="--fx:${rnd(-34, 34).toFixed(0)}px;--fy:${rnd(-48, 40).toFixed(0)}px;--fs:${rnd(22, 46).toFixed(0)}px;--ft:${rnd(0.7, 1.3).toFixed(2)}s;animation-delay:${rnd(0.1, 1.2).toFixed(2)}s"></i>`;
+    for (let i = 0; i < 34; i++)
+      html += `<i class="em" style="--ex:${rnd(-40, 40).toFixed(0)}px;--ey:${rnd(-30, 30).toFixed(0)}px;--dx:${rnd(-50, 50).toFixed(0)}px;--es:${rnd(2, 5).toFixed(1)}px;--et:${rnd(1.3, 2.6).toFixed(2)}s;animation-delay:${rnd(0, 1.8).toFixed(2)}s"></i>`;
+    o.innerHTML = html;
+    document.body.appendChild(o);
+    if (visible) { dv.classList.remove("burning"); void dv.getBoundingClientRect(); dv.classList.add("burning"); setTimeout(() => dv.classList.remove("burning"), 3500); }
+    setTimeout(() => o.remove(), 3900);
+  }
+
   const VERSES = window.CROSSILLION_VERSES || [];
   let vIdx = -1;
   function showVerse(i, label) {
@@ -341,6 +362,7 @@
     if (!$("verse").open) $("verse").showModal();
   }
   function touchCross(el, withVerse) {
+    el.blur();                                  // no focus box after a click
     holyGlow(el);
     if (withVerse) setTimeout(openVerse, 700);
   }

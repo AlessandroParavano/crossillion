@@ -4,12 +4,12 @@ A daily Christian trivia game in the style of Krillion. Seven prompts, 20 second
 
 | Tier | Meters |
 |---|---|
-| Pew Warmer | 100 m |
+| Flock | 100 m |
 | Pharisee | 150 m |
 | Sunday Schooler | 300 m |
 | Seminarian | 600 m |
-| Desert Father | 850 m |
-| One in a Crossillion | 1,000 m |
+| Theologian | 850 m |
+| Burning Bush | 1,000 m |
 
 Values, timing and zone depths follow Krillion: 7 prompts, a 3-second preview then 25 seconds to answer, a perfect run of 7,000 m, and zones starting at 0 / 200 / 1,000 / 4,000 / 6,000 m (The Sunday Street, The Nave, The Crypt, The Catacombs, The Holy of Holies).
 
@@ -21,7 +21,7 @@ Google Search volume has no public API, so Crossillion uses the **Wikimedia Page
 
 - Every answer maps to an English Wikipedia article (redirects are resolved, and disambiguation pages are rejected).
 - The score is the sum of **human (non-bot) pageviews over the last 12 full months**.
-- Within each prompt, answers are ranked by popularity and split into the six tiers: top 10% Pew Warmer, next 20% Pharisee, next 25% Sunday Schooler, next 25% Seminarian, next 13% Desert Father, rarest 7% One in a Crossillion.
+- Within each prompt, answers are ranked by popularity and split into the six tiers: top 10% Flock, next 20% Pharisee, next 25% Sunday Schooler, next 25% Seminarian, next 13% Theologian, rarest 7% Burning Bush.
 
 **Limits to know about:**
 - Tiers are *relative to the answer list for that prompt*, not to what other players typed (a static site has no server to collect that).
