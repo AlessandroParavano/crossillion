@@ -1,14 +1,16 @@
 (() => {
   "use strict";
   const DATA = window.CROSSILLION_DATA;
-  const ROUNDS = 7, SECONDS = 20;
+  const ROUNDS = 7, SECONDS = 25, PREVIEW = 3;
 
+  // Same six tiers and values as Krillion (points x 10 = meters)
   const TIERS = {
-    schooler:    { name: "Sunday Schooler",      pts: 100,  cls: "t-schooler",    sq: "⬜" },
-    churchgoer:  { name: "Churchgoer",           pts: 300,  cls: "t-churchgoer",  sq: "🟩" },
-    deepcut:     { name: "Seminarian",           pts: 550,  cls: "t-seminarian",  sq: "🟨" },
-    rare:        { name: "Desert Father",        pts: 800,  cls: "t-desert",      sq: "🟧" },
-    crossillion: { name: "One in a Crossillion", pts: 1000, cls: "t-crossillion", sq: "🟪" },
+    plankton:    { name: "Pew Warmer",           pts: 100,  cls: "t-plankton" },
+    clever:      { name: "Pharisee",             pts: 150,  cls: "t-clever" },
+    schooler:    { name: "Sunday Schooler",      pts: 300,  cls: "t-schooler" },
+    rare:        { name: "Seminarian",           pts: 600,  cls: "t-rare" },
+    deepcut:     { name: "Desert Father",        pts: 850,  cls: "t-deepcut" },
+    crossillion: { name: "One in a Crossillion", pts: 1000, cls: "t-crossillion" },
   };
   const zoneOf = h => CXWorld.zones[CXWorld.zoneIndex(h)].name;
 
@@ -106,29 +108,40 @@
 
   const setAlt = (h, opts) => CXWorld.setDepth(h, opts);
 
+  let phase = "idle", previewTimer = null;
   function nextQ() {
     const cat = S.cats[S.i];
     $("qCount").textContent = `${S.i + 1} / ${ROUNDS}`;
     $("prompt").textContent = cat.prompt;
-    $("feedback").textContent = "";
     $("reveal").classList.add("hidden");
     $("answerForm").classList.remove("hidden");
-    $("passBtn").classList.remove("hidden");
-    const inp = $("answerInput"); inp.value = ""; inp.disabled = false; inp.focus();
-    deadline = performance.now() + SECONDS * 1000;
-    cancelAnimationFrame(timer);
-    const tick = () => {
-      const left = deadline - performance.now();
-      $("timerBar").style.transform = `scaleX(${Math.max(left, 0) / (SECONDS * 1000)})`;
-      $("timerBar").classList.toggle("low", left < 5000);
-      if (left <= 0) return resolve(null);
-      timer = requestAnimationFrame(tick);
-    };
-    tick();
+    const inp = $("answerInput"); inp.value = ""; inp.disabled = true;
+    cancelAnimationFrame(timer); clearInterval(previewTimer);
+    $("timerBar").style.transform = "scaleX(1)"; $("timerBar").classList.remove("low");
+    // 3-second preview, then the 25-second clock starts (as in Krillion)
+    phase = "preview";
+    let n = PREVIEW;
+    const say = () => { $("feedback").style.color = "var(--ink-dim)"; $("feedback").textContent = `Get ready… ${n}`; };
+    say();
+    previewTimer = setInterval(() => { n--; if (n > 0) return say(); clearInterval(previewTimer); go(); }, 1000);
+    function go() {
+      phase = "live";
+      $("feedback").style.color = ""; $("feedback").textContent = "";
+      inp.disabled = false; inp.focus();
+      deadline = performance.now() + SECONDS * 1000;
+      const tick = () => {
+        const left = deadline - performance.now();
+        $("timerBar").style.transform = `scaleX(${Math.max(left, 0) / (SECONDS * 1000)})`;
+        $("timerBar").classList.toggle("low", left < 5000);
+        if (left <= 0) return resolve(null);
+        timer = requestAnimationFrame(tick);
+      };
+      tick();
+    }
   }
 
   function resolve(entry, typed) {
-    cancelAnimationFrame(timer);
+    cancelAnimationFrame(timer); clearInterval(previewTimer); phase = "reveal";
     const cat = S.cats[S.i];
     const t = entry ? TIERS[entry.t] : null;
     const gain = t ? t.pts : 0;
@@ -137,13 +150,12 @@
       views: entry ? entry.v : 0, rank: entry ? entry.r : 0, total: cat.total, tier: entry ? entry.t : null, gain, typed });
     setAlt(S.height);
     $("answerForm").classList.add("hidden");
-    $("passBtn").classList.add("hidden");
     $("feedback").textContent = "";
     const badge = $("revBadge");
     badge.textContent = t ? t.name : "No answer";
     badge.className = "badge " + (t ? t.cls : "");
-    $("revGain").textContent = t ? `+${fmt(gain)} cubits` : "+0 cubits";
-    $("revAnswer").textContent = entry ? entry.n : "Time ran out or you passed";
+    $("revGain").textContent = t ? `+${fmt(gain)} m` : "+0 m";
+    $("revAnswer").textContent = entry ? entry.n : "Time ran out";
     const rarest = cat.entries[cat.entries.length - 1];
     $("revFact").innerHTML = entry
       ? `Ranked <b>#${entry.r}</b> of ${cat.total} answers · looked up about <b>${fmt(entry.v)}</b> times on Wikipedia in the last year.`
@@ -155,6 +167,7 @@
 
   function submit(e) {
     e.preventDefault();
+    if (phase !== "live") return;
     const cat = S.cats[S.i];
     const raw = $("answerInput").value;
     if (!raw.trim()) return;
@@ -162,7 +175,7 @@
     if (!entry) {
       const inp = $("answerInput");
       inp.classList.remove("shake"); void inp.offsetWidth; inp.classList.add("shake");
-      $("feedback").textContent = "Not in our records — try another answer, or pass.";
+      $("feedback").textContent = "Not in our records — try another answer.";
       return;
     }
     resolve(entry, raw);
@@ -181,21 +194,21 @@
   }
 
   function showEnd(out, replay) {
-    S = null; cancelAnimationFrame(timer);
+    S = null; cancelAnimationFrame(timer); clearInterval(previewTimer); phase = "idle";
     show("screen-end");
     CXWorld.reset();
     setAlt(out.height, { quiet: true });
     $("endMode").textContent = out.mode === "daily" ? "Today's Descent · " + out.date : "Endless Mode";
     $("endHeight").textContent = fmt(out.height);
     $("endZone").textContent = "You descended to " + zoneOf(out.height);
-    $("endGrid").textContent = out.results.map(r => (r.tier ? TIERS[r.tier].sq : "⬛")).join("");
+    $("endGrid").innerHTML = out.results.map(r => `<i class="sq ${r.tier ? TIERS[r.tier].cls : "none"}"></i>`).join("");
     $("endList").innerHTML = out.results.map(r => {
       const t = r.tier ? TIERS[r.tier] : null;
       const cat = DATA.categories.find(c => c.id === r.cat);
       const rarest = cat ? cat.entries[cat.entries.length - 1] : null;
       return `<li><span class="q">${esc(r.prompt)}</span>
         <span class="a">${r.entry ? esc(r.entry) : "—"}</span>
-        <span class="p ${t ? t.cls : ""}">${t ? t.name + " · +" + fmt(r.gain) : "Passed"}</span>
+        <span class="p ${t ? t.cls : ""}">${t ? t.name + " · +" + fmt(r.gain) + " m" : "No answer"}</span>
         <span class="d">${r.entry ? `#${r.rank} of ${r.total} · ~${fmt(r.views)} yearly lookups` : ""}${rarest ? ` · Deepest: ${esc(rarest.n)}` : ""}</span></li>`;
     }).join("");
     $("againBtn").style.display = "";
@@ -205,30 +218,91 @@
   }
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
+  const TIER_COL = { plankton: "#8b93a7", clever: "#7fb3d5", schooler: "#5fd0b8", rare: "#f0b24a", deepcut: "#ff7a55", crossillion: "#d09bff" };
+  function shareCanvas(o) {
+    const W = 1000, H = 620, c = document.createElement("canvas");
+    c.width = W; c.height = H;
+    const g = c.getContext("2d");
+    const zi = CXWorld.zoneIndex(o.height);
+    const SK = [["#3f9ae6", "#bfe3f7"], ["#5b4331", "#2a1c14"], ["#262a47", "#10111f"], ["#2f2013", "#120a06"], ["#f2c14e", "#fff4c9"]][zi];
+    const bg = g.createLinearGradient(0, 0, 0, H); bg.addColorStop(0, SK[0]); bg.addColorStop(1, SK[1]);
+    g.fillStyle = bg; g.fillRect(0, 0, W, H);
+    const dark = zi !== 0 && zi !== 4;
+    g.fillStyle = "rgba(8,8,24,.55)"; g.beginPath(); g.roundRect(60, 50, W - 120, H - 100, 28); g.fill();
+    // cross
+    g.save(); g.translate(W / 2 - 40, 78); g.scale(2.5, 2.5);
+    const cg = g.createLinearGradient(0, 0, 0, 32); cg.addColorStop(0, "#ffe9a8"); cg.addColorStop(.55, "#f2c14e"); cg.addColorStop(1, "#c8872a");
+    g.fillStyle = cg; g.shadowColor = "rgba(242,193,78,.7)"; g.shadowBlur = 14;
+    g.fill(new Path2D("M13 3h6v9h9v6h-9v11h-6V18H4v-6h9z")); g.restore();
+    g.textAlign = "center"; g.shadowBlur = 0;
+    g.fillStyle = "#f4efe2"; g.font = "700 54px Georgia, serif"; g.fillText("Crossillion", W / 2, 230);
+    g.fillStyle = "#bdbacd"; g.font = "22px system-ui, sans-serif";
+    g.fillText(o.mode === "daily" ? "Daily Descent · " + o.date : "Endless Descent", W / 2, 268);
+    g.fillStyle = "#f2c14e"; g.font = "700 96px Georgia, serif"; g.fillText(fmt(o.height) + " m", W / 2, 370);
+    g.fillStyle = "#f4efe2"; g.font = "italic 30px Georgia, serif"; g.fillText(zoneOf(o.height), W / 2, 418);
+    const n = o.results.length, s = 62, gap = 14, x0 = (W - (n * s + (n - 1) * gap)) / 2;
+    o.results.forEach((r, i) => {
+      g.fillStyle = r.tier ? TIER_COL[r.tier] : "rgba(255,255,255,.12)";
+      g.beginPath(); g.roundRect(x0 + i * (s + gap), 460, s, s, 12); g.fill();
+    });
+    g.fillStyle = "#bdbacd"; g.font = "20px system-ui, sans-serif";
+    g.fillText(location.host || "Crossillion", W / 2, 565);
+    return c;
+  }
+
   async function share() {
     const o = window._cx; if (!o) return;
-    const text = `✝️ Crossillion ${o.mode === "daily" ? o.date : "(Endless)"}\n` +
-      `${fmt(o.height)} cubits deep · ${zoneOf(o.height)}\n` +
-      o.results.map(r => (r.tier ? TIERS[r.tier].sq : "⬛")).join("") +
-      `\n${location.href.split("#")[0]}`;
+    const text = `Crossillion ${o.mode === "daily" ? o.date : "(Endless)"} - ${fmt(o.height)} m deep, ${zoneOf(o.height)}\n${location.href.split("#")[0]}`;
+    const msg = $("shareMsg");
+    const blob = await new Promise(r => shareCanvas(o).toBlob(r, "image/png"));
+    const file = blob && new File([blob], "crossillion.png", { type: "image/png" });
     try {
-      if (navigator.share && /Mobi|Android/i.test(navigator.userAgent)) await navigator.share({ text });
-      else { await navigator.clipboard.writeText(text); $("shareMsg").textContent = "Copied to clipboard!"; }
-    } catch { $("shareMsg").textContent = "Couldn't copy — select and copy manually:\n" + text; }
+      if (file && navigator.canShare && navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], text }); return; }
+      if (blob && window.ClipboardItem && navigator.clipboard && navigator.clipboard.write) {
+        await navigator.clipboard.write([new ClipboardItem({ "image/png": blob })]); msg.textContent = "Result image copied to clipboard."; return;
+      }
+    } catch (e) { if (e && e.name === "AbortError") return; }
+    if (blob) {
+      const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "crossillion.png"; a.click();
+      msg.textContent = "Result image saved.";
+    } else msg.textContent = text;
   }
 
   /* ---------- start screen ---------- */
   function home() {
-    S = null; cancelAnimationFrame(timer);
+    S = null; cancelAnimationFrame(timer); clearInterval(previewTimer); phase = "idle";
     show("screen-start");
+    document.body.classList.remove("preview");
+    $("previewBar").classList.add("hidden");
     CXWorld.reset();
     setAlt(0, { quiet: true });
     const done = store.get("cx.daily." + todayKey());
-    $("dailyStatus").textContent = done ? `Today's Descent complete: ${fmt(done.height)} cubits.` : "A new Descent every day at midnight UTC.";
+    $("dailyStatus").textContent = done ? `Today's Descent complete: ${fmt(done.height)} m deep.` : "A new Descent every day at midnight UTC.";
     $("dailyBtn").textContent = done ? "View Today's Result" : "Today's Descent";
     const st = store.get("cx.stats", null);
-    $("statsLine").textContent = st ? `Climbs: ${st.played} · Best: ${fmt(st.best)} cubits · Average: ${fmt(Math.round(st.total / st.played))}` : "";
+    $("statsLine").textContent = st ? `Descents: ${st.played} · Best: ${fmt(st.best)} m · Average: ${fmt(Math.round(st.total / st.played))} m` : "";
   }
+
+  /* zone preview */
+  const PV = [0, 560, 1250, 4500, 7000];
+  let pv = 0;
+  function preview(i) {
+    pv = (i + PV.length) % PV.length;
+    const z = CXWorld.zones[pv];
+    $("pvNum").textContent = `Zone ${pv + 1} of ${PV.length}`;
+    $("pvName").textContent = z.name;
+    CXWorld.setDepth(PV[pv]);
+  }
+  $("previewBtn").onclick = () => {
+    $("screen-start").classList.add("hidden");
+    $("ruler").classList.remove("hidden");
+    $("previewBar").classList.remove("hidden");
+    document.body.classList.add("preview");
+    CXWorld.reset(); preview(0);
+  };
+  $("pvPrev").onclick = () => preview(pv - 1);
+  $("pvNext").onclick = () => preview(pv + 1);
+  $("pvClose").onclick = () => home();
 
   $("dailyBtn").onclick = () => start("daily");
   $("endlessBtn").onclick = () => start("endless");
@@ -236,15 +310,12 @@
   $("homeBtn").onclick = home;
   $("helpBtn").onclick = () => $("help").showModal();
   $("answerForm").onsubmit = submit;
-  $("passBtn").onclick = () => resolve(null);
-  $("nextBtn").onclick = next;
+    $("nextBtn").onclick = next;
   $("shareBtn").onclick = share;
   document.addEventListener("keydown", e => {
     if (e.key === "Enter" && S && !$("reveal").classList.contains("hidden") && document.activeElement !== $("nextBtn")) next();
   });
 
-  const w = DATA.window;
-  $("foot").textContent = `Rarity from English Wikipedia human pageviews, ${w[0]} to ${w[1]} · ${DATA.categories.reduce((n, c) => n + c.total, 0)} ranked answers · data built ${DATA.generated}`;
   CXWorld.build();
   home();
 })();

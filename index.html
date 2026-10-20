@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Crossillion – The Daily Descent</title>
+<title>Crossillion - The Daily Descent</title>
 <meta name="description" content="A daily Christian trivia game. Name something from the faith — the rarer your answer, the deeper you descend into the sacred.">
-<meta property="og:title" content="Crossillion – The Daily Descent">
+<meta property="og:title" content="Crossillion - The Daily Descent">
 <meta property="og:description" content="Seven prompts. Common answers keep you on the surface. Rare ones carry you down to the Holy of Holies.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23161a3a'/%3E%3Cpath d='M13 4h6v8h8v6h-8v10h-6V18H5v-6h8z' fill='%23f2c14e'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
@@ -33,8 +33,8 @@
 <aside id="ruler" class="hidden" aria-label="Depth">
   <div class="scale" id="scale"></div>
   <div class="pointer"><svg class="cross" viewBox="0 0 32 32" aria-hidden="true"><use href="#crossShape"/></svg></div>
-  <div class="readout"><b id="depthNum">0</b><small>cubits deep</small></div>
 </aside>
+<div id="depthReadout"><b id="depthNum">0 m</b><small>meters deep</small></div>
 
 <main>
   <!-- START -->
@@ -42,24 +42,19 @@
     <svg class="cross hero" viewBox="0 0 32 32" aria-hidden="true"><use href="#crossShape"/></svg>
     <h1>Crossillion</h1>
     <p class="tag">Name something from the faith.<br>The rarer your answer, the deeper you descend.</p>
-    <ol class="zonelist" aria-label="The five zones">
-      <li><i style="--c:#7ec8f5"></i>The Sunday Street</li>
-      <li><i style="--c:#e0a860"></i>The Nave</li>
-      <li><i style="--c:#8a93b8"></i>The Crypt</li>
-      <li><i style="--c:#a8764a"></i>The Catacombs</li>
-      <li><i style="--c:#f2c14e"></i>The Holy of Holies</li>
-    </ol>
     <div class="tiers" aria-label="Rarity tiers">
+      <span class="chip t-plankton">Pew Warmer</span>
+      <span class="chip t-clever">Pharisee</span>
       <span class="chip t-schooler">Sunday Schooler</span>
-      <span class="chip t-churchgoer">Churchgoer</span>
-      <span class="chip t-seminarian">Seminarian</span>
-      <span class="chip t-desert">Desert Father</span>
+      <span class="chip t-rare">Seminarian</span>
+      <span class="chip t-deepcut">Desert Father</span>
       <span class="chip t-crossillion">One in a Crossillion</span>
     </div>
     <div class="actions">
       <button class="primary" id="dailyBtn">Today's Descent</button>
       <button class="secondary" id="endlessBtn">Endless Mode</button>
     </div>
+    <button class="ghost" id="previewBtn">Preview the five zones</button>
     <p class="small" id="dailyStatus"></p>
     <p class="small stats" id="statsLine"></p>
   </section>
@@ -74,7 +69,6 @@
       <button class="primary" type="submit">Descend</button>
     </form>
     <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
-    <button class="ghost pass" id="passBtn">Pass (0 cubits)</button>
 
     <div id="reveal" class="reveal hidden">
       <div class="badge" id="revBadge"></div>
@@ -88,7 +82,7 @@
   <!-- RESULTS -->
   <section id="screen-end" class="screen panel hidden">
     <p class="small" id="endMode"></p>
-    <h2 class="big"><span id="endHeight">0</span><small> cubits deep</small></h2>
+    <h2 class="big"><span id="endHeight">0</span><small> meters deep</small></h2>
     <p class="endzone" id="endZone"></p>
     <div id="endGrid" class="grid" aria-hidden="true"></div>
     <ol id="endList" class="list"></ol>
@@ -102,21 +96,28 @@
 
 <dialog id="help">
   <h3>How to play</h3>
-  <p>Each round gives you <b>7 prompts</b> and about <b>20 seconds</b> each. Type one valid answer.</p>
-  <p>Common answers keep you near the surface. Rare answers carry you down through the church, the crypt and the catacombs, toward the <b>Holy of Holies</b> at <b>7,000 cubits</b>.</p>
+  <p>Each round gives you <b>7 prompts</b> and <b>25 seconds</b> each (after a 3-second preview). Type one valid answer.</p>
+  <p>Common answers keep you near the surface. Rare answers carry you down through the street, the nave, the crypt and the catacombs toward the <b>Holy of Holies</b>. Seven perfect answers reach <b>7,000 meters</b>. Zones begin at 0, 200, 1,000, 4,000 and 6,000 m.</p>
   <ul>
-    <li><span class="chip t-schooler">Sunday Schooler</span> 100</li>
-    <li><span class="chip t-churchgoer">Churchgoer</span> 300</li>
-    <li><span class="chip t-seminarian">Seminarian</span> 550</li>
-    <li><span class="chip t-desert">Desert Father</span> 800</li>
-    <li><span class="chip t-crossillion">One in a Crossillion</span> 1,000</li>
+    <li><span class="chip t-plankton">Pew Warmer</span> 100 m</li>
+    <li><span class="chip t-clever">Pharisee</span> 150 m</li>
+    <li><span class="chip t-schooler">Sunday Schooler</span> 300 m</li>
+    <li><span class="chip t-rare">Seminarian</span> 600 m</li>
+    <li><span class="chip t-deepcut">Desert Father</span> 850 m</li>
+    <li><span class="chip t-crossillion">One in a Crossillion</span> 1,000 m</li>
   </ul>
   <p class="small"><b>How rarity is measured.</b> Every answer in the game was ranked by how many real people looked it up on English Wikipedia over a full 12-month window (human traffic only, bots excluded). Within each prompt, the most-looked-up answers are the commonest tier and the least-looked-up are the rarest. See the README for details.</p>
   <p class="small">A new Descent unlocks every day at midnight UTC.</p>
   <form method="dialog"><button class="primary">Close</button></form>
 </dialog>
 
-<footer id="foot"></footer>
+<div id="previewBar" class="hidden" role="group" aria-label="Zone preview">
+  <button class="secondary" id="pvPrev" aria-label="Previous zone">‹</button>
+  <div class="pvLabel"><small id="pvNum"></small><b id="pvName"></b></div>
+  <button class="secondary" id="pvNext" aria-label="Next zone">›</button>
+  <button class="primary" id="pvClose">Close</button>
+</div>
+
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>

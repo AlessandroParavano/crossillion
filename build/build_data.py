@@ -17,13 +17,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 UA = "CrossillionBuilder/1.0 (https://github.com; contact: funk3ymonkey19@gmail.com)"
 
-# Tier cut-offs: share of answers (by popularity rank, most popular first).
+# Tier cut-offs: share of answers (by popularity rank, most popular first). Same six tiers as Krillion.
 TIERS = [
-    ("schooler", 0.25),   # top 25 %
-    ("churchgoer", 0.55),
-    ("deepcut", 0.80),
-    ("rare", 0.93),
-    ("crossillion", 1.00),
+    ("plankton", 0.10),    # the very commonest answers
+    ("clever", 0.30),
+    ("schooler", 0.55),
+    ("rare", 0.80),
+    ("deepcut", 0.93),
+    ("crossillion", 1.00), # the rarest 7 %
 ]
 
 
