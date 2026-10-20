@@ -134,9 +134,13 @@ window.CXWorld = (() => {
         return `<section class="zone z${i}" style="top:${ZONES[i].at * K}px;height:${height}${i === 0 ? ";overflow:visible" : ""}">${h}</section>`;
       }).join("");
     $("world").innerHTML = html;
-    // ruler ticks: one every 100 m, a longer one every 500 m
+    // ruler (Krillion style): short tick every 25 m, medium every 50 m, long + label every 100 m
     let t = "";
-    for (let d = 0; d <= MAXD; d += 100) t += `<div class="tick ${d % 500 === 0 ? "major" : ""}" style="top:${d * KR}px"></div>`;
+    for (let d = 0; d <= MAXD; d += 25) {
+      const cls = d % 100 === 0 ? "major" : d % 50 === 0 ? "mid" : "";
+      t += `<div class="tick ${cls}" style="top:${d * KR}px"></div>`;
+      if (d % 100 === 0) t += `<span class="lab" style="top:${d * KR}px">${d ? "-" + d.toLocaleString("en-US") + "m" : "0m"}</span>`;
+    }
     ZONES.slice(1).forEach(z => { t += `<div class="rz" style="top:${z.at * KR}px"></div>`; });
     $("scale").innerHTML = t;
     $("scale").style.height = MAXD * KR + "px";

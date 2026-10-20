@@ -18,6 +18,7 @@
   const show = id => {
     ["screen-start", "screen-game", "screen-end"].forEach(s => $(s).classList.toggle("hidden", s !== id));
     $("ruler").classList.toggle("hidden", id === "screen-start");
+    $("dock").classList.toggle("hidden", id !== "screen-game");
     document.body.classList.toggle("playing", id === "screen-game");
     window.scrollTo(0, 0);
   };
@@ -60,19 +61,31 @@
     indexes.set(cat.id, map);
     return map;
   }
+  // exact match only (aliases and honorifics like "saint" / "pope" / "the" are forgiven)
   function match(cat, raw) {
     const q = strip(raw);
     if (q.length < 2) return null;
     const map = indexFor(cat);
     for (const v of variants(q)) if (map.has(v)) return map.get(v);
-    for (const v of variants(q)) {           // typo tolerance
-      const tol = v.length >= 10 ? 2 : v.length >= 5 ? 1 : 0;
-      if (!tol) continue;
-      let best = null, bd = tol + 1;
-      for (const [k, e] of map) { const d = lev(v, k, tol); if (d < bd) { bd = d; best = e; } }
-      if (best) return best;
-    }
     return null;
+  }
+  // close-but-not-exact: returns the single best candidate to offer as a correction
+  function suggest(cat, raw) {
+    const q = strip(raw);
+    if (q.length < 3) return null;
+    const map = indexFor(cat);
+    let best = null, bd = 99, tie = false;
+    const consider = (e, d) => { if (d < bd) { best = e; bd = d; tie = false; } else if (d === bd && e !== best) tie = true; };
+    for (const v of variants(q)) {
+      const tol = v.length >= 12 ? 3 : v.length >= 8 ? 2 : v.length >= 4 ? 1 : 0;
+      for (const [k, e] of map) {
+        if (k.length < 3) continue;
+        const d = lev(v, k, tol);
+        if (d <= tol) consider(e, d);
+        else if (v.length >= 4 && k.startsWith(v)) consider(e, 1.5);   // typed only the start of it
+      }
+    }
+    return tie ? null : best;
   }
 
   /* ---------- seeded daily picks ---------- */
@@ -108,7 +121,7 @@
 
   const setAlt = (h, opts) => CXWorld.setDepth(h, opts);
 
-  let phase = "idle", previewTimer = null;
+  let phase = "idle", previewTimer = null, revealAt = 0, sugg = null;
   function nextQ() {
     const cat = S.cats[S.i];
     $("qCount").textContent = `${S.i + 1} / ${ROUNDS}`;
@@ -121,12 +134,13 @@
     // 3-second preview, then the 25-second clock starts (as in Krillion)
     phase = "preview";
     let n = PREVIEW;
-    const say = () => { $("feedback").style.color = "var(--ink-dim)"; $("feedback").textContent = `Get ready… ${n}`; };
+    sugg = null;
+    const say = () => { const f = $("feedback"); f.className = "feedback hint"; f.textContent = `Get ready… ${n}`; };
     say();
     previewTimer = setInterval(() => { n--; if (n > 0) return say(); clearInterval(previewTimer); go(); }, 1000);
     function go() {
       phase = "live";
-      $("feedback").style.color = ""; $("feedback").textContent = "";
+      $("feedback").className = "feedback"; $("feedback").textContent = "";
       inp.disabled = false; inp.focus();
       deadline = performance.now() + SECONDS * 1000;
       const tick = () => {
@@ -141,7 +155,7 @@
   }
 
   function resolve(entry, typed) {
-    cancelAnimationFrame(timer); clearInterval(previewTimer); phase = "reveal";
+    cancelAnimationFrame(timer); clearInterval(previewTimer); phase = "reveal"; revealAt = performance.now();
     const cat = S.cats[S.i];
     const t = entry ? TIERS[entry.t] : null;
     const gain = t ? t.pts : 0;
@@ -150,7 +164,7 @@
       views: entry ? entry.v : 0, rank: entry ? entry.r : 0, total: cat.total, tier: entry ? entry.t : null, gain, typed });
     setAlt(S.height);
     $("answerForm").classList.add("hidden");
-    $("feedback").textContent = "";
+    $("feedback").className = "feedback"; $("feedback").textContent = "";
     const badge = $("revBadge");
     badge.textContent = t ? t.name : "No answer";
     badge.className = "badge " + (t ? t.cls : "");
@@ -165,23 +179,33 @@
     $("nextBtn").focus();
   }
 
+  function offer(entry, raw) {
+    sugg = { raw: raw.trim(), entry };
+    const f = $("feedback");
+    f.className = "feedback suggest";
+    f.innerHTML = `Did you mean <button type="button" class="sugg" id="suggBtn">${esc(entry.n)}</button>? Press <kbd>Enter</kbd> to use it.`;
+    $("suggBtn").onclick = () => { $("answerInput").focus(); if (phase === "live") resolve(entry, raw); };
+  }
+
   function submit(e) {
     e.preventDefault();
     if (phase !== "live") return;
     const cat = S.cats[S.i];
     const raw = $("answerInput").value;
     if (!raw.trim()) return;
-    const entry = match(cat, raw);
-    if (!entry) {
-      const inp = $("answerInput");
-      inp.classList.remove("shake"); void inp.offsetWidth; inp.classList.add("shake");
-      $("feedback").textContent = "Not in our records — try another answer.";
-      return;
-    }
-    resolve(entry, raw);
+    const exact = match(cat, raw);
+    if (exact) return resolve(exact, raw);
+    if (sugg && sugg.raw === raw.trim()) return resolve(sugg.entry, raw);   // Enter again = accept the correction
+    const near = suggest(cat, raw);
+    if (near) return offer(near, raw);
+    const inp = $("answerInput");
+    inp.classList.remove("shake"); void inp.offsetWidth; inp.classList.add("shake");
+    sugg = null;
+    $("feedback").className = "feedback"; $("feedback").textContent = "Not in our records. Try another answer.";
   }
 
   function next() {
+    if (phase !== "reveal" || performance.now() - revealAt < 450) return;   // ignore held / double Enter
     if (S.i === ROUNDS - 1) {
       const out = { mode: S.mode, date: S.date, height: S.height, results: S.results };
       if (S.mode === "daily") store.set("cx.daily." + S.date, out);
@@ -213,7 +237,6 @@
     }).join("");
     $("againBtn").style.display = "";
     $("shareMsg").textContent = replay ? "You've already descended today — come back tomorrow, or try Endless Mode." : "";
-    $("nextDaily").textContent = "";
     out._cur = out; window._cx = out;
   }
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -310,10 +333,14 @@
   $("homeBtn").onclick = home;
   $("helpBtn").onclick = () => $("help").showModal();
   $("answerForm").onsubmit = submit;
+  $("answerInput").addEventListener("input", () => {
+    if (phase !== "live") return;
+    sugg = null; $("feedback").className = "feedback"; $("feedback").textContent = "";
+  });
     $("nextBtn").onclick = next;
   $("shareBtn").onclick = share;
   document.addEventListener("keydown", e => {
-    if (e.key === "Enter" && S && !$("reveal").classList.contains("hidden") && document.activeElement !== $("nextBtn")) next();
+    if (e.key === "Enter" && !e.repeat && S && !$("reveal").classList.contains("hidden") && document.activeElement !== $("nextBtn")) next();
   });
 
   CXWorld.build();

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Crossillion - The Daily Descent</title>
 <meta name="description" content="A daily Christian trivia game. Name something from the faith — the rarer your answer, the deeper you descend into the sacred.">
 <meta property="og:title" content="Crossillion - The Daily Descent">
@@ -29,10 +29,10 @@
 
 <div id="zoneBanner" aria-live="polite"><small id="zbNum"></small><b id="zbName"></b><em id="zbSub"></em></div>
 
-<!-- depth ruler -->
+<!-- depth ruler with the YOU marker -->
 <aside id="ruler" class="hidden" aria-label="Depth">
   <div class="scale" id="scale"></div>
-  <div class="pointer"><svg class="cross" viewBox="0 0 32 32" aria-hidden="true"><use href="#crossShape"/></svg></div>
+  <div class="you" aria-hidden="true"><span>YOU</span><i class="yline"></i><i class="yarrow"></i></div>
 </aside>
 <div id="depthReadout"><b id="depthNum">0 m</b><small>meters deep</small></div>
 
@@ -59,23 +59,12 @@
     <p class="small stats" id="statsLine"></p>
   </section>
 
-  <!-- GAME -->
-  <section id="screen-game" class="screen panel hidden">
-    <div class="meta"><span id="qCount">1 / 7</span><span id="mode"></span></div>
-    <div class="timer"><div id="timerBar"></div></div>
-    <h2 id="prompt">…</h2>
-    <form id="answerForm" autocomplete="off">
-      <input id="answerInput" type="text" placeholder="Type your answer…" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="go" aria-label="Your answer">
-      <button class="primary" type="submit">Descend</button>
-    </form>
-    <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
-
-    <div id="reveal" class="reveal hidden">
-      <div class="badge" id="revBadge"></div>
-      <div class="gain" id="revGain"></div>
-      <div class="ans" id="revAnswer"></div>
-      <p class="fact" id="revFact"></p>
-      <button class="primary" id="nextBtn">Next</button>
+  <!-- GAME: question plaque at the top, answer dock at the bottom -->
+  <section id="screen-game" class="screen hidden">
+    <div class="plaque panel sm">
+      <div class="meta"><span id="qCount">1 / 7</span><span id="mode"></span></div>
+      <h2 id="prompt">…</h2>
+      <div class="timer"><div id="timerBar"></div></div>
     </div>
   </section>
 
@@ -94,10 +83,25 @@
   </section>
 </main>
 
+<div id="dock" class="hidden">
+  <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+  <form id="answerForm" class="field" autocomplete="off">
+    <input id="answerInput" type="text" placeholder="Type your answer…" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="go" aria-label="Your answer">
+    <button class="primary" type="submit">Descend</button>
+  </form>
+
+  <div id="reveal" class="reveal panel sm hidden">
+    <div class="rv-left"><div class="badge" id="revBadge"></div><div class="gain" id="revGain"></div></div>
+    <div class="rv-mid"><div class="ans" id="revAnswer"></div><p class="fact" id="revFact"></p></div>
+    <button class="primary" id="nextBtn">Next</button>
+  </div>
+</div>
+
 <dialog id="help">
   <h3>How to play</h3>
   <p>Each round gives you <b>7 prompts</b> and <b>25 seconds</b> each (after a 3-second preview). Type one valid answer.</p>
   <p>Common answers keep you near the surface. Rare answers carry you down through the street, the nave, the crypt and the catacombs toward the <b>Holy of Holies</b>. Seven perfect answers reach <b>7,000 meters</b>. Zones begin at 0, 200, 1,000, 4,000 and 6,000 m.</p>
+  <p>Close, but not perfect? You'll be offered a correction. Press <b>Enter</b> again to accept it.</p>
   <ul>
     <li><span class="chip t-plankton">Pew Warmer</span> 100 m</li>
     <li><span class="chip t-clever">Pharisee</span> 150 m</li>
@@ -117,7 +121,6 @@
   <button class="secondary" id="pvNext" aria-label="Next zone">›</button>
   <button class="primary" id="pvClose">Close</button>
 </div>
-
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
