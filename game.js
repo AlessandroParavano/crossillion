@@ -10,17 +10,13 @@
     rare:        { name: "Desert Father",        pts: 800,  cls: "t-desert",      sq: "🟧" },
     crossillion: { name: "One in a Crossillion", pts: 1000, cls: "t-crossillion", sq: "🟪" },
   };
-  const ZONES = [
-    [1500, "The Valley"], [3000, "Hills of Galilee"], [4500, "Mount Sinai"],
-    [6000, "Mount Zion"], [Infinity, "The Gates of Heaven"],
-  ];
-  const MAX = ROUNDS * 1000;
-  const zoneOf = h => ZONES.find(z => h < z[0] || z[0] === Infinity)[1];
+  const zoneOf = h => CXWorld.zones[CXWorld.zoneIndex(h)].name;
 
   const $ = id => document.getElementById(id);
   const show = id => {
     ["screen-start", "screen-game", "screen-end"].forEach(s => $(s).classList.toggle("hidden", s !== id));
-    $("altimeter").classList.toggle("hidden", id === "screen-start");
+    $("ruler").classList.toggle("hidden", id === "screen-start");
+    document.body.classList.toggle("playing", id === "screen-game");
     window.scrollTo(0, 0);
   };
   const store = {
@@ -102,19 +98,13 @@
     const rand = mode === "daily" ? rng(hashStr("crossillion-" + key)) : Math.random;
     S = { mode, date: key, cats: pickCats(rand), i: 0, height: 0, results: [] };
     $("mode").textContent = mode === "daily" ? "Daily · " + key : "Endless";
+    CXWorld.reset();
     setAlt(0);
     show("screen-game");
     nextQ();
   }
 
-  function setAlt(h) {
-    const f = Math.min(h / MAX, 1);
-    document.documentElement.style.setProperty("--alt", f.toFixed(3));
-    $("altFill").style.height = f * 100 + "%";
-    $("altCross").style.bottom = f * 100 + "%";
-    $("altNum").textContent = fmt(h);
-    $("altZone").textContent = zoneOf(h);
-  }
+  const setAlt = (h, opts) => CXWorld.setDepth(h, opts);
 
   function nextQ() {
     const cat = S.cats[S.i];
@@ -193,10 +183,11 @@
   function showEnd(out, replay) {
     S = null; cancelAnimationFrame(timer);
     show("screen-end");
-    setAlt(out.height);
-    $("endMode").textContent = out.mode === "daily" ? "Today's Ascent · " + out.date : "Endless Mode";
+    CXWorld.reset();
+    setAlt(out.height, { quiet: true });
+    $("endMode").textContent = out.mode === "daily" ? "Today's Descent · " + out.date : "Endless Mode";
     $("endHeight").textContent = fmt(out.height);
-    $("endZone").textContent = "You reached " + zoneOf(out.height);
+    $("endZone").textContent = "You descended to " + zoneOf(out.height);
     $("endGrid").textContent = out.results.map(r => (r.tier ? TIERS[r.tier].sq : "⬛")).join("");
     $("endList").innerHTML = out.results.map(r => {
       const t = r.tier ? TIERS[r.tier] : null;
@@ -208,7 +199,7 @@
         <span class="d">${r.entry ? `#${r.rank} of ${r.total} · ~${fmt(r.views)} yearly lookups` : ""}${rarest ? ` · Deepest: ${esc(rarest.n)}` : ""}</span></li>`;
     }).join("");
     $("againBtn").style.display = "";
-    $("shareMsg").textContent = replay ? "You've already climbed today — come back tomorrow, or try Endless Mode." : "";
+    $("shareMsg").textContent = replay ? "You've already descended today — come back tomorrow, or try Endless Mode." : "";
     $("nextDaily").textContent = "";
     out._cur = out; window._cx = out;
   }
@@ -217,7 +208,7 @@
   async function share() {
     const o = window._cx; if (!o) return;
     const text = `✝️ Crossillion ${o.mode === "daily" ? o.date : "(Endless)"}\n` +
-      `${fmt(o.height)} cubits · ${zoneOf(o.height)}\n` +
+      `${fmt(o.height)} cubits deep · ${zoneOf(o.height)}\n` +
       o.results.map(r => (r.tier ? TIERS[r.tier].sq : "⬛")).join("") +
       `\n${location.href.split("#")[0]}`;
     try {
@@ -229,11 +220,12 @@
   /* ---------- start screen ---------- */
   function home() {
     S = null; cancelAnimationFrame(timer);
-    document.documentElement.style.setProperty("--alt", "0");
     show("screen-start");
+    CXWorld.reset();
+    setAlt(0, { quiet: true });
     const done = store.get("cx.daily." + todayKey());
-    $("dailyStatus").textContent = done ? `Today's Ascent complete: ${fmt(done.height)} cubits.` : "A new Ascent every day at midnight UTC.";
-    $("dailyBtn").textContent = done ? "View Today's Result" : "Today's Ascent";
+    $("dailyStatus").textContent = done ? `Today's Descent complete: ${fmt(done.height)} cubits.` : "A new Descent every day at midnight UTC.";
+    $("dailyBtn").textContent = done ? "View Today's Result" : "Today's Descent";
     const st = store.get("cx.stats", null);
     $("statsLine").textContent = st ? `Climbs: ${st.played} · Best: ${fmt(st.best)} cubits · Average: ${fmt(Math.round(st.total / st.played))}` : "";
   }
@@ -253,5 +245,6 @@
 
   const w = DATA.window;
   $("foot").textContent = `Rarity from English Wikipedia human pageviews, ${w[0]} to ${w[1]} · ${DATA.categories.reduce((n, c) => n + c.total, 0)} ranked answers · data built ${DATA.generated}`;
+  CXWorld.build();
   home();
 })();

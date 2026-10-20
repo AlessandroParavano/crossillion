@@ -1,6 +1,6 @@
 # ✝ Crossillion
 
-A daily Christian trivia game in the style of Krillion. Seven prompts, 20 seconds each. Name something from the faith: the rarer your answer, the higher you climb the mountain, from the Valley to the Gates of Heaven. A perfect run is 7,000 cubits.
+A daily Christian trivia game in the style of Krillion. Seven prompts, 20 seconds each. Name something from the faith: the rarer your answer, the deeper you descend. You start on the street outside a church and sink through five zones, each more sacred than the last: **The Sunday Street → The Nave → The Crypt → The Catacombs → The Holy of Holies**. A perfect run reaches 7,000 cubits.
 
 | Tier | Cubits |
 |---|---|
@@ -34,7 +34,8 @@ This regenerates `data/answers.js` and prints any entry it could not resolve. Re
 
 ## Files
 - `index.html`, `style.css`, `game.js`: the game
+- `world.js`: the five scrolling zone scenes and the depth ruler
 - `data/answers.js`: generated answer and rarity data
 - `build/`: the answer list and the data builder
 
-The daily prompts are chosen from the UTC date, so everyone gets the same Ascent. Progress and stats are stored in the browser's localStorage only.
+The daily prompts are chosen from the UTC date, so everyone gets the same Descent. Progress and stats are stored in the browser's localStorage only.
