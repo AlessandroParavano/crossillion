@@ -35,10 +35,16 @@ python3 build/build_data.py     # needs internet, Python 3 standard library only
 ```
 This regenerates `data/answers.js` and prints any entry it could not resolve. Re-run it once a year or so to refresh the numbers.
 
+## Touching the cross: verse of the day (ESV)
+Tap the cross on the home screen for a holy glow and a verse. Everyone gets the same random verse each day (chosen from the UTC date), and **Another verse** draws a fresh random one. Tapping the cross during a descent only plays the glow, so the clock isn't disturbed.
+
+`data/verses.js` holds **450 verses picked at random from the whole Bible**, with the ESV wording downloaded from esv.org. `python3 build/fetch_verses.py` picks random chapters across all 66 books and keeps random verses from them, so every run produces a different pool. The pool is capped at 450 because the ESV's free-quotation allowance is 500 verses. The ESV copyright notice is shown on the verse card and must stay there.
+
 ## Files
 - `index.html`, `style.css`, `game.js`: the game
 - `world.js`: the five scrolling zone scenes and the depth ruler
 - `data/answers.js`: generated answer and rarity data
+- `data/verses.js`: the 450 random ESV verses
 - `build/`: the answer list and the data builder
 
 The daily prompts are chosen from the UTC date, so everyone gets the same Descent. Progress and stats are stored in the browser's localStorage only.

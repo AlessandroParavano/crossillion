@@ -19,6 +19,7 @@
     ["screen-start", "screen-game", "screen-end"].forEach(s => $(s).classList.toggle("hidden", s !== id));
     $("ruler").classList.toggle("hidden", id === "screen-start");
     $("dock").classList.toggle("hidden", id !== "screen-game");
+    document.body.classList.toggle("ruler-on", id !== "screen-start");
     document.body.classList.toggle("playing", id === "screen-game");
     window.scrollTo(0, 0);
   };
@@ -306,6 +307,53 @@
     $("statsLine").textContent = st ? `Descents: ${st.played} · Best: ${fmt(st.best)} m · Average: ${fmt(Math.round(st.total / st.played))} m` : "";
   }
 
+  /* ---------- touch the cross: holy glow + verse ---------- */
+  function holyGlow(el) {
+    const r = el.getBoundingClientRect();
+    const cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+    el.classList.remove("blessed"); void el.getBoundingClientRect(); el.classList.add("blessed");
+    setTimeout(() => el.classList.remove("blessed"), 1900);
+    const h = document.createElement("div");
+    h.className = "holy"; h.style.setProperty("--x", cx + "px"); h.style.setProperty("--y", cy + "px");
+    let sparks = "";
+    for (let i = 0; i < 24; i++) {
+      const a = Math.random() * Math.PI * 2, d = 90 + Math.random() * 200;
+      sparks += `<i style="--dx:${(Math.cos(a) * d).toFixed(0)}px;--dy:${(Math.sin(a) * d - 60).toFixed(0)}px;--s:${(2 + Math.random() * 4).toFixed(1)}px;--t:${(0.9 + Math.random() * 0.9).toFixed(2)}s;animation-delay:${(Math.random() * 0.3).toFixed(2)}s"></i>`;
+    }
+    h.innerHTML = `<b class="hl-flash"></b><b class="hl-rays"></b><b class="hl-halo"></b><b class="hl-ring"></b>${sparks}`;
+    document.body.appendChild(h);
+    setTimeout(() => h.remove(), 2700);
+  }
+
+  const VERSES = window.CROSSILLION_VERSES || [];
+  let vIdx = -1;
+  function showVerse(i, label) {
+    vIdx = i;
+    const v = VERSES[i];
+    $("vLabel").textContent = label;
+    $("vText").textContent = v.text;
+    $("vRef").textContent = `${v.ref} (ESV)`;
+  }
+  function openVerse() {
+    if (!VERSES.length) return;
+    const today = (hashStr("verse-" + todayKey()) >>> 0) % VERSES.length;   // same random verse for everyone each day
+    showVerse(vIdx < 0 ? today : vIdx, vIdx < 0 || vIdx === today ? "Verse of the day" : "A verse for you");
+    if (!$("verse").open) $("verse").showModal();
+  }
+  function touchCross(el, withVerse) {
+    holyGlow(el);
+    if (withVerse) setTimeout(openVerse, 700);
+  }
+  $("heroCross").onclick = () => touchCross($("heroCross"), true);
+  $("heroCross").onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); touchCross($("heroCross"), true); } };
+  $("diver").onclick = () => touchCross($("diver"), false);       // mid-game: glow only, the clock keeps running
+  $("vAnother").onclick = () => {
+    let n; do { n = Math.floor(Math.random() * VERSES.length); } while (VERSES.length > 1 && n === vIdx);
+    showVerse(n, "A verse for you");
+  };
+  $("vClose").onclick = () => $("verse").close();
+  $("verse").addEventListener("click", e => { if (e.target === $("verse")) $("verse").close(); });
+
   /* zone preview */
   const PV = [0, 560, 1250, 4500, 7000];
   let pv = 0;
@@ -320,7 +368,7 @@
     $("screen-start").classList.add("hidden");
     $("ruler").classList.remove("hidden");
     $("previewBar").classList.remove("hidden");
-    document.body.classList.add("preview");
+    document.body.classList.add("preview", "ruler-on");
     CXWorld.reset(); preview(0);
   };
   $("pvPrev").onclick = () => preview(pv - 1);

@@ -39,7 +39,7 @@
 <main>
   <!-- START -->
   <section id="screen-start" class="screen panel">
-    <svg class="cross hero" viewBox="0 0 32 32" aria-hidden="true"><use href="#crossShape"/></svg>
+    <svg class="cross hero" id="heroCross" viewBox="0 0 32 32" role="button" tabindex="0" aria-label="Touch the cross for a verse"><title>Touch the cross</title><use href="#crossShape"/></svg>
     <h1>Crossillion</h1>
     <p class="tag">Name something from the faith.<br>The rarer your answer, the deeper you descend.</p>
     <div class="tiers" aria-label="Rarity tiers">
@@ -115,6 +115,19 @@
   <form method="dialog"><button class="primary">Close</button></form>
 </dialog>
 
+<dialog id="verse" class="verseDlg" aria-labelledby="vLabel">
+  <div class="panel verse-panel">
+    <p class="v-label" id="vLabel">Verse of the day</p>
+    <blockquote id="vText"></blockquote>
+    <p class="v-ref" id="vRef"></p>
+    <div class="actions">
+      <button class="secondary" id="vAnother" type="button">Another verse</button>
+      <button class="primary" id="vClose" type="button">Amen</button>
+    </div>
+    <p class="small v-copy">Scripture quotations are from the ESV® Bible (The Holy Bible, English Standard Version®), © 2001 by Crossway, a publishing ministry of Good News Publishers. Used by permission. All rights reserved.</p>
+  </div>
+</dialog>
+
 <div id="previewBar" class="hidden" role="group" aria-label="Zone preview">
   <button class="secondary" id="pvPrev" aria-label="Previous zone">‹</button>
   <div class="pvLabel"><small id="pvNum"></small><b id="pvName"></b></div>
@@ -134,6 +147,7 @@
 </svg>
 
 <script src="data/answers.js"></script>
+<script src="data/verses.js"></script>
 <script src="world.js"></script>
 <script src="game.js"></script>
 </body>
