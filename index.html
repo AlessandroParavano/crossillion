@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crossillion – The Daily Ascent</title>
+<meta name="description" content="A daily Christian trivia game. Name something from the faith — the rarer your answer, the higher you climb.">
+<meta property="og:title" content="Crossillion – The Daily Ascent">
+<meta property="og:description" content="Seven prompts. Common answers keep you in the valley. Rare ones carry you to the summit.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23161a3a'/%3E%3Cpath d='M13 4h6v8h8v6h-8v10h-6V18H5v-6h8z' fill='%23f2c14e'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="sky" aria-hidden="true"></div>
+<div id="stars" aria-hidden="true"></div>
+
+<header class="top">
+  <button class="brand" id="homeBtn" aria-label="Crossillion home">
+    <svg class="cross sm" viewBox="0 0 32 32" aria-hidden="true"><use href="#crossShape"/></svg>
+    <span>Crossillion</span>
+  </button>
+  <button class="ghost" id="helpBtn" aria-label="How to play">?</button>
+</header>
+
+<!-- altimeter -->
+<aside id="altimeter" class="hidden" aria-label="Altitude">
+  <div class="track"><div class="fill" id="altFill"></div>
+    <svg class="cross marker" id="altCross" viewBox="0 0 32 32" aria-hidden="true"><use href="#crossShape"/></svg>
+  </div>
+  <div class="readout"><b id="altNum">0</b><small>cubits</small><em id="altZone">The Valley</em></div>
+</aside>
+
+<main>
+  <!-- START -->
+  <section id="screen-start" class="screen">
+    <svg class="cross hero" viewBox="0 0 32 32" aria-hidden="true"><use href="#crossShape"/></svg>
+    <h1>Crossillion</h1>
+    <p class="tag">Name something from the faith.<br>The rarer your answer, the higher you climb.</p>
+    <div class="tiers" aria-label="Rarity tiers">
+      <span class="chip t-schooler">Sunday Schooler</span>
+      <span class="chip t-churchgoer">Churchgoer</span>
+      <span class="chip t-seminarian">Seminarian</span>
+      <span class="chip t-desert">Desert Father</span>
+      <span class="chip t-crossillion">One in a Crossillion</span>
+    </div>
+    <div class="actions">
+      <button class="primary" id="dailyBtn">Today's Ascent</button>
+      <button class="secondary" id="endlessBtn">Endless Mode</button>
+    </div>
+    <p class="small" id="dailyStatus"></p>
+    <p class="small stats" id="statsLine"></p>
+  </section>
+
+  <!-- GAME -->
+  <section id="screen-game" class="screen hidden">
+    <div class="meta"><span id="qCount">1 / 7</span><span id="mode"></span></div>
+    <div class="timer"><div id="timerBar"></div></div>
+    <h2 id="prompt">…</h2>
+    <form id="answerForm" autocomplete="off">
+      <input id="answerInput" type="text" placeholder="Type your answer…" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="go" aria-label="Your answer">
+      <button class="primary" type="submit">Climb</button>
+    </form>
+    <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+    <button class="ghost pass" id="passBtn">Pass (0 cubits)</button>
+
+    <div id="reveal" class="reveal hidden">
+      <div class="badge" id="revBadge"></div>
+      <div class="gain" id="revGain"></div>
+      <div class="ans" id="revAnswer"></div>
+      <p class="fact" id="revFact"></p>
+      <button class="primary" id="nextBtn">Next</button>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="screen-end" class="screen hidden">
+    <p class="small" id="endMode"></p>
+    <h2 class="big"><span id="endHeight">0</span><small> cubits</small></h2>
+    <p class="zone" id="endZone"></p>
+    <div id="endGrid" class="grid" aria-hidden="true"></div>
+    <ol id="endList" class="list"></ol>
+    <div class="actions">
+      <button class="primary" id="shareBtn">Share result</button>
+      <button class="secondary" id="againBtn">Endless Mode</button>
+    </div>
+    <p class="small" id="shareMsg" role="status"></p>
+    <p class="small" id="nextDaily"></p>
+  </section>
+</main>
+
+<dialog id="help">
+  <h3>How to play</h3>
+  <p>Each round gives you <b>7 prompts</b> and about <b>20 seconds</b> each. Type one valid answer.</p>
+  <p>Common answers keep you in the valley. Rare answers carry you up the mountain. A perfect run reaches <b>7,000 cubits</b>.</p>
+  <ul>
+    <li><span class="chip t-schooler">Sunday Schooler</span> 100</li>
+    <li><span class="chip t-churchgoer">Churchgoer</span> 300</li>
+    <li><span class="chip t-seminarian">Seminarian</span> 550</li>
+    <li><span class="chip t-desert">Desert Father</span> 800</li>
+    <li><span class="chip t-crossillion">One in a Crossillion</span> 1,000</li>
+  </ul>
+  <p class="small"><b>How rarity is measured.</b> Every answer in the game was ranked by how many real people looked it up on English Wikipedia over a full 12-month window (human traffic only, bots excluded). Within each prompt, the most-looked-up answers are the commonest tier and the least-looked-up are the rarest. See the README for details.</p>
+  <p class="small">A new Ascent unlocks every day at midnight UTC.</p>
+  <form method="dialog"><button class="primary">Close</button></form>
+</dialog>
+
+<footer id="foot"></footer>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe9a8"/><stop offset=".55" stop-color="#f2c14e"/><stop offset="1" stop-color="#c8872a"/>
+    </linearGradient>
+    <symbol id="crossShape" viewBox="0 0 32 32">
+      <path d="M13 3h6v9h9v6h-9v11h-6V18H4v-6h9z" fill="url(#gold)" stroke="#8a5a14" stroke-width=".6" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<script src="data/answers.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
