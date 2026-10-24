@@ -1,0 +1,404 @@
+# Christian books, music, film and art.
+# One block per question:   [id] The question text   {options}
+# then one answer per line:  Display name | Wikipedia article | alias;alias
+# (article defaults to the display name; aliases are other ways a player might type it)
+# Edit freely, then run:  python3 tools/build.py        See content/README.md for the full guide.
+
+
+[books_christian] Name a famous Christian book (not the Bible)   {letters, noun=title}
+The Pilgrim's Progress | The Pilgrim's Progress | pilgrims progress
+Confessions | Confessions (Augustine)
+The City of God | City of God (book)
+Summa Theologica | Summa Theologica | summa theologiae
+The Imitation of Christ
+The Divine Comedy
+Paradise Lost
+Institutes of the Christian Religion
+Mere Christianity
+The Screwtape Letters
+The Cost of Discipleship
+Foxe's Book of Martyrs | Foxe's Book of Martyrs
+The Practice of the Presence of God | The Practice of the Presence of God
+The Purpose Driven Life
+The Chronicles of Narnia | The Chronicles of Narnia
+The Brothers Karamazov
+Ben-Hur | Ben-Hur: A Tale of the Christ
+Left Behind | Left Behind | Left Behind: A Novel of the Earth's Last Days
+The Shack | The Shack
+Heaven Is for Real | Heaven Is for Real
+The Rule of Saint Benedict | Rule of Saint Benedict
+Dark Night of the Soul | Dark Night of the Soul
+Interior Castle | Interior Castle
+Introduction to the Devout Life | Introduction to the Devout Life
+Letters from Prison | Letters and Papers from Prison
+Orthodoxy | Orthodoxy (book)
+The Everlasting Man | The Everlasting Man
+The Problem of Pain | The Problem of Pain
+The Great Divorce | The Great Divorce
+A Grief Observed | A Grief Observed
+Miracles | Miracles (book)
+Surprised by Joy | Surprised by Joy
+The Seven Storey Mountain | The Seven Storey Mountain
+Life Together | Life Together
+Knowing God | Knowing God (book)
+Prayer: Finding the Heart's True Home | Prayer
+The Hiding Place | The Hiding Place (book)
+Through Gates of Splendor | Through Gates of Splendor
+In His Steps | In His Steps
+Quo Vadis | Quo Vadis (novel)
+The Robe | The Robe (novel)
+Silence | Silence (Endō novel)
+Gilead | Gilead (novel)
+Pensées | Pensées
+The Theology of Hope | Theology of Hope
+Church Dogmatics | Church Dogmatics
+The Courage to Be | The Courage to Be
+Fear and Trembling | Fear and Trembling
+Evidence That Demands a Verdict | Evidence That Demands a Verdict
+The Case for Christ | The Case for Christ
+Streams in the Desert | Streams in the Desert
+My Utmost for His Highest | My Utmost for His Highest
+Jesus Calling | Jesus Calling
+Boundaries | Boundaries (book)
+Desiring God | Desiring God
+The Prayer of Jabez | The Prayer of Jabez
+Wild at Heart | Wild at Heart (book)
+The Late Great Planet Earth | The Late Great Planet Earth
+Hind's Feet on High Places | Hinds' Feet on High Places
+The Cloud of Unknowing | The Cloud of Unknowing
+Revelations of Divine Love | Revelations of Divine Love | Showings
+The Book of Margery Kempe | The Book of Margery Kempe
+Spiritual Exercises | Spiritual Exercises of Ignatius of Loyola
+Philokalia | Philokalia
+The Way of a Pilgrim | The Way of a Pilgrim
+Dialogue of Saint Catherine of Siena | The Dialogue of Saint Catherine of Siena
+The Little Flowers of St. Francis | Fioretti di San Francesco
+Story of a Soul | Story of a Soul
+The Life of Saint Anthony | Life of Antony
+The Sayings of the Desert Fathers | Apophthegmata Patrum
+
+[composers] Name a composer or hymn writer   {letters}
+Johann Sebastian Bach | Johann Sebastian Bach | bach
+George Frideric Handel | George Frideric Handel | handel
+Wolfgang Amadeus Mozart | Wolfgang Amadeus Mozart | mozart
+Giovanni Pierluigi da Palestrina | Giovanni Pierluigi da Palestrina | palestrina
+Hildegard of Bingen
+Gregorio Allegri | Gregorio Allegri | allegri
+Thomas Tallis | Thomas Tallis | tallis
+William Byrd | William Byrd | byrd
+Antonio Vivaldi | Antonio Vivaldi | vivaldi
+Joseph Haydn | Joseph Haydn | haydn
+Felix Mendelssohn | Felix Mendelssohn | mendelssohn
+Isaac Watts | Isaac Watts | watts
+Charles Wesley
+Fanny Crosby
+John Newton
+Martin Luther
+Joseph Mohr | Joseph Mohr
+Philip Bliss | Philip Bliss
+William Cowper | William Cowper | cowper
+Horatius Bonar | Horatius Bonar
+Augustus Toplady | Augustus Toplady
+Henry Francis Lyte | Henry Francis Lyte
+Frances Havergal | Frances Ridley Havergal
+Ira D. Sankey | Ira D. Sankey
+Thomas A. Dorsey | Thomas A. Dorsey
+Claudio Monteverdi | Claudio Monteverdi
+Ludwig van Beethoven | Ludwig van Beethoven | beethoven
+Johannes Brahms | Johannes Brahms | brahms
+Giuseppe Verdi | Giuseppe Verdi | verdi
+Gabriel Fauré | Gabriel Fauré | faure
+Maurice Duruflé | Maurice Duruflé | durufle
+John Rutter | John Rutter
+Arvo Pärt | Arvo Pärt | arvo part
+Henryk Górecki | Henryk Górecki
+Sergei Rachmaninoff | Sergei Rachmaninoff | rachmaninoff
+Anton Bruckner | Anton Bruckner | bruckner
+Heinrich Schütz | Heinrich Schütz
+Henry Purcell | Henry Purcell | purcell
+Josquin des Prez | Josquin des Prez | josquin
+Guillaume de Machaut | Guillaume de Machaut
+Pérotin | Pérotin
+Léonin | Léonin
+Guido of Arezzo | Guido of Arezzo
+Ambrose
+Gregory the Great
+Thomas Ken | Thomas Ken
+Charles Gounod | Charles Gounod
+César Franck | César Franck
+Olivier Messiaen | Olivier Messiaen
+Franz Schubert | Franz Schubert
+Antonín Dvořák | Antonín Dvořák
+Giovanni Gabrieli | Giovanni Gabrieli
+Dietrich Buxtehude | Dietrich Buxtehude
+Georg Philipp Telemann | Georg Philipp Telemann
+Francis Poulenc | Francis Poulenc
+Leonard Bernstein | Leonard Bernstein
+Ralph Vaughan Williams | Ralph Vaughan Williams
+Gustav Holst | Gustav Holst
+Edward Elgar | Edward Elgar
+Benjamin Britten | Benjamin Britten
+Michael Haydn | Michael Haydn
+Igor Stravinsky | Igor Stravinsky
+Charles Villiers Stanford | Charles Villiers Stanford
+
+[ccm] Name a Christian musician or worship band   {letters}
+Hillsong Worship | Hillsong Worship
+Casting Crowns
+MercyMe
+Skillet | Skillet (band)
+Switchfoot
+Chris Tomlin
+Lauren Daigle
+for KING & COUNTRY | For King & Country (band)
+Newsboys
+DC Talk | DC Talk
+Amy Grant
+Michael W. Smith
+Third Day
+Steven Curtis Chapman
+TobyMac
+Jars of Clay
+Petra | Petra (band)
+Stryper
+Elevation Worship
+Bethel Music
+Kari Jobe
+Phil Wickham
+Matt Redman
+Darlene Zschech
+Don Moen
+Hillsong United
+Kirk Franklin
+CeCe Winans
+Mandisa
+Rend Collective
+Crowder | David Crowder
+Brandon Lake
+Maverick City Music
+Cody Carnes
+Housefires | Housefires
+Passion | Passion Conferences
+Sovereign Grace Music | Sovereign Grace Music
+Keith Green
+Larry Norman
+Sandi Patty
+Twila Paris
+Rich Mullins
+Point of Grace | Point of Grace
+Avalon | Avalon (band)
+Audio Adrenaline
+Relient K
+Hawk Nelson
+Building 429
+Big Daddy Weave
+Tenth Avenue North
+Matthew West
+Francesca Battistelli
+Natalie Grant
+Jeremy Camp
+Mark Schultz | Mark Schultz (singer)
+Jon Foreman
+Needtobreathe | Needtobreathe
+Gaither Vocal Band | Gaither Vocal Band
+Bill Gaither
+Andraé Crouch | Andraé Crouch
+Mahalia Jackson
+Sister Rosetta Tharpe
+Johnny Cash
+Lecrae
+Trip Lee
+Andy Mineo
+Propaganda | Propaganda (rapper)
+Sho Baraka
+Hillsong Young & Free | Hillsong Young & Free
+Planetshakers | Planetshakers
+Jesus Culture | Jesus Culture
+Gungor | Gungor (band)
+Sufjan Stevens | Sufjan Stevens
+Over the Rhine | Over the Rhine (band)
+
+[films] Name a Christian or Bible-themed film or show   {letters, noun=title}
+The Passion of the Christ
+Ben-Hur | Ben-Hur (1959 film)
+The Ten Commandments | The Ten Commandments (1956 film)
+The Prince of Egypt
+Jesus of Nazareth | Jesus of Nazareth (miniseries)
+The Chosen | The Chosen (TV series)
+Risen | Risen (2016 film)
+Son of God | Son of God (film)
+Noah | Noah (2014 film)
+Exodus: Gods and Kings
+God's Not Dead | God's Not Dead (film)
+Fireproof | Fireproof (film)
+Facing the Giants
+The Nativity Story
+The Gospel of John | The Gospel of John (film)
+The Greatest Story Ever Told
+King of Kings | King of Kings (1961 film)
+Jesus Christ Superstar | Jesus Christ Superstar (film)
+Godspell | Godspell (film)
+The Last Temptation of Christ | The Last Temptation of Christ (film)
+Left Behind | Left Behind (2000 film)
+Heaven Is for Real | Heaven Is for Real (film)
+Courageous | Courageous (film)
+War Room | War Room (film)
+I Can Only Imagine | I Can Only Imagine (film)
+Silence | Silence (2016 film)
+Chariots of Fire
+Evan Almighty
+Bruce Almighty
+The Robe | The Robe (film)
+Quo Vadis | Quo Vadis (1951 film)
+VeggieTales
+Joseph: King of Dreams
+David and Goliath | David and Bathsheba (film)
+Samson and Delilah | Samson and Delilah (1949 film)
+Barabbas | Barabbas (1961 film)
+The Gospel According to St. Matthew | The Gospel According to St. Matthew (film)
+Jesus | Jesus (1979 film)
+The Miracle of Our Lady of Fatima | The Miracle of Our Lady of Fátima
+The Song of Bernadette | The Song of Bernadette
+Going My Way | Going My Way
+The Bells of St. Mary's | The Bells of St. Mary's
+Sister Act | Sister Act
+The Shack | The Shack (film)
+Unplanned | Unplanned
+The Case for Christ | The Case for Christ (film)
+Paul, Apostle of Christ | Paul, Apostle of Christ
+Mary Magdalene | Mary Magdalene (2018 film)
+The Young Messiah | The Young Messiah
+Last Days in the Desert | Last Days in the Desert
+A.D. The Bible Continues | A.D. The Bible Continues
+The Bible | The Bible (miniseries)
+Superbook | Superbook
+The Book of Life | The Book of Life (2014 film)
+The Apostle | The Apostle (film)
+Amazing Grace | Amazing Grace (2006 film)
+End of the Spear | End of the Spear
+Soul Surfer | Soul Surfer
+October Baby | October Baby
+Do You Believe? | Do You Believe? (film)
+The Star | The Star (2017 film)
+The Visitation | Visitation (film)
+The Mission | The Mission (1986 film)
+Babette's Feast | Babette's Feast
+The Seventh Seal | The Seventh Seal
+Andrei Rublev | Andrei Rublev (film)
+
+[artworks] Name a famous Christian artwork   {noun=title}
+The Last Supper | The Last Supper (Leonardo) | last supper
+The Creation of Adam
+Sistine Chapel ceiling | Sistine Chapel ceiling
+The Last Judgment | The Last Judgment (Michelangelo) | The Last Judgement
+Pietà | Pietà (Michelangelo) | pieta
+The Return of the Prodigal Son | The Return of the Prodigal Son (Rembrandt)
+Sistine Madonna
+Ghent Altarpiece | Ghent Altarpiece | The Adoration of the Lamb
+Isenheim Altarpiece
+Salvator Mundi | Salvator Mundi (Leonardo)
+Christ the Redeemer | Christ the Redeemer (statue)
+The Calling of Saint Matthew
+The Transfiguration | Transfiguration (Raphael)
+Descent from the Cross | Descent from the Cross (van der Weyden)
+Christ of Saint John of the Cross | Christ of Saint John of the Cross
+The Sacrament of the Last Supper | The Sacrament of the Last Supper
+Madonna of the Rosary | Madonna of the Rosary (Caravaggio)
+The Garden of Earthly Delights | The Garden of Earthly Delights
+The Annunciation | Annunciation (Leonardo)
+The Deposition | Deposition (Caravaggio)
+The Entombment of Christ | The Entombment of Christ (Caravaggio)
+The Conversion of Saint Paul | Conversion of Saint Paul (Caravaggio)
+Christ in the Storm on the Sea of Galilee | The Storm on the Sea of Galilee
+The Raising of Lazarus | Raising of Lazarus (Rembrandt)
+The Crucifixion | Crucifixion (Grünewald)
+The Book of Kells | Book of Kells
+Lindisfarne Gospels
+The Trinity | Trinity (Rublev) | rublev trinity
+David | David (Michelangelo)
+Moses | Moses (Michelangelo)
+Ecstasy of Saint Teresa | Ecstasy of Saint Teresa
+The Holy Trinity | Holy Trinity (Masaccio)
+The Tribute Money | The Tribute Money
+Christ Pantocrator | Christ Pantocrator
+The Virgin of the Rocks | Virgin of the Rocks
+Madonna and Child | Madonna (art)
+The Adoration of the Magi | Adoration of the Magi (Leonardo)
+The Tower of Babel | The Tower of Babel (Bruegel)
+The Fall of Man | The Fall of Man
+Christ Carrying the Cross | Christ Carrying the Cross (Bosch)
+The Prodigal Son | The Prodigal Son (Rembrandt)
+Saint Jerome in His Study | Saint Jerome in His Study
+Praying Hands | Praying Hands (Dürer)
+The Four Apostles | The Four Apostles
+The Resurrection | Resurrection (Piero della Francesca)
+The Baptism of Christ | Baptism of Christ (Verrocchio)
+The Flagellation | The Flagellation of Christ (Piero della Francesca)
+Lamentation | Lamentation of Christ (Giotto)
+The Scrovegni Chapel | Scrovegni Chapel
+The Wilton Diptych | Wilton Diptych
+
+[artists] Name an artist famous for religious art   {letters}
+Michelangelo
+Leonardo da Vinci
+Raphael
+Caravaggio
+Rembrandt
+El Greco
+Fra Angelico
+Giotto
+Sandro Botticelli | Sandro Botticelli | botticelli
+Titian
+Jan van Eyck
+Albrecht Dürer | Albrecht Dürer | durer
+Hieronymus Bosch
+Gian Lorenzo Bernini | Gian Lorenzo Bernini | bernini
+Peter Paul Rubens | Peter Paul Rubens | rubens
+Bartolomé Esteban Murillo | Bartolomé Esteban Murillo | murillo
+Diego Velázquez | Diego Velázquez | velazquez
+Francisco de Zurbarán | Francisco de Zurbarán | zurbaran
+Matthias Grünewald | Matthias Grünewald
+Duccio | Duccio
+Masaccio
+Piero della Francesca
+Perugino | Pietro Perugino
+Tintoretto
+Paolo Veronese | Paolo Veronese | veronese
+Giovanni Bellini
+Andrei Rublev
+Gustave Doré | Gustave Doré | dore
+William Blake
+Salvador Dalí | Salvador Dalí | dali
+Marc Chagall | Marc Chagall | chagall
+Georges Rouault | Georges Rouault
+Simone Martini | Simone Martini
+Cimabue
+Lorenzo Ghiberti
+Donatello
+Filippo Lippi | Filippo Lippi
+Rogier van der Weyden | Rogier van der Weyden
+Hans Memling | Hans Memling
+Lucas Cranach the Elder | Lucas Cranach the Elder | cranach
+Hans Holbein the Younger | Hans Holbein the Younger | holbein
+Peter Bruegel the Elder | Pieter Bruegel the Elder | bruegel
+Anthony van Dyck | Anthony van Dyck
+Nicolas Poussin | Nicolas Poussin | poussin
+Georges de La Tour | Georges de La Tour
+Artemisia Gentileschi | Artemisia Gentileschi
+Guido Reni | Guido Reni
+Annibale Carracci | Annibale Carracci
+Giovanni Battista Tiepolo | Giovanni Battista Tiepolo | tiepolo
+William Holman Hunt | William Holman Hunt
+John Everett Millais | John Everett Millais
+Dante Gabriel Rossetti | Dante Gabriel Rossetti
+Henry Ossawa Tanner | Henry Ossawa Tanner
+Stanley Spencer | Stanley Spencer
+Henri Matisse | Henri Matisse
+Emil Nolde | Emil Nolde
+Bezalel | Bezalel (Bible)
+Sieger Köder | Sieger Köder
+Theophanes the Greek | Theophanes the Greek
+Dionisius | Dionisius
+Simon Ushakov | Simon Ushakov
+Viktor Vasnetsov | Viktor Vasnetsov
+Mikhail Nesterov | Mikhail Nesterov

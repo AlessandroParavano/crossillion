@@ -1,0 +1,29 @@
+# Settings for the GENERATED letter / length / vowel questions
+# ("Name a pope whose name starts with L", "...with both an A and an N in its name", ...).
+# Which questions take part is set in the content files with the {letters} option on a question's header line.
+# After editing, run:  python3 tools/build.py
+
+# a generated question needs at least this many answers that fit its rule ...
+min_pool: 9
+# ... and at most this many (and never more than max_share of the whole question)
+max_pool: 45
+max_share: 0.6
+# no more than this many generated questions from any one source question
+per_source: 2
+# change this number to draw a different random-but-stable selection
+seed: 2026
+
+# how many generated questions of each kind to make
+starts:      11   # whose name starts with J
+ends:         4   # whose name ends in the letter H
+contains:     3   # with the letter Z in its name
+both:         3   # with both an A and an N in its name
+without:      3   # without the letter E in its name
+len_eq:       3   # with a six-letter name
+len_ge:       2   # with 11 or more letters in its name
+one_vowel:    1   # uses only one vowel letter (like Ruth)
+two_cons:     2   # starts with two consonants (like Christ)
+double:       2   # has a double letter (like Matthew)
+vowel_start:  1   # starts with a vowel
+two_words:    1   # is exactly two words long
+many_words:   1   # is three or more words long

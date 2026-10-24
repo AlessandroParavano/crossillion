@@ -1,24 +1,14 @@
-/* The descending world: five scenes stacked top to bottom, each more sacred than the last. */
-window.CXWorld = (() => {
+/* world.js - the descending cross-section: one drawing per zone, the camera that scrolls past them, and the depth ruler.
+   To add or change a zone: add its entry in config.js (name, depth, scene) and give it a drawing in `scenes` below. */
+(function (CX) {
   "use strict";
-  const K = 1;                          // pixels per meter (world AND ruler use the same scale)
-  const KR = K;                         // ruler is 1:1 with the world
-  const MAXD = 7000;
-  // Zone boundaries match Krillion's: 0-200, 200-1,000, 1,000-4,000, 4,000-6,000, 6,000+ meters
-  const ZONES = [
-    { at: 0,    name: "The Sunday Street",   sub: "Where everyone starts" },
-    { at: 200,  name: "The Nave",            sub: "Pews, candles and stained glass" },
-    { at: 1000, name: "The Crypt",           sub: "Beneath the altar, the saints sleep" },
-    { at: 4000, name: "The Catacombs",       sub: "Where the first Christians hid and prayed" },
-    { at: 6000, name: "The Holy of Holies",  sub: "Deep calls to deep" },
-  ];
-  const zoneIndex = d => ZONES.reduce((n, z, i) => (d >= z.at ? i : n), 0);
-  const $ = id => document.getElementById(id);
+  const { $, rnd } = CX;
+  const cfg = CX.config;
+  const K = 1;                          // pixels per meter - the world and the ruler share this scale, so they match 1:1
 
   const cross = (cls = "") => `<svg class="cross ${cls}" viewBox="0 0 32 32"><use href="#crossShape"/></svg>`;
-  const rnd = (a, b) => a + Math.random() * (b - a);
 
-  function zoneSky() {
+  function street() {
     const clouds = Array.from({ length: 5 }, (_, i) =>
       `<i class="cloud" style="top:${-330 + i * 60 + rnd(-15, 15)}px;left:${rnd(-10, 80)}%;--s:${rnd(.7, 1.4).toFixed(2)};--t:${rnd(70, 140).toFixed(0)}s;animation-delay:${-rnd(0, 100).toFixed(0)}s"></i>`).join("");
     const town = `
@@ -40,7 +30,7 @@ window.CXWorld = (() => {
     return `<div class="sun"></div>${clouds}${town}<div class="grass"></div>`;
   }
 
-  function zoneNave() {
+  function nave() {
     const win = (c1, c2, c3) => `
       <svg class="window" viewBox="0 0 60 120">
         <path d="M4 118V44A26 26 0 0 1 56 44V118Z" fill="#1a1020" stroke="#c9a15a" stroke-width="3"/>
@@ -63,7 +53,7 @@ window.CXWorld = (() => {
       </svg>`;
   }
 
-  function zoneCrypt() {
+  function crypt() {
     const arch = `<svg class="arches" viewBox="0 0 800 260" preserveAspectRatio="none">
       <g fill="#14152a">
         ${Array.from({ length: 5 }, (_, i) => {
@@ -90,7 +80,7 @@ window.CXWorld = (() => {
     return out;
   }
 
-  function zoneCatacombs() {
+  function catacombs() {
     const niches = () => Array.from({ length: 135 }, (_, i) =>
       `<i class="niche ${i % 7 === 3 ? "lit" : ""}"></i>`).join("");
     const G = {
@@ -109,7 +99,7 @@ window.CXWorld = (() => {
     return out;
   }
 
-  function zoneHoly() {
+  function holy() {
     const ark = `<svg class="ark" viewBox="0 0 320 220">
       <defs><linearGradient id="arkg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff2b8"/><stop offset="1" stop-color="#d6962a"/></linearGradient></defs>
       <g fill="url(#arkg)" stroke="#8a5a14" stroke-width="2">
@@ -126,51 +116,55 @@ window.CXWorld = (() => {
     return `<div class="glory"></div><div class="rays"></div>${ark}<div class="floorlight"></div>`;
   }
 
+  /* scene name (from config.js) -> a function returning that zone's HTML */
+  const scenes = { street, nave, crypt, catacombs, holy };
+
   function build() {
-    const html = [zoneSky(), zoneNave(), zoneCrypt(), zoneCatacombs(), zoneHoly()]
-      .map((h, i) => {
-        const last = i === ZONES.length - 1;
-        const height = last ? `calc(${(MAXD - ZONES[i].at) * K}px + 100vh)` : `${(ZONES[i + 1].at - ZONES[i].at) * K}px`;
-        return `<section class="zone z${i}" style="top:${ZONES[i].at * K}px;height:${height}${i === 0 ? ";overflow:visible" : ""}">${h}</section>`;
-      }).join("");
-    $("world").innerHTML = html;
+    const zones = cfg.zones;
+    $("world").innerHTML = zones.map((z, i) => {
+      const last = i === zones.length - 1;
+      const height = last ? `calc(${(cfg.maxDepth - z.at) * K}px + 100vh)` : `${(zones[i + 1].at - z.at) * K}px`;
+      return `<section class="zone z${i}" style="top:${z.at * K}px;height:${height}${i === 0 ? ";overflow:visible" : ""}">${(scenes[z.scene] || (() => ""))()}</section>`;
+    }).join("");
     // ruler (Krillion style): short tick every 25 m, medium every 50 m, long + label every 100 m
     let t = "";
-    for (let d = 0; d <= MAXD; d += 25) {
+    for (let d = 0; d <= cfg.maxDepth; d += 25) {
       const cls = d % 100 === 0 ? "major" : d % 50 === 0 ? "mid" : "";
-      t += `<div class="tick ${cls}" style="top:${d * KR}px"></div>`;
-      if (d % 100 === 0) t += `<span class="lab" style="top:${d * KR}px">${d ? "-" + d.toLocaleString("en-US") + "m" : "0m"}</span>`;
+      t += `<div class="tick ${cls}" style="top:${d * K}px"></div>`;
+      if (d % 100 === 0) t += `<span class="lab" style="top:${d * K}px">${d ? "-" + d.toLocaleString("en-US") + "m" : "0m"}</span>`;
     }
-    ZONES.slice(1).forEach(z => { t += `<div class="rz" style="top:${z.at * KR}px"></div>`; });
+    zones.slice(1).forEach(z => { t += `<div class="rz" style="top:${z.at * K}px"></div>`; });
     $("scale").innerHTML = t;
-    $("scale").style.height = MAXD * KR + "px";
+    $("scale").style.height = cfg.maxDepth * K + "px";
     // dotted line across the whole scene at each zone transition
-    $("world").insertAdjacentHTML("beforeend", ZONES.slice(1).map(z => `<div class="zline" style="top:${z.at * K}px"></div>`).join(""));
+    $("world").insertAdjacentHTML("beforeend", zones.slice(1).map(z => `<div class="zline" style="top:${z.at * K}px"></div>`).join(""));
     $("world").insertAdjacentHTML("afterbegin", `<div class="skycap"></div>`);
-    const motes = Array.from({ length: 26 }, () =>
+    $("motes").innerHTML = Array.from({ length: 26 }, () =>
       `<i style="left:${rnd(0, 100).toFixed(1)}%;--d:${rnd(9, 22).toFixed(1)}s;--x:${rnd(-30, 30).toFixed(0)}px;--z:${rnd(2, 5).toFixed(1)}px;animation-delay:${-rnd(0, 20).toFixed(1)}s"></i>`).join("");
-    $("motes").innerHTML = motes;
   }
 
+  /* move the camera to a depth (in meters). `quiet` = no zone title banner and no zone sound; `silent` = banner but no sound. */
   let lastZone = -1;
   function setDepth(d, opts = {}) {
     const root = document.documentElement;
     root.style.setProperty("--cam", `${-d * K}px`);
-    root.style.setProperty("--ruler", `${-d * KR}px`);
-    const zi = zoneIndex(d);
+    root.style.setProperty("--ruler", `${-d * K}px`);
+    const zi = CX.rules.zoneIndex(d);
     root.dataset.zone = zi;
     $("depthNum").textContent = d.toLocaleString("en-US") + " m";
     if (zi !== lastZone) {
       lastZone = zi;
-      const b = $("zoneBanner");
-      $("zbNum").textContent = `Zone ${zi + 1} of ${ZONES.length}`;
-      $("zbName").textContent = ZONES[zi].name;
-      $("zbSub").textContent = ZONES[zi].sub;
+      const b = $("zoneBanner"), z = cfg.zones[zi];
+      $("zbNum").textContent = `Zone ${zi + 1} of ${cfg.zones.length}`;
+      $("zbName").textContent = z.name;
+      $("zbSub").textContent = z.sub || "";
       b.classList.remove("on"); void b.offsetWidth;
       if (!opts.quiet) b.classList.add("on");
+      CX.bus.emit("zone", { index: zi, quiet: !!opts.quiet, silent: !!opts.silent });
     }
+    CX.bus.emit("depth", { depth: d, quiet: !!opts.quiet });
   }
   const reset = () => { lastZone = -1; };
 
-  return { build, setDepth, zoneIndex, zones: ZONES, reset, MAXD };
-})();
+  CX.world = { build, setDepth, reset, scenes };
+})(window.CX = window.CX || {});

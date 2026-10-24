@@ -1,0 +1,843 @@
+# People from church history.
+# One block per question:   [id] The question text   {options}
+# then one answer per line:  Display name | Wikipedia article | alias;alias
+# (article defaults to the display name; aliases are other ways a player might type it)
+# Edit freely, then run:  python3 tools/build.py        See content/README.md for the full guide.
+
+
+[saints] Name a Christian saint   {letters, strip=saint|st.|st}
+Saint Peter | Saint Peter | peter
+Saint Paul | Paul the Apostle | paul
+Francis of Assisi | Francis of Assisi | st francis
+Thomas Aquinas | Thomas Aquinas | aquinas
+Augustine of Hippo | Augustine of Hippo | augustine
+Saint Nicholas | Saint Nicholas | nicholas;st nick
+Saint Patrick | Saint Patrick | patrick
+Saint George | Saint George | george
+Saint Valentine | Saint Valentine | valentine
+Anthony of Padua | Anthony of Padua
+Mother Teresa | Mother Teresa | teresa of calcutta;saint teresa of calcutta;mother theresa
+Thérèse of Lisieux | Thérèse of Lisieux | therese of lisieux;little flower
+Joan of Arc | Joan of Arc
+Catherine of Siena | Catherine of Siena
+Teresa of Ávila | Teresa of Ávila | teresa of avila
+John of the Cross | John of the Cross
+Ignatius of Loyola | Ignatius of Loyola
+Francis Xavier | Francis Xavier
+Benedict of Nursia | Benedict of Nursia | benedict
+Dominic | Saint Dominic | dominic de guzman;dominic
+Bernard of Clairvaux | Bernard of Clairvaux
+Jerome | Jerome
+Ambrose | Ambrose
+Gregory the Great | Pope Gregory I | gregory
+Athanasius | Athanasius of Alexandria
+Basil the Great | Basil of Caesarea | basil
+John Chrysostom | John Chrysostom
+Gregory of Nazianzus | Gregory of Nazianzus
+Cyril of Alexandria | Cyril of Alexandria
+Anselm | Anselm of Canterbury
+Bonaventure | Bonaventure
+Albertus Magnus | Albertus Magnus | albert the great
+Padre Pio | Padre Pio | pio of pietrelcina
+John Paul II | Pope John Paul II | pope john paul ii
+Maximilian Kolbe | Maximilian Kolbe
+Edith Stein | Edith Stein
+Josemaría Escrivá | Josemaría Escrivá | josemaria escriva
+Juan Diego | Juan Diego
+Bernadette Soubirous | Bernadette Soubirous | bernadette
+Rita of Cascia | Rita of Cascia
+Saint Cecilia | Saint Cecilia | cecilia
+Saint Lucy | Saint Lucy | lucy
+Agnes of Rome | Agnes of Rome | agnes
+Agatha of Sicily | Agatha of Sicily | agatha
+Saint Barbara | Saint Barbara | barbara
+Monica of Hippo | Monica of Hippo | monica
+Perpetua and Felicity | Perpetua and Felicity | perpetua;felicity
+Polycarp | Polycarp
+Ignatius of Antioch | Ignatius of Antioch
+Justin Martyr | Justin Martyr
+Irenaeus | Irenaeus
+Boniface | Saint Boniface
+Columba | Columba
+Brigid of Kildare | Brigid of Kildare | brigid;bridget
+Saint David | David of Wales | david of wales
+Cyril and Methodius | Saints Cyril and Methodius | cyril;methodius
+Seraphim of Sarov | Seraphim of Sarov
+Hildegard of Bingen | Hildegard of Bingen
+Clare of Assisi | Clare of Assisi
+Kateri Tekakwitha | Kateri Tekakwitha
+Rose of Lima | Rose of Lima
+Martin de Porres | Martin de Porres
+Saint Christopher | Saint Christopher | christopher
+Sergius of Radonezh | Sergius of Radonezh
+Saint Stephen | Saint Stephen | stephen
+Saint Jude | Jude the Apostle | jude
+Saint Mark | Mark the Evangelist
+Genevieve | Genevieve
+Saint Swithun | Swithun | swithin
+Saint Aidan | Aidan of Lindisfarne | aidan
+Saint Cuthbert | Cuthbert
+Bede | Bede | venerable bede
+
+[popes] Name a pope   {letters, strip=pope, roman}
+Pope Francis | Pope Francis | francis;jorge bergoglio
+Pope Leo XIV | Pope Leo XIV | leo xiv
+Pope Benedict XVI | Pope Benedict XVI | benedict xvi;joseph ratzinger
+Pope John Paul II | Pope John Paul II | john paul ii;john paul 2
+Pope John Paul I | Pope John Paul I | john paul i;john paul 1
+Pope Paul VI | Pope Paul VI | paul vi
+Pope John XXIII | Pope John XXIII | john xxiii
+Pope Pius XII | Pope Pius XII | pius xii
+Pope Pius XI | Pope Pius XI | pius xi
+Pope Benedict XV | Pope Benedict XV | benedict xv
+Pope Pius X | Pope Pius X | pius x
+Pope Leo XIII | Pope Leo XIII | leo xiii
+Pope Pius IX | Pope Pius IX | pius ix
+Pope Pius VII | Pope Pius VII | pius vii
+Pope Benedict XIV | Pope Benedict XIV | benedict xiv
+Pope Urban VIII | Pope Urban VIII | urban viii
+Pope Sixtus V | Pope Sixtus V | sixtus v
+Pope Gregory XIII | Pope Gregory XIII | gregory xiii
+Pope Pius V | Pope Pius V | pius v
+Pope Paul III | Pope Paul III | paul iii
+Pope Clement VII | Pope Clement VII | clement vii
+Pope Leo X | Pope Leo X | leo x
+Pope Julius II | Pope Julius II | julius ii
+Pope Alexander VI | Pope Alexander VI | alexander vi;rodrigo borgia
+Pope Boniface VIII | Pope Boniface VIII | boniface viii
+Pope Innocent III | Pope Innocent III | innocent iii
+Pope Urban II | Pope Urban II | urban ii
+Pope Gregory VII | Pope Gregory VII | gregory vii
+Pope Sylvester II | Pope Sylvester II | sylvester ii
+Pope Gregory I | Pope Gregory I | gregory the great;gregory i
+Pope Leo I | Pope Leo I | leo the great;leo i
+Pope Damasus I | Pope Damasus I | damasus
+Pope Clement I | Pope Clement I | clement i;clement of rome
+Pope Linus | Pope Linus | linus
+Saint Peter | Saint Peter | peter
+Pope Stephen VI | Pope Stephen VI | stephen vi
+Pope Formosus | Pope Formosus | formosus
+Pope Celestine V | Pope Celestine V | celestine v
+Pope Adrian IV | Pope Adrian IV | adrian iv;hadrian iv;nicholas breakspear
+Pope Callixtus III | Pope Callixtus III | callixtus iii
+Pope Nicholas V | Pope Nicholas V | nicholas v
+Pope Pius II | Pope Pius II | pius ii
+Pope Sixtus IV | Pope Sixtus IV | sixtus iv
+Pope Innocent VIII | Pope Innocent VIII | innocent viii
+Pope Clement XIV | Pope Clement XIV | clement xiv
+Pope Gregory XVI | Pope Gregory XVI | gregory xvi
+Pope Anastasius I | Pope Anastasius I | anastasius i
+Pope Zachary | Pope Zachary | zachary
+Pope Sergius I | Pope Sergius I | sergius i
+Pope Vigilius | Pope Vigilius | vigilius
+Pope Honorius I | Pope Honorius I | honorius i
+
+[thinkers] Name a Christian thinker, reformer or preacher   {letters}
+Martin Luther | Martin Luther | luther
+John Calvin | John Calvin | calvin
+Huldrych Zwingli | Huldrych Zwingli | zwingli;ulrich zwingli
+John Knox | John Knox | knox
+Jan Hus | Jan Hus | john hus;hus
+John Wycliffe | John Wycliffe | wycliffe;wyclif
+William Tyndale | William Tyndale | tyndale
+Thomas Cranmer | Thomas Cranmer | cranmer
+Menno Simons | Menno Simons
+John Wesley | John Wesley | wesley
+Charles Wesley | Charles Wesley
+George Whitefield | George Whitefield | whitefield
+Charles Spurgeon | Charles Spurgeon | spurgeon
+Jonathan Edwards | Jonathan Edwards (theologian) | edwards
+Billy Graham | Billy Graham | graham
+Martin Luther King Jr. | Martin Luther King Jr. | mlk;martin luther king;dr king
+Karl Barth | Karl Barth | barth
+Dietrich Bonhoeffer | Dietrich Bonhoeffer | bonhoeffer
+C. S. Lewis | C. S. Lewis | cs lewis;c.s. lewis;lewis
+G. K. Chesterton | G. K. Chesterton | chesterton;gk chesterton
+Tertullian | Tertullian
+Origen | Origen
+Pelagius | Pelagius
+Arius | Arius
+Marcion | Marcion of Sinope | marcion of sinope
+Nestorius | Nestorius
+Erasmus | Erasmus | desiderius erasmus
+Thomas à Kempis | Thomas à Kempis | thomas a kempis
+Blaise Pascal | Blaise Pascal | pascal
+Søren Kierkegaard | Søren Kierkegaard | soren kierkegaard;kierkegaard
+Reinhold Niebuhr | Reinhold Niebuhr | niebuhr
+Paul Tillich | Paul Tillich | tillich
+Karl Rahner | Karl Rahner | rahner
+Hans Urs von Balthasar | Hans Urs von Balthasar | balthasar
+N. T. Wright | N. T. Wright | nt wright;tom wright
+Tim Keller | Tim Keller (pastor)| keller
+John Piper | John Piper (theologian) | piper
+Francis Schaeffer | Francis Schaeffer | schaeffer
+Dwight L. Moody | Dwight L. Moody | moody
+Charles Finney | Charles Grandison Finney | finney
+Nicolaus Zinzendorf | Nicolaus Zinzendorf | zinzendorf
+William Booth | William Booth | booth
+Hudson Taylor | Hudson Taylor | taylor
+William Carey | William Carey (missionary) | carey
+Amy Carmichael | Amy Carmichael
+Corrie ten Boom | Corrie ten Boom | ten boom
+John Bunyan | John Bunyan | bunyan
+John Newton | John Newton | newton
+Julian of Norwich | Julian of Norwich
+Meister Eckhart | Meister Eckhart | eckhart
+Thomas Merton | Thomas Merton | merton
+Dorothy Day | Dorothy Day
+Desmond Tutu | Desmond Tutu | tutu
+Oscar Romero | Óscar Romero | romero;oscar romero
+Brother Lawrence | Brother Lawrence
+Jacobus Arminius | Jacobus Arminius | arminius
+Philip Melanchthon | Philip Melanchthon | melanchthon
+Martin Bucer | Martin Bucer | bucer
+Theodore Beza | Theodore Beza | beza
+Peter Abelard | Peter Abelard | abelard
+Duns Scotus | Duns Scotus | john duns scotus
+William of Ockham | William of Ockham | ockham;occam
+Anselm | Anselm of Canterbury | anselm
+Cyprian | Cyprian
+Hippolytus | Hippolytus of Rome | hippolytus
+Clement of Alexandria | Clement of Alexandria
+Eusebius | Eusebius | eusebius of caesarea
+Gregory of Nyssa | Gregory of Nyssa
+Maximus the Confessor | Maximus the Confessor
+John of Damascus | John of Damascus
+Gregory Palamas | Gregory Palamas | palamas
+Evagrius Ponticus | Evagrius Ponticus | evagrius
+
+[fathers] Name a Church Father   {letters}
+Ignatius of Antioch
+Polycarp
+Clement of Rome | Pope Clement I
+Justin Martyr
+Irenaeus | Irenaeus | Irenaeus of Lyons
+Tertullian
+Origen
+Cyprian
+Athanasius | Athanasius of Alexandria
+Basil the Great | Basil of Caesarea
+Gregory of Nazianzus
+Gregory of Nyssa
+John Chrysostom
+Ambrose
+Jerome
+Augustine of Hippo | Augustine of Hippo | augustine
+Gregory the Great | Pope Gregory I
+Cyril of Alexandria
+Hilary of Poitiers
+Eusebius | Eusebius
+Clement of Alexandria
+Lactantius
+Ephrem the Syrian
+Cyril of Jerusalem
+John of Damascus
+Leo the Great | Pope Leo I
+Isidore of Seville
+Papias | Papias of Hierapolis
+Hippolytus | Hippolytus of Rome
+Melito of Sardis
+Athenagoras of Athens
+Tatian
+Theophilus of Antioch
+Dionysius of Alexandria
+Gregory Thaumaturgus
+Methodius of Olympus
+Vincent of Lérins
+Maximus the Confessor
+Macrina the Younger | Macrina the Younger
+Rufinus | Tyrannius Rufinus
+John Cassian | John Cassian
+Paulinus of Nola
+Prudentius
+Ambrosiaster
+Arnobius
+Minucius Felix
+Aristides of Athens | Aristides of Athens
+Quadratus of Athens | Quadratus of Athens
+
+[martyrs] Name a Christian martyr   {letters}
+Stephen | Saint Stephen
+Polycarp | Polycarp | Polykarp
+Perpetua | Perpetua and Felicity | Felicity
+Lawrence | Lawrence of Rome
+Sebastian | Saint Sebastian
+Cecilia | Saint Cecilia
+Agnes | Agnes of Rome
+Agatha | Agatha of Sicily
+Lucy | Saint Lucy
+Ignatius of Antioch | Ignatius of Antioch | Ignatius
+Justin Martyr
+Thomas Becket
+Thomas More
+Maximilian Kolbe
+Óscar Romero | Óscar Romero | oscar romero
+Dietrich Bonhoeffer
+Joan of Arc
+Jan Hus
+William Tyndale
+Hugh Latimer
+Nicholas Ridley | Nicholas Ridley (martyr)
+Thomas Cranmer
+Alban | Saint Alban
+Boniface | Saint Boniface
+James the Great | James, son of Zebedee
+Peter | Saint Peter
+Paul | Paul the Apostle
+Andrew | Andrew the Apostle
+Bartholomew | Bartholomew the Apostle
+Thomas | Thomas the Apostle
+Catherine of Alexandria
+Barbara | Saint Barbara
+Margaret of Antioch
+Blandina | Blandina
+Cyprian
+Edmund the Martyr | Edmund the Martyr
+Wenceslaus | Wenceslaus I, Duke of Bohemia
+Olga of Kiev | Olga of Kiev
+Charles Lwanga | Charles Lwanga
+Paul Miki | Paul Miki
+Edith Stein | Edith Stein
+Jim Elliot | Jim Elliot
+Nate Saint | Nate Saint
+Victor of Marseilles | Victor of Marseilles
+Maurice | Saint Maurice
+George | Saint George
+Vitus | Saint Vitus
+Valentine | Saint Valentine
+Denis | Saint Denis
+Ursula | Saint Ursula
+Pancras | Saint Pancras
+Eulalia of Barcelona | Eulalia of Barcelona
+Forty Martyrs of Sebaste | Forty Martyrs of Sebaste
+Martyrs of Lyon | Martyrs of Lyon
+Martyrs of Japan | Twenty-Six Martyrs of Japan
+Uganda Martyrs | Uganda Martyrs
+Coptic martyrs of Libya | 21 Coptic Orthodox Christians
+
+[canterbury] Name an Archbishop of Canterbury   {letters}
+Augustine of Canterbury
+Dunstan
+Lanfranc
+Anselm of Canterbury | Anselm of Canterbury | anselm
+Thomas Becket
+Stephen Langton
+Thomas Cranmer
+Reginald Pole
+Matthew Parker
+John Whitgift
+Edmund Grindal
+George Abbot | George Abbot (archbishop)
+William Laud
+William Sancroft
+John Tillotson
+Thomas Tenison
+Thomas Secker
+Archibald Campbell Tait
+Edward White Benson
+Frederick Temple
+Randall Davidson
+Cosmo Gordon Lang | Cosmo Lang
+William Temple | William Temple (archbishop)
+Geoffrey Fisher
+Michael Ramsey
+Donald Coggan
+Robert Runcie
+George Carey
+Rowan Williams
+Justin Welby
+Sarah Mullally
+Thomas Bourchier | Thomas Bourchier
+John Morton | John Morton (cardinal)
+William Warham
+William Courtenay | William Courtenay
+Simon Sudbury | Simon Sudbury
+Thomas Arundel | Thomas Arundel
+Henry Chichele | Henry Chichele
+John Stafford | John Stafford (archbishop)
+Walter Reynolds | Walter Reynolds
+Robert Winchelsey | Robert Winchelsey
+John Peckham | John Peckham
+Edmund Rich | Edmund of Abingdon | edmund of abingdon
+Hubert Walter
+Baldwin of Forde | Baldwin of Forde
+Richard of Dover | Richard of Dover
+Theobald of Bec | Theobald of Bec
+William de Corbeil | William de Corbeil
+Ralph d'Escures | Ralph d'Escures
+Æthelgar | Æthelgar
+Sigeric the Serious | Sigeric the Serious
+Ælfheah | Ælfheah of Canterbury | alphege
+Theodore of Tarsus | Theodore of Tarsus
+Laurence of Canterbury | Laurence of Canterbury
+Mellitus | Mellitus
+Justus | Justus (archbishop of Canterbury)
+
+[missionaries] Name a Christian missionary   {letters}
+Patrick | Saint Patrick
+Columba
+Boniface | Saint Boniface
+Cyril and Methodius | Saints Cyril and Methodius
+Francis Xavier
+William Carey | William Carey (missionary)
+Hudson Taylor
+David Livingstone
+Adoniram Judson
+Amy Carmichael
+Jim Elliot
+Eric Liddell
+Lottie Moon
+Mary Slessor
+Gladys Aylward
+Albert Schweitzer
+Mother Teresa
+Brother Andrew | Brother Andrew
+Nate Saint
+Elisabeth Elliot
+C. T. Studd
+Henry Martyn
+Robert Moffat | Robert Moffat (missionary)
+Ulfilas | Ulfilas
+Matteo Ricci
+Alopen | Alopen
+Junípero Serra
+Bartolomé de las Casas
+Ansgar | Ansgar
+Willibrord | Willibrord
+Augustine of Canterbury
+Samuel Ajayi Crowther | Samuel Ajayi Crowther
+John Eliot | John Eliot (missionary)
+Jonathan Goforth
+Bruce Olson | Bruce Olson
+Paul | Paul the Apostle
+Barnabas
+Hans Egede | Hans Egede
+Johannes Rebmann | Johannes Rebmann
+Robert Morrison | Robert Morrison (missionary)
+Karl Gützlaff | Karl Gützlaff
+Alexander Duff | Alexander Duff (missionary)
+Alexander Mackay | Alexander Mackay (missionary)
+Bishop Hannington | James Hannington
+David Brainerd
+Ann Hasseltine Judson | Ann Hasseltine Judson
+Marcus Whitman | Marcus Whitman
+Pierre-Jean De Smet | Pierre-Jean De Smet
+Jean de Brébeuf | Jean de Brébeuf
+Isaac Jogues | Isaac Jogues
+Damien of Molokai | Father Damien
+Pandita Ramabai | Pandita Ramabai
+Sundar Singh | Sundar Singh
+Toyohiko Kagawa | Toyohiko Kagawa
+Watchman Nee | Watchman Nee
+Lillian Trasher | Lillian Trasher
+Helen Roseveare | Helen Roseveare
+Paul Brand | Paul Wilson Brand
+Ida Scudder | Ida S. Scudder
+John G. Paton | John G. Paton
+Titus Brandsma | Titus Brandsma
+
+[evangelists] Name a pastor, preacher or evangelist   {letters}
+Billy Graham
+Joel Osteen
+T. D. Jakes
+Rick Warren
+Joyce Meyer
+Kenneth Copeland
+Franklin Graham
+Max Lucado
+John MacArthur
+R. C. Sproul
+Ravi Zacharias
+Tim Keller | Tim Keller (pastor)
+John Piper | John Piper (theologian)
+Charles Stanley | Charles Stanley (pastor)
+Beth Moore
+Francis Chan
+Pat Robertson
+Jerry Falwell
+Oral Roberts
+Jimmy Swaggart
+Benny Hinn
+Creflo Dollar
+Kirk Cameron
+Lee Strobel
+J. I. Packer
+Chuck Swindoll | Charles R. Swindoll
+Bill Hybels
+Louie Giglio
+Steven Furtick
+Craig Groeschel
+Andy Stanley
+Tony Evans | Tony Evans (pastor)
+Voddie Baucham
+David Platt | David Platt (pastor)
+Francis Schaeffer
+Dwight L. Moody
+Charles Finney
+Charles Spurgeon
+George Whitefield
+John Wesley
+Jonathan Edwards | Jonathan Edwards (theologian)
+Billy Sunday
+Aimee Semple McPherson
+Kathryn Kuhlman | Kathryn Kuhlman
+Smith Wigglesworth | Smith Wigglesworth
+William J. Seymour | William Seymour
+Reinhard Bonnke
+Rodney Howard-Browne | Rodney Howard-Browne
+Bishop Fulton Sheen | Fulton J. Sheen | Fulton Sheen
+Mother Angelica
+Scott Hahn
+Bishop Robert Barron | Robert Barron
+Dr. D. James Kennedy | D. James Kennedy
+Adrian Rogers | Adrian Rogers
+Brian Houston | Brian Houston
+Robert H. Schuller | Robert H. Schuller
+Norman Vincent Peale | Norman Vincent Peale
+Tony Campolo | Tony Campolo
+Shane Claiborne | Shane Claiborne
+Jen Hatmaker | Jen Hatmaker
+Priscilla Shirer | Priscilla Shirer
+Christine Caine | Christine Caine
+Kay Arthur | Kay Arthur
+
+[founders] Name a founder of a church or Christian movement   {letters}
+Martin Luther
+John Calvin
+John Wesley
+John Smyth | John Smyth (Baptist)
+George Fox
+Menno Simons
+Jakob Ammann
+William Booth
+Ellen G. White
+Alexander Campbell | Alexander Campbell (minister)
+Barton W. Stone
+William J. Seymour
+Charles Parham | Charles Fox Parham
+Aimee Semple McPherson
+Huldrych Zwingli
+John Knox
+Thomas Helwys
+Nicolaus Zinzendorf
+Philipp Jakob Spener
+John Nelson Darby
+Francis Asbury
+Richard Allen | Richard Allen (bishop)
+Absalom Jones
+Hans Nielsen Hauge | Hans Nielsen Hauge
+Conrad Grebel
+Balthasar Hubmaier
+Jan Hus
+Peter Waldo | Peter Waldo
+Francis of Assisi
+Ignatius of Loyola
+Benedict of Nursia
+Dominic | Saint Dominic
+Bruno of Cologne | Bruno of Cologne
+Teresa of Ávila
+Henry VIII | Henry VIII
+Roger Williams | Roger Williams (theologian)
+William Penn
+Robert Browne | Robert Browne (Puritan)
+Isaac Backus | Isaac Backus
+Jacobus Arminius
+Philip Melanchthon
+Thomas Müntzer | Thomas Müntzer
+John Wycliffe
+Brother Roger | Roger Schütz
+Chiara Lubich | Chiara Lubich
+Jean Vanier | Jean Vanier
+Josemaría Escrivá
+Luigi Giussani | Luigi Giussani
+Dorothy Day
+Peter Maurin | Peter Maurin
+Bill Bright | Bill Bright
+Billy Graham
+
+[orthodox] Name an Eastern Orthodox saint or leader
+Seraphim of Sarov | Seraphim of Sarov
+Sergius of Radonezh
+Gregory Palamas
+John of Damascus
+Nicholas II | Nicholas II of Russia
+Maximus the Confessor
+Theophan the Recluse | Theophan the Recluse
+Paisios of Mount Athos | Paisios of Mount Athos
+Silouan the Athonite | Silouan the Athonite
+Ephrem the Syrian
+Isaac the Syrian | Isaac of Nineveh
+Simeon the New Theologian | Symeon the New Theologian
+Mark of Ephesus | Mark of Ephesus
+Andrei Rublev | Andrei Rublev
+Bartholomew I of Constantinople | Bartholomew I of Constantinople
+Patriarch Kirill | Patriarch Kirill of Moscow
+Photios I of Constantinople | Photios I of Constantinople
+Athenagoras I of Constantinople | Athenagoras I of Constantinople
+Nikon | Patriarch Nikon
+Tikhon of Moscow | Patriarch Tikhon of Moscow
+Sergius I of Moscow | Patriarch Sergius I of Moscow
+Dmitry Donskoy | Dmitry Donskoy
+Alexander Nevsky | Alexander Nevsky
+Vladimir the Great | Vladimir the Great
+Olga of Kiev
+Cyril of Turov | Cyril of Turov
+Herman of Alaska | Herman of Alaska
+Innocent of Alaska | Innocent of Alaska
+John of Kronstadt | John of Kronstadt
+Ambrose of Optina | Ambrose of Optina
+Macarius of Egypt | Macarius of Egypt
+Anthony the Great | Anthony the Great
+Pachomius | Pachomius the Great
+Paul of Thebes | Paul of Thebes
+Mary of Egypt | Mary of Egypt
+Theodore the Studite | Theodore the Studite
+Basil the Great
+John Climacus | John Climacus
+Evagrius Ponticus | Evagrius Ponticus
+Sava | Saint Sava
+Stephen of Perm | Stephen of Perm
+Cyril Lucaris | Cyril Lucaris
+Nicodemus of the Holy Mountain | Nicodemus of the Holy Mountain
+Elder Porphyrios | Porphyrios of Kafsokalyvia
+Elder Joseph the Hesychast | Joseph the Hesychast
+Mother Maria of Paris | Maria Skobtsova
+Alexander Schmemann | Alexander Schmemann
+Georges Florovsky | Georges Florovsky
+Vladimir Lossky | Vladimir Lossky
+Sergei Bulgakov | Sergei Bulgakov
+John Zizioulas | John Zizioulas
+Kallistos Ware | Kallistos Ware
+
+[women_christian] Name a notable Christian woman   {letters}
+Elizabeth Fry
+Florence Nightingale
+Corrie ten Boom
+Amy Carmichael
+Mary Slessor
+Fanny Crosby
+Catherine Booth
+Lottie Moon
+Mother Teresa
+Dorothy Day
+Hannah More
+Susanna Wesley
+Anne Bradstreet
+Julian of Norwich
+Margery Kempe
+Hildegard of Bingen
+Teresa of Ávila
+Joni Eareckson Tada | Joni Eareckson Tada
+Elisabeth Elliot
+Joyce Meyer
+Beth Moore
+Kay Arthur
+Evelyn Underhill
+Hannah Whitall Smith
+Phoebe Palmer
+Aimee Semple McPherson
+Ellen G. White
+Sojourner Truth
+Phillis Wheatley
+Harriet Beecher Stowe
+Harriet Tubman
+Christina Rossetti
+Flannery O'Connor
+Dorothy L. Sayers
+Madeleine L'Engle
+Simone Weil
+Edith Stein
+Catherine of Siena
+Joan of Arc
+Clare of Assisi
+Thérèse of Lisieux
+Katharina von Bora
+Katharina Zell | Katharina Schütz Zell
+Argula von Grumbach | Argula von Grumbach
+Anne Askew
+Jane Grey | Lady Jane Grey
+Mary I of England
+Elizabeth I | Elizabeth I
+Mary Magdalene Dominici
+Lilias Trotter | Lilias Trotter
+Gladys Aylward
+Ruth Bell Graham | Ruth Graham
+Katharine Drexel | Katharine Drexel
+Elizabeth Ann Seton
+Frances Xavier Cabrini | Frances Xavier Cabrini
+Mother Angelica
+Maria von Trapp | Maria von Trapp
+Dorothea Dix | Dorothea Dix
+Clara Barton | Clara Barton
+Frances Willard | Frances Willard
+Sister Helen Prejean | Helen Prejean
+Joan Chittister | Joan Chittister
+Sarah Mullally | Sarah Mullally
+
+[kings_christian] Name a Christian king or emperor   {letters, roman}
+Constantine the Great
+Theodosius I
+Justinian I
+Charlemagne
+Otto I | Otto I, Holy Roman Emperor
+Clovis I
+Alfred the Great
+Louis IX of France | Louis IX of France
+Richard I of England | Richard I of England | richard the lionheart
+Henry VIII
+Elizabeth I
+Mary I of England
+James VI and I | James VI and I
+Charles V | Charles V, Holy Roman Emperor
+Philip II of Spain
+Ferdinand II of Aragon
+Isabella I of Castile
+Vladimir the Great
+Stephen I of Hungary | Stephen I of Hungary
+Olaf II of Norway
+Æthelberht of Kent | Æthelberht of Kent
+Oswald of Northumbria | Oswald of Northumbria
+Edward the Confessor
+Henry IV | Henry IV, Holy Roman Emperor
+Frederick Barbarossa | Frederick Barbarossa
+Helena | Helena, mother of Constantine I | saint helena
+Theodora | Empress Theodora (wife of Justinian I)
+Irene of Athens | Irene of Athens
+Basil II | Basil II
+Alexios I Komnenos | Alexios I Komnenos
+Nicholas II | Nicholas II of Russia
+Haile Selassie | Haile Selassie
+Ezana of Axum | Ezana of Axum
+Tiridates III of Armenia | Tiridates III of Armenia
+Abgar V | Abgar V
+Recared I | Reccared I
+Bolesław I the Brave | Bolesław I the Brave
+Mieszko I | Mieszko I of Poland
+Casimir III the Great | Casimir III the Great
+Wenceslaus I | Wenceslaus I, Duke of Bohemia
+Charles Martel | Charles Martel
+Pepin the Short | Pepin the Short
+Louis the Pious | Louis the Pious
+Henry II | Henry II of England
+Edward I | Edward I of England
+Henry V | Henry V of England
+Gustavus Adolphus | Gustavus Adolphus of Sweden
+Oliver Cromwell | Oliver Cromwell
+William of Orange | William the Silent
+William III | William III of England
+Frederick the Wise | Frederick III, Elector of Saxony
+Philip of Hesse | Philip I, Landgrave of Hesse
+Edward VI | Edward VI of England
+
+[crusades] Name a figure from the Crusades   {letters, roman}
+Godfrey of Bouillon
+Richard I of England | Richard I of England | richard the lionheart
+Saladin
+Raymond IV of Toulouse | Raymond IV, Count of Toulouse
+Bohemond I of Antioch | Bohemond I of Antioch
+Baldwin I of Jerusalem | Baldwin I of Jerusalem | Baldwin of Boulogne
+Louis VII of France | Louis VII of France
+Conrad III | Conrad III of Germany
+Frederick Barbarossa
+Philip II of France | Philip II of France
+Peter the Hermit
+Pope Urban II
+Bernard of Clairvaux
+Baldwin IV of Jerusalem | Baldwin IV of Jerusalem
+Guy of Lusignan | Guy of Lusignan
+Raynald of Châtillon | Raynald of Châtillon
+Tancred | Tancred, Prince of Galilee
+Louis IX of France
+Edward I of England | Edward I of England
+Nur ad-Din | Nur ad-Din (died 1174)
+Alexios I Komnenos
+Enrico Dandolo | Enrico Dandolo
+Simon de Montfort | Simon de Montfort, 5th Earl of Leicester
+Frederick II | Frederick II, Holy Roman Emperor
+Hugh of Payens | Hugues de Payens
+Raymond III of Tripoli | Raymond III, Count of Tripoli
+Balian of Ibelin | Balian of Ibelin
+Melisende | Melisende, Queen of Jerusalem
+Sibylla of Jerusalem | Sibylla of Jerusalem
+Eleanor of Aquitaine | Eleanor of Aquitaine
+Leopold V | Leopold V, Duke of Austria
+Imad ad-Din Zengi | Zengi
+Baibars | Baibars
+Fulcher of Chartres | Fulcher of Chartres
+Adhemar of Le Puy | Adhemar of Le Puy
+Stephen of Blois | Stephen, Count of Blois
+Robert Curthose | Robert Curthose
+Hugh of Vermandois | Hugh of Vermandois
+Bertrand de Blanchefort | Bertrand de Blanchefort
+Gerard of Ridefort | Gerard of Ridefort
+Jacques de Molay | Jacques de Molay
+Walter the Penniless | Walter Sans Avoir
+Emicho | Emicho
+Conrad of Montferrat | Conrad of Montferrat
+Henry of Champagne | Henry II of Champagne
+John of Brienne | John of Brienne
+Peter of Castelnau | Pierre de Castelnau
+Arnaud Amalric | Arnaud Amalric
+Albigensian Crusade | Albigensian Crusade
+Children's Crusade | Children's Crusade
+Siege of Jerusalem (1099) | Siege of Jerusalem (1099)
+Battle of Hattin | Battle of Hattin
+
+[scientists] Name a Christian scientist or priest-scientist
+Gregor Mendel
+Georges Lemaître | Georges Lemaître | lemaitre
+Isaac Newton
+Blaise Pascal
+Nicolaus Copernicus
+Galileo Galilei
+Johannes Kepler
+Robert Boyle
+Michael Faraday
+Louis Pasteur
+Francis Collins
+John Polkinghorne
+Roger Bacon
+Albertus Magnus
+Robert Grosseteste
+Nicolas Steno | Nicolas Steno
+Pierre Teilhard de Chardin | Pierre Teilhard de Chardin
+Athanasius Kircher
+Giambattista Riccioli | Giovanni Battista Riccioli
+Francesco Maria Grimaldi | Francesco Maria Grimaldi
+Angelo Secchi
+Maria Gaetana Agnesi | Maria Gaetana Agnesi
+Joseph Priestley
+James Clerk Maxwell
+Lord Kelvin | William Thomson, 1st Baron Kelvin
+John Ray
+William Paley
+Marin Mersenne | Marin Mersenne
+Pierre Gassendi | Pierre Gassendi
+Jean Buridan
+Nicole Oresme
+Thomas Bayes
+Antonie van Leeuwenhoek | Antonie van Leeuwenhoek
+William Whewell | William Whewell
+Francis Bacon | Francis Bacon
+René Descartes | René Descartes
+Gottfried Leibniz | Gottfried Wilhelm Leibniz
+Leonhard Euler | Leonhard Euler
+Augustin-Louis Cauchy | Augustin-Louis Cauchy
+Carl Linnaeus | Carl Linnaeus
+Georges Cuvier | Georges Cuvier
+Alister McGrath | Alister McGrath
+Arthur Peacocke | Arthur Peacocke
+Ian Barbour | Ian Barbour
+Jennifer Wiseman | Jennifer Wiseman
+Guy Consolmagno | Guy Consolmagno
+George Coyne | George Coyne
+Ronald Numbers | Ronald Numbers
+Simon Conway Morris | Simon Conway Morris
+Kenneth R. Miller | Kenneth R. Miller
+Denis Alexander | Denis Alexander
+William Lane Craig | William Lane Craig
+Alvin Plantinga | Alvin Plantinga
+Richard Swinburne | Richard Swinburne
+Stephen Meyer | Stephen C. Meyer
+Michael Behe | Michael Behe
+Hugh Ross | Hugh Ross (creationist)

@@ -1,0 +1,1175 @@
+# The Bible: books, people, places, stories, names of God, relics, Revelation, translations.
+# One block per question:   [id] The question text   {options}
+# then one answer per line:  Display name | Wikipedia article | alias;alias
+# (article defaults to the display name; aliases are other ways a player might type it)
+# Edit freely, then run:  python3 tools/build.py        See content/README.md for the full guide.
+
+
+[books] Name a book of the Bible   {letters}
+Genesis | Book of Genesis | gen
+Exodus | Book of Exodus | ex
+Leviticus | Book of Leviticus
+Numbers | Book of Numbers
+Deuteronomy | Deuteronomy | deut
+Joshua | Book of Joshua
+Judges | Book of Judges
+Ruth | Book of Ruth
+Samuel | Books of Samuel | 1 samuel;2 samuel;first samuel;second samuel
+Kings | Books of Kings | 1 kings;2 kings;first kings;second kings
+Chronicles | Books of Chronicles | 1 chronicles;2 chronicles
+Ezra | Book of Ezra
+Nehemiah | Book of Nehemiah
+Esther | Book of Esther
+Job | Book of Job
+Psalms | Psalms | psalm;book of psalms
+Proverbs | Book of Proverbs
+Ecclesiastes | Ecclesiastes | qoheleth
+Song of Solomon | Song of Songs | song of songs;song of salomon;canticles
+Isaiah | Book of Isaiah
+Jeremiah | Book of Jeremiah
+Lamentations | Book of Lamentations
+Ezekiel | Book of Ezekiel
+Daniel | Book of Daniel
+Hosea | Book of Hosea
+Joel | Book of Joel
+Amos | Book of Amos
+Obadiah | Book of Obadiah
+Jonah | Book of Jonah
+Micah | Book of Micah
+Nahum | Book of Nahum
+Habakkuk | Book of Habakkuk
+Zephaniah | Book of Zephaniah
+Haggai | Book of Haggai
+Zechariah | Book of Zechariah
+Malachi | Book of Malachi
+Matthew | Gospel of Matthew
+Mark | Gospel of Mark
+Luke | Gospel of Luke
+John | Gospel of John | gospel of john
+Acts | Acts of the Apostles | acts of the apostles
+Romans | Epistle to the Romans
+Corinthians | First Epistle to the Corinthians | 1 corinthians;2 corinthians;first corinthians;second corinthians
+Galatians | Epistle to the Galatians
+Ephesians | Epistle to the Ephesians
+Philippians | Epistle to the Philippians
+Colossians | Epistle to the Colossians
+Thessalonians | First Epistle to the Thessalonians | 1 thessalonians;2 thessalonians
+Timothy | First Epistle to Timothy | 1 timothy;2 timothy
+Titus | Saint Titus
+Philemon | Epistle to Philemon
+Hebrews | Epistle to the Hebrews
+James | Epistle of James
+Peter | First Epistle of Peter | 1 peter;2 peter;first peter;second peter
+2 John | Second Epistle of John | second john;2nd john
+3 John | Third Epistle of John | third john;3rd john
+Jude | Epistle of Jude
+Revelation | Book of Revelation | revelations;apocalypse;the apocalypse
+
+[ot_books] Name a book of the Old Testament
+Genesis | Book of Genesis
+Exodus | Book of Exodus
+Leviticus | Book of Leviticus
+Numbers | Book of Numbers
+Deuteronomy
+Joshua | Book of Joshua
+Judges | Book of Judges
+Ruth | Book of Ruth
+Samuel | Books of Samuel | 1 samuel;2 samuel;first samuel;second samuel
+Kings | Books of Kings | 1 kings;2 kings;first kings;second kings
+Chronicles | Books of Chronicles | 1 chronicles;2 chronicles
+Ezra | Book of Ezra
+Nehemiah | Book of Nehemiah
+Esther | Book of Esther
+Job | Book of Job
+Psalms | Psalms | psalm;book of psalms
+Proverbs | Book of Proverbs
+Ecclesiastes
+Song of Solomon | Song of Songs | song of songs;canticles
+Isaiah | Book of Isaiah
+Jeremiah | Book of Jeremiah
+Lamentations | Book of Lamentations
+Ezekiel | Book of Ezekiel
+Daniel | Book of Daniel
+Hosea | Book of Hosea
+Joel | Book of Joel
+Amos | Book of Amos
+Obadiah | Book of Obadiah
+Jonah | Book of Jonah
+Micah | Book of Micah
+Nahum | Book of Nahum
+Habakkuk | Book of Habakkuk
+Zephaniah | Book of Zephaniah
+Haggai | Book of Haggai
+Zechariah | Book of Zechariah
+Malachi | Book of Malachi
+
+[nt_books] Name a book of the New Testament
+Matthew | Gospel of Matthew
+Mark | Gospel of Mark
+Luke | Gospel of Luke
+John | Gospel of John
+Acts | Acts of the Apostles
+Romans | Epistle to the Romans
+Corinthians | First Epistle to the Corinthians | 1 corinthians;2 corinthians
+Galatians | Epistle to the Galatians
+Ephesians | Epistle to the Ephesians
+Philippians | Epistle to the Philippians
+Colossians | Epistle to the Colossians
+Thessalonians | First Epistle to the Thessalonians | 1 thessalonians;2 thessalonians
+Timothy | First Epistle to Timothy | 1 timothy;2 timothy
+Titus | Epistle to Titus
+Philemon | Epistle to Philemon
+Hebrews | Epistle to the Hebrews
+James | Epistle of James
+Peter | First Epistle of Peter | 1 peter;2 peter
+1 John | First Epistle of John | first john
+2 John | Second Epistle of John
+3 John | Third Epistle of John
+Jude | Epistle of Jude
+Revelation | Book of Revelation | revelations;apocalypse
+
+[ot_people] Name a person from the Old Testament   {letters}
+Adam | Adam
+Eve | Eve
+Cain | Cain and Abel | abel;cain and abel
+Noah | Noah
+Abraham | Abraham | abram
+Sarah | Sarah
+Isaac | Isaac
+Jacob | Jacob | israel
+Joseph | Joseph (Genesis)
+Moses | Moses
+Aaron | Aaron
+Joshua | Joshua
+Samson | Samson
+Delilah | Delilah
+Samuel | Samuel
+Saul | Saul
+David | David
+Goliath | Goliath
+Solomon | Solomon
+Elijah | Elijah
+Elisha | Elisha
+Daniel | Daniel (biblical figure)
+Jonah | Jonah
+Job | Job (biblical figure)
+Esther | Esther
+Gideon | Gideon (Bible)
+Deborah | Deborah
+Hagar | Hagar
+Ishmael | Ishmael
+Esau | Esau
+Rebecca | Rebecca (biblical figure)| rebekah
+Rachel | Rachel
+Leah | Leah
+Lot | Lot (biblical person)
+Melchizedek | Melchizedek
+Methuselah | Methuselah
+Enoch | Enoch (ancestor of Noah) | enoch
+Nebuchadnezzar | Nebuchadnezzar II | nebuchadnezzar ii
+Jezebel | Jezebel
+Ahab | Ahab
+Hezekiah | Hezekiah
+Josiah | Josiah
+Naomi | Naomi (biblical figure)
+Boaz | Boaz
+Jephthah | Jephthah
+Zipporah | Zipporah
+Jethro | Jethro (biblical figure) | reuel
+Balaam | Balaam
+Korah | Korah
+Caleb | Caleb
+Uriah | Uriah the Hittite | uriah the hittite
+Bathsheba | Bathsheba
+Absalom | Absalom
+Jonathan | Jonathan (1 Samuel)
+Mephibosheth | Mephibosheth
+Shadrach, Meshach and Abednego | Shadrach, Meshach, and Abednego | shadrach;meshach;abednego
+Belshazzar | Belshazzar
+Darius the Mede | Darius the Mede
+Ezra | Ezra
+Nehemiah | Nehemiah
+Rahab | Rahab
+Hannah | Hannah (biblical figure)
+Eli | Eli (biblical figure)
+Joab | Joab
+Abigail | Abigail
+Tamar | Tamar (Genesis) | tamar
+Dinah | Dinah
+Benjamin | Benjamin
+Reuben | Reuben (son of Jacob)
+Judah | Judah (son of Jacob)
+Levi | Levi
+Ehud | Ehud
+Hophni and Phinehas | Hophni and Phinehas | hophni;phinehas
+Obadiah | Obadiah
+Habakkuk | Habakkuk
+
+[nt_people] Name a person from the New Testament   {letters}
+Mary | Mary, mother of Jesus | virgin mary;mother of jesus;blessed virgin mary
+Joseph | Joseph of Nazareth | joseph of nazareth
+John the Baptist | John the Baptist
+Elizabeth | Elizabeth (biblical figure)
+Zechariah | Zechariah (New Testament figure) | zacharias
+Herod the Great | Herod the Great | herod
+Herod Antipas | Herod Antipas
+Pontius Pilate | Pontius Pilate | pilate
+Caiaphas | Caiaphas
+Judas Iscariot | Judas Iscariot | judas
+Mary Magdalene | Mary Magdalene
+Martha | Martha of Bethany | martha of bethany
+Lazarus | Lazarus of Bethany | lazarus of bethany
+Nicodemus | Nicodemus
+Zacchaeus | Zacchaeus
+Barabbas | Barabbas
+Simon of Cyrene | Simon of Cyrene
+Joseph of Arimathea | Joseph of Arimathea
+Paul | Paul the Apostle | saul of tarsus;saul
+Barnabas | Barnabas
+Silas | Silas
+Timothy | Saint Timothy
+Titus | Titus (disciple)
+Luke | Luke the Evangelist
+Stephen | Saint Stephen
+Philip the Evangelist | Philip the Evangelist
+Cornelius | Cornelius the Centurion | cornelius the centurion
+Lydia | Lydia of Thyatira
+Priscilla and Aquila | Priscilla and Aquila | priscilla;aquila
+Apollos | Apollos
+Ananias and Sapphira | Ananias and Sapphira | ananias;sapphira
+Eutychus | Eutychus
+Felix | Antonius Felix | antonius felix
+Festus | Porcius Festus | porcius festus
+Agrippa | Herod Agrippa II | herod agrippa
+Gamaliel | Gamaliel
+Onesimus | Onesimus
+Salome | Salome (disciple) | salome
+Herodias | Herodias
+Bartimaeus | Bartimaeus
+Jairus | Jairus
+Simeon | Simeon (Gospel of Luke) | simeon
+Anna | Anna the Prophetess | anna the prophetess
+Theophilus | Theophilus (biblical)
+Epaphras | Epaphras
+Demas | Demas
+Sergius Paulus | Sergius Paulus
+Elymas | Elymas
+Rhoda | Rhoda (Acts)
+Mary of Clopas | Mary of Clopas
+Phoebe | Phoebe (biblical figure)
+Trophimus | Trophimus
+Tychicus | Tychicus
+Aristarchus | Aristarchus of Thessalonica
+Dionysius the Areopagite | Dionysius the Areopagite | dionysius
+
+[apostles] Name one of the apostles
+Peter | Saint Peter | simon peter;simon;saint peter;cephas
+Andrew | Andrew the Apostle
+James | James, son of Zebedee | james son of zebedee;james the greater
+John | John the Apostle | john the apostle;john the beloved
+Philip | Philip the Apostle
+Bartholomew | Bartholomew the Apostle | nathanael
+Thomas | Thomas the Apostle | doubting thomas
+Matthew | Matthew the Apostle | levi
+James the Less | James, son of Alphaeus | james son of alphaeus;james the lesser
+Thaddaeus | Jude the Apostle | jude;thaddeus;judas thaddaeus;jude thaddaeus
+Simon the Zealot | Simon the Zealot | simon zelotes
+Judas Iscariot | Judas Iscariot | judas
+Matthias | Saint Matthias | matthias
+Paul | Paul the Apostle | saul
+Barnabas | Barnabas
+
+[women] Name a woman from the Bible   {letters}
+Eve
+Sarah
+Hagar
+Rebecca | Rebecca (biblical figure) | rebekah
+Rachel
+Leah
+Dinah
+Tamar | Tamar (Genesis)
+Miriam
+Zipporah
+Rahab
+Deborah
+Jael
+Delilah
+Ruth | Book of Ruth
+Naomi | Naomi (biblical figure)
+Hannah | Hannah (biblical figure)
+Bathsheba
+Abigail
+Michal
+Jezebel
+Queen of Sheba
+Esther | Book of Esther
+Vashti
+Mary | Mary, mother of Jesus | virgin mary;mother of jesus
+Elizabeth | Elizabeth (biblical figure)
+Anna | Anna the Prophetess
+Mary Magdalene
+Martha | Martha of Bethany
+Mary of Bethany
+Salome | Salome (disciple)
+Herodias
+Joanna | Joanna (disciple)
+Lydia | Lydia of Thyatira
+Priscilla | Priscilla and Aquila
+Phoebe | Phoebe (biblical figure)
+Eunice | Eunice (biblical figure)
+Lois | Lois (biblical figure)
+Sapphira | Ananias and Sapphira
+Rhoda | Rhoda (Acts)
+Abishag
+Athaliah
+Huldah
+Lot's wife
+Potiphar's wife | Potiphar
+Gomer | Gomer (wife of Hosea)
+Jochebed
+Keturah
+Bilhah
+Zilpah
+Orpah
+Noah's wife | Noah's wife
+Susanna | Book of Susanna
+
+[prophets] Name a prophet from the Bible   {letters}
+Moses
+Samuel
+Nathan | Nathan (prophet)
+Elijah
+Elisha
+Isaiah
+Jeremiah
+Ezekiel
+Daniel | Daniel (biblical figure)
+Hosea
+Joel | Joel (prophet)
+Amos | Amos (prophet)
+Obadiah
+Jonah
+Micah
+Nahum
+Habakkuk
+Zephaniah
+Haggai
+Zechariah | Zechariah (prophet)
+Malachi
+Gad | Gad (prophet)
+Deborah
+Miriam
+Huldah
+Balaam
+Ahijah | Ahijah the Shilonite
+Micaiah
+Hanani
+Oded
+Shemaiah
+John the Baptist
+Agabus
+Anna | Anna the Prophetess
+Aaron
+Eldad and Medad
+Enoch | Enoch (ancestor of Noah)
+Abraham
+Jehu | Jehu (prophet)
+Azariah | Azariah (prophet)
+Iddo | Iddo (prophet)
+
+[kings] Name a king of Israel or Judah   {letters, roman}
+Saul
+David
+Solomon
+Rehoboam
+Jeroboam
+Abijah | Abijam
+Asa | Asa of Judah
+Jehoshaphat
+Jehoram | Jehoram of Judah
+Ahaziah | Ahaziah of Judah
+Athaliah
+Joash | Joash of Judah
+Amaziah | Amaziah of Judah
+Uzziah
+Jotham | Jotham of Judah
+Ahaz
+Hezekiah
+Manasseh | Manasseh of Judah
+Amon | Amon of Judah
+Josiah
+Jehoahaz | Jehoahaz of Judah
+Jehoiakim
+Jehoiachin
+Zedekiah
+Nadab | Nadab of Israel
+Baasha
+Elah | Elah of Israel
+Zimri | Zimri (king)
+Omri
+Ahab
+Ahaziah of Israel
+Jehoram of Israel
+Jehu
+Jehoahaz of Israel
+Jehoash | Jehoash of Israel
+Jeroboam II
+Zechariah of Israel
+Shallum | Shallum of Israel
+Menahem
+Pekahiah
+Pekah
+Hoshea
+Ish-bosheth
+
+[foreign_rulers] Name a foreign ruler from the Bible   {letters, roman}
+Nebuchadnezzar II
+Cyrus the Great
+Darius | Darius I | darius the great
+Xerxes I | Xerxes I | ahasuerus
+Artaxerxes I
+Belshazzar
+Sennacherib
+Tiglath-Pileser III
+Shalmaneser V
+Sargon II
+Ashurbanipal
+Necho II | Necho II | pharaoh necho
+Shoshenq I | Shoshenq I | shishak
+Hiram I
+Herod the Great
+Herod Antipas
+Herod Agrippa I
+Augustus | Augustus | caesar augustus
+Tiberius
+Claudius
+Nero
+Domitian
+Pontius Pilate
+Quirinius | Publius Sulpicius Quirinius
+Antonius Felix | Antonius Felix | felix
+Porcius Festus | Porcius Festus | festus
+Gallio | Lucius Junius Gallio Annaeanus | gallio
+Merodach-Baladan | Marduk-apla-iddina II | merodach baladan
+Hophra | Apries | pharaoh hophra
+Taharqa | Taharqa | tirhakah
+Esarhaddon
+Amel-Marduk | Amel-Marduk | evil-merodach
+Hazael
+Mesha | Mesha Stele | king mesha
+Eglon | Eglon (Bible)
+Agag
+Og | Og
+Sihon
+Balak
+Jabin
+Ben-Hadad | Ben-Hadad I
+Abimelech
+Nebuzaradan
+Cambyses II
+Ramesses II
+
+[peoples] Name a people or group from the Bible   {letters}
+Israelites
+Philistines
+Canaanites
+Amalekites
+Moabites
+Ammonites
+Edomites
+Hittites
+Jebusites
+Amorites
+Midianites
+Assyrians
+Babylonians
+Medes
+Samaritans
+Pharisees
+Sadducees
+Essenes
+Zealots | Zealots
+Levites | Levite
+Nazirite
+Hivites
+Perizzites
+Girgashites
+Kenites
+Nephilim
+Rephaim
+Anakim
+Arameans
+Hyksos
+Herodians
+Scribe | Scribes
+Publican | Publican (ancient Rome) | publicans;tax collectors
+Magi | Biblical Magi | wise men
+Ishmaelites
+Phoenicians
+Sanhedrin
+Sicarii
+Nicolaitans
+Philistia
+Hebrews | Hebrews
+Gentile
+
+[places] Name a place from the Bible   {letters}
+Jerusalem | Jerusalem
+Bethlehem | Bethlehem
+Nazareth | Nazareth
+Galilee | Galilee
+Sea of Galilee | Sea of Galilee
+Jordan River | Jordan River | jordan
+Jericho | Jericho
+Capernaum | Capernaum
+Bethany | Bethany (biblical village) | bethany
+Mount Sinai | Mount Sinai | sinai;mt sinai
+Mount Zion | Mount Zion | zion
+Mount of Olives | Mount of Olives
+Golgotha | Calvary | calvary;place of the skull
+Garden of Eden | Garden of Eden | eden
+Garden of Gethsemane | Gethsemane | gethsemane
+Babylon | Babylon
+Nineveh | Nineveh
+Sodom and Gomorrah | Sodom and Gomorrah | sodom;gomorrah
+Ephesus | Ephesus
+Corinth | Ancient Corinth
+Philippi | Philippi
+Patmos | Patmos
+Mount Ararat | Mount Ararat | ararat
+Mount Carmel | Mount Carmel | carmel
+Hebron | Hebron
+Samaria | Samaria
+Canaan | Canaan
+Red Sea | Red Sea
+Dead Sea | Dead Sea
+Cana | Cana
+Emmaus | Emmaus
+Bethsaida | Bethsaida
+Caesarea Philippi | Banias | banias
+Tarsus | Tarsus, Mersin | tarsus
+Colossae | Colossae
+Laodicea | Laodicea on the Lycus | laodicea
+Thyatira | Thyatira
+Sardis | Sardis
+Smyrna | Smyrna
+Pergamon | Pergamon
+Ur | Ur
+Haran | Harran | harran
+Beersheba | Beersheba
+Shiloh | Shiloh (biblical city) | shiloh
+Bethel | Bethel
+Gilgal | Gilgal
+Endor | Witch of Endor| endor
+Megiddo | Tel Megiddo | armageddon
+Goshen | Land of Goshen
+Ophir | Ophir
+Tarshish | Tarshish
+Gadara | Gadara
+Lystra | Lystra
+Derbe | Derbe
+Berea | Veria | beroea
+Thessalonica | Thessaloniki | thessalonica
+Ai | Ai (Canaan)| ai
+Shechem | Shechem
+Mount Moriah | Moriah | moriah
+Mount Nebo | Mount Nebo | nebo
+Mount Horeb | Mount Horeb | horeb
+Mount Tabor | Mount Tabor | tabor
+Mount Hermon | Mount Hermon | hermon
+Valley of Elah | Elah Valley | elah
+Kidron Valley | Kidron Valley | kidron
+Pool of Siloam | Pool of Siloam | siloam
+Pool of Bethesda | Pool of Bethesda | bethesda
+
+[mountains] Name a mountain from the Bible   {strip=mount}
+Mount Sinai
+Mount Zion
+Mount Ararat
+Mount Carmel
+Mount Nebo
+Mount Hermon
+Mount Tabor
+Mount of Olives
+Mount Moriah | Moriah
+Mount Horeb | Mount Horeb
+Mount Gerizim
+Mount Ebal
+Mount Gilboa
+Mount Hor
+Mount Pisgah | Pisgah
+Mount Lebanon
+Mount Seir | Seir
+Mount of Temptation
+Mount of Beatitudes
+Mount Zaphon | Jebel al-Aqra
+Mount Scopus
+Mount Moreh | Hill of Moreh
+Golgotha | Calvary
+Mount Cassius | Mount Cassius
+
+[waters] Name a river, lake or sea from the Bible
+Jordan River
+Nile
+Tigris
+Euphrates
+Red Sea
+Dead Sea
+Sea of Galilee | Sea of Galilee | Sea of Chinneroth
+Mediterranean Sea
+Kishon | Kishon River
+Jabbok | Jabbok
+Arnon | Arnon
+Kidron Valley
+Abana | Barada
+Pharpar | Awaj River
+Chebar | Kebar River
+Gihon Spring
+Pool of Siloam
+Pool of Bethesda
+Yarmouk River
+Brook Cherith | Cherith
+Wadi Qelt | Wadi Qelt
+Waters of Merom | Lake Huleh
+Pishon | Pishon
+Gihon | Gihon (Bible)
+
+[ot_cities] Name a city from the Old Testament   {letters}
+Babylon
+Nineveh
+Jericho
+Hebron
+Beersheba
+Bethel
+Shiloh | Shiloh (biblical city)
+Shechem
+Samaria
+Ur
+Haran | Harran
+Sodom and Gomorrah | Sodom and Gomorrah
+Tyre | Tyre, Lebanon
+Sidon
+Damascus
+Gaza | Gaza City
+Ashkelon
+Ashdod
+Gath | Gath (city)
+Ekron
+Lachish
+Megiddo | Tel Megiddo
+Hazor | Tel Hazor
+Dan | Tel Dan
+Gibeon
+Gibeah
+Mizpah
+Ramah | Ramah (biblical city)
+Bethlehem
+Jerusalem
+Tirzah | Tirzah (ancient city)
+Susa
+Memphis | Memphis, Egypt
+Thebes | Thebes, Egypt
+Heliopolis | Heliopolis (ancient Egypt)
+Carchemish
+Calah | Nimrud
+Uruk | Uruk
+Akkad | Akkad (city)
+Ai | Ai (Canaan)
+Tarshish
+Ophir
+Mari | Mari, Syria
+Ugarit
+
+[nt_cities] Name a city or town from the New Testament   {letters}
+Jerusalem
+Bethlehem
+Nazareth
+Capernaum
+Cana
+Jericho
+Bethany | Bethany (biblical village)
+Emmaus
+Damascus
+Antioch
+Ephesus
+Corinth | Ancient Corinth
+Philippi
+Thessalonica | Thessaloniki
+Colossae
+Laodicea | Laodicea on the Lycus
+Smyrna
+Pergamon
+Sardis
+Thyatira
+Tarsus | Tarsus, Mersin
+Lystra
+Derbe
+Iconium | Konya
+Berea | Veria
+Caesarea Maritima
+Joppa | Jaffa
+Sychar
+Tiberias
+Magdala
+Nain | Nain, Israel
+Bethsaida
+Gadara
+Tyre | Tyre, Lebanon
+Sidon
+Patmos
+Cenchreae
+Troas | Alexandria Troas
+Miletus
+Perga
+Salamis | Salamis, Cyprus
+Paphos
+Puteoli | Pozzuoli
+Syracuse | Syracuse, Sicily
+Caesarea Philippi | Banias
+Philadelphia | Alaşehir
+Ptolemais | Acre, Israel
+
+[parables] Name a parable of Jesus   {letters, noun=title}
+The Good Samaritan | Parable of the Good Samaritan | good samaritan
+The Prodigal Son | Parable of the Prodigal Son | prodigal son;lost son
+The Sower | Parable of the Sower | sower
+The Mustard Seed | Parable of the Mustard Seed | mustard seed
+The Lost Sheep | Parable of the Lost Sheep | lost sheep
+The Wise and Foolish Builders | Parable of the Wise and the Foolish Builders| house on the rock;wise and foolish builders
+The Ten Virgins | Parable of the Ten Virgins | ten virgins;wise and foolish virgins
+The Talents | Parable of the Talents| talents;minas
+The Rich Fool | Parable of the Rich Fool | rich fool
+The Rich Man and Lazarus | Rich man and Lazarus | rich man and lazarus
+The Pharisee and the Tax Collector | Parable of the Pharisee and the Publican | pharisee and the publican;pharisee and the tax collector
+The Unforgiving Servant | Parable of the Unforgiving Servant | unmerciful servant;unforgiving servant
+The Workers in the Vineyard | Parable of the Workers in the Vineyard | laborers in the vineyard;workers in the vineyard
+The Wedding Feast | Parable of the Wedding Feast | wedding feast;wedding banquet
+The Wheat and the Tares | Parable of the Tares | tares;wheat and the weeds;wheat and tares
+The Hidden Treasure | Parable of the Hidden Treasure | hidden treasure;treasure in the field
+The Pearl | Parable of the Pearl | pearl of great price;pearl
+The Leaven | Parable of the Leaven | leaven;yeast
+The Lost Coin | Parable of the Lost Coin | lost coin
+The Dishonest Steward | Parable of the Unjust Steward | unjust steward;shrewd manager
+The Persistent Widow | Parable of the Unjust Judge| persistent widow;unjust judge
+The Friend at Midnight | Parable of the Friend at Night | friend at midnight
+The Barren Fig Tree | Parable of the barren fig tree | barren fig tree;fig tree
+The Two Sons | Parable of the Two Sons | two sons
+The Wicked Tenants | Parable of the Wicked Tenants | wicked tenants;wicked husbandmen
+The Great Banquet | Parable of the Great Banquet | great banquet;great supper
+The Sheep and the Goats | The Sheep and the Goats| sheep and goats
+The Two Debtors | Parable of the Two Debtors | two debtors;moneylender
+The Budding Fig Tree | Parable of the Budding Fig Tree
+The Growing Seed | Parable of the Growing Seed | seed growing secretly
+The Lamp under a Bushel | Lamp under a bushel | lamp under a bushel
+The Net | Parable of the Net | net;dragnet
+The Faithful Servant | Parable of the Faithful Servant | faithful servant
+
+[miracles] Name a miracle of Jesus   {noun=title}
+Water into Wine | Marriage at Cana | wedding at cana;turning water into wine;water to wine
+Feeding the 5,000 | Feeding the multitude | feeding of the 5000;loaves and fishes;feeding the five thousand
+Walking on Water | Jesus walks on water | walking on water
+Raising Lazarus | Raising of Lazarus | lazarus
+Calming the Storm | Calming the storm | calming the sea;calming of the storm
+The Transfiguration | Transfiguration of Jesus | transfiguration
+Healing the Blind Man | Healing the man blind from birth | blind man;man born blind
+Healing the Paralytic | Healing the paralytic at Capernaum | paralytic;lowered through the roof
+Raising Jairus's Daughter | Raising of Jairus' daughter | jairus daughter
+Raising the Widow's Son | Raising of the son of the widow of Nain | widow of nain;son of the widow of nain
+Healing Ten Lepers | Cleansing ten lepers| ten lepers
+Healing the Man with a Withered Hand | Healing the man with a withered hand| withered hand
+Casting Out Legion | Gerasenes | gerasene demoniac;legion;demons into pigs
+Miraculous Catch of Fish | Miraculous catch of fish | catch of fish;draught of fishes
+Coin in the Fish's Mouth | Temple tax | coin in the fish
+Cursing the Fig Tree | Cursing of the fig tree | fig tree
+Healing the Centurion's Servant | Healing the centurion's servant | centurion's servant
+Healing the Woman with the Issue of Blood | Healing the bleeding woman | bleeding woman;woman with the issue of blood
+Healing Blind Bartimaeus | Bartimaeus | bartimaeus
+Healing the Deaf Mute | Healing the deaf mute of Decapolis| deaf mute
+Healing at the Pool of Bethesda | Pool of Bethesda | bethesda
+Healing the Canaanite Woman's Daughter | Canaanite woman | syrophoenician woman
+Healing Malchus's Ear | Malchus | malchus
+Healing the Royal Official's Son | Healing the royal official's son | nobleman's son
+The Resurrection | Resurrection of Jesus | resurrection
+
+[jesus_events] Name an event from the life of Jesus   {noun=title}
+Nativity of Jesus | Nativity of Jesus | birth of jesus;nativity
+Annunciation
+Visitation | Visitation (Christianity)
+Adoration of the Magi
+Flight into Egypt
+Massacre of the Innocents
+Presentation of Jesus at the Temple
+Finding in the Temple
+Baptism of Jesus
+Temptation of Christ | Temptation of Christ | temptation of jesus
+Calling of the disciples | Calling of the disciples
+Wedding at Cana | Marriage at Cana
+Sermon on the Mount
+Feeding the multitude | Feeding the multitude | feeding of the 5000
+Jesus walks on water | Jesus walks on water | walking on water
+Transfiguration of Jesus | Transfiguration of Jesus | transfiguration
+Raising of Lazarus
+Triumphal entry into Jerusalem | Triumphal entry into Jerusalem | palm sunday
+Cleansing of the Temple | Cleansing of the Temple
+Last Supper
+Washing of the feet | Foot washing
+Agony in the Garden
+Arrest of Jesus | Arrest of Jesus | betrayal of jesus
+Trial of Jesus
+Flagellation of Christ | Flagellation of Christ | scourging
+Crown of thorns | Crown of Thorns
+Crucifixion of Jesus | Crucifixion of Jesus | crucifixion
+Entombment of Christ | Entombment of Christ
+Resurrection of Jesus | Resurrection of Jesus | resurrection
+Harrowing of Hell
+Road to Emmaus appearance | Road to Emmaus appearance
+Doubting Thomas | Thomas the Apostle
+Great Commission
+Ascension of Jesus | Ascension of Jesus | ascension
+Anointing of Jesus | Anointing of Jesus
+Denial of Peter | Denial of Peter
+Descent from the Cross | Descent from the Cross
+Pietà | Pietà | pieta
+Stations of the Cross | Stations of the Cross
+Via Dolorosa
+
+[jesus_names] Name a name or title of God or Jesus
+Messiah
+Christ
+Lamb of God | Lamb of God | Lamb
+Son of God
+Son of man | Son of man
+Good Shepherd
+Immanuel | Immanuel | emmanuel
+Alpha and Omega
+Logos | Logos (Christianity) | the word
+King of Kings
+Prince of Peace
+Savior | Savior | saviour
+Redeemer | Redeemer (Christianity)
+Rabbi
+Yahweh
+Elohim
+Adonai
+El Shaddai
+Jehovah
+I Am that I Am | I Am that I Am | i am
+Abba | Abba (Aramaic) | abba father
+Ancient of Days
+Holy Spirit
+Paraclete
+Shekhinah | Shekhinah | shekinah
+Tetragrammaton
+El Elyon
+Nazarene | Nazarene (title)
+Root of Jesse
+Son of David
+Lion of Judah
+Jesus of Nazareth | Jesus
+Lord | Lord (Christianity)
+Bridegroom | Bridegroom of Christ
+Rock | Rock (metaphor)
+
+[objects] Name a biblical object or relic
+Ark of the Covenant
+Tabernacle
+Ten Commandments
+Burning bush | Burning bush
+Rod of Aaron | Aaron's rod
+Brazen serpent | Nehushtan | bronze serpent
+Holy Grail
+Crown of Thorns
+True Cross
+Shroud of Turin
+Holy Lance | Holy Lance | spear of destiny
+Veil of Veronica
+Manna
+Menorah | Menorah (Temple)
+Urim and Thummim
+Mercy seat | Mercy seat
+Golden calf
+Jacob's Ladder | Jacob's Ladder
+Noah's Ark
+Sudarium of Oviedo
+Tunic of Argenteuil
+Mandylion | Image of Edessa
+Bread of the Presence | Showbread
+Altar of incense | Altar of Incense
+Brazen laver | Brazen laver | bronze laver
+Ephod
+Breastplate of the High Priest | Hoshen
+Seamless robe | Holy Tunic
+Pillar of fire | Pillar of cloud
+Rainbow | Rainbow covenant | noahic covenant
+Titulus Crucis | Titulus Crucis
+Nails of the Crucifixion | Holy Nails
+
+[ot_events] Name a story from the Old Testament
+Creation | Genesis creation narrative | creation story
+The Fall | Fall of man | adam and eve
+Cain and Abel
+The Flood | Genesis flood narrative | noah's ark
+Tower of Babel
+Call of Abraham | Call of Abraham
+Binding of Isaac | Binding of Isaac
+Sodom and Gomorrah
+Jacob's Ladder
+Jacob wrestling with the angel | Jacob wrestling with the angel | jacob wrestles
+Joseph and his brothers | Joseph (Genesis)
+The Exodus | The Exodus | exodus
+Plagues of Egypt
+Burning bush | Burning bush
+Crossing the Red Sea | Crossing the Red Sea
+Manna from heaven | Manna
+Giving of the Law | Revelation at Sinai
+Golden calf
+Battle of Jericho
+Samson and Delilah | Samson
+Ruth and Naomi | Book of Ruth
+David and Goliath | Goliath
+David and Bathsheba | Bathsheba
+Judgment of Solomon | Judgment of Solomon
+Solomon's Temple | Solomon's Temple
+Queen of Sheba
+Elijah on Mount Carmel | Elijah
+Naboth's vineyard | Naboth
+Babylonian captivity | Babylonian captivity
+Fall of Jerusalem | Siege of Jerusalem (587 BC)
+Daniel in the lions' den | Daniel in the lions' den
+Fiery furnace | Shadrach, Meshach, and Abednego
+Writing on the wall | Belshazzar's feast | belshazzars feast
+Jonah and the whale | Jonah | jonah
+Job's trials | Book of Job
+Esther saves the Jews | Book of Esther
+Valley of Dry Bones | Valley of Dry Bones
+Balaam's donkey | Balaam
+Rahab and the spies | Rahab
+Gideon's fleece | Gideon (Bible)
+Elisha and the bears | Elisha
+Naaman healed | Naaman
+Hannah's prayer | Hannah (biblical figure)
+Return from exile | Return to Zion
+
+[apocalypse] Name something from the Book of Revelation
+Four Horsemen of the Apocalypse | Four Horsemen of the Apocalypse | White horse;Pale horse
+Seven seals | Seven seals
+Antichrist
+Mark of the Beast | Number of the Beast | Number of the Beast
+Armageddon | Battle of Armageddon
+New Jerusalem
+Rapture
+Millennialism | Millennialism | thousand years
+Great Tribulation | Great Tribulation | Tribulation
+Last Judgment
+Whore of Babylon
+Seven churches of Asia | Seven churches of Asia
+Book of Life
+Lake of fire | Lake of fire
+Second Coming
+Seven trumpets | Seven trumpets
+Seven bowls | Seven bowls
+Beast from the sea | Beast of Revelation
+Woman clothed with the sun | Woman of the Apocalypse
+Dragon | Great Red Dragon
+Lamb of God
+Alpha and Omega
+Abaddon
+Gog and Magog
+Tree of life | Tree of life
+Wormwood | Wormwood (Bible)
+Seven spirits of God | Seven Spirits of God
+144,000 | 144,000
+Heaven | Heaven in Christianity
+Hell | Hell in Christianity
+New heaven and new earth | New Heaven and New Earth
+Sea of glass | Sea of glass
+Four living creatures | Four Living Creatures
+Twenty-four elders | Twenty-four Elders
+Second death | Second death
+Bema | Judgment seat of Christ
+
+[teachings] Name a famous passage or saying from the Bible   {noun=title}
+Beatitudes
+Lord's Prayer
+Sermon on the Mount
+Golden Rule
+Great Commission
+Great Commandment
+Ten Commandments
+Psalm 23 | Psalm 23 | Valley of the Shadow of Death
+John 3:16
+Shema Yisrael | Shema Yisrael | shema
+Love chapter | 1 Corinthians 13
+Armor of God
+Fruit of the Holy Spirit | Fruit of the Holy Spirit
+Turn the other cheek
+An eye for an eye
+Render unto Caesar | Render unto Caesar...
+Let him who is without sin cast the first stone | Let him who is without sin cast the first stone
+Pearls before swine
+Wolf in sheep's clothing | Wolf in sheep's clothing
+Blind leading the blind | Blind leading the blind
+Salt of the earth | Salt of the Earth (Bible)
+Lamp under a bushel | Lamp under a bushel
+Do not judge | Judge not, that ye be not judged
+Love your enemies | Love your enemies
+Faith, hope and charity | Three theological virtues
+Ask and it will be given | Ask, and it shall be given you
+Narrow gate | Narrow gate
+Prodigal son | Parable of the Prodigal Son
+Good Samaritan | Parable of the Good Samaritan
+Magnificat
+Nunc dimittis | Nunc dimittis
+Benedictus | Benedictus (canticle)
+Priestly Blessing | Priestly Blessing | aaronic blessing
+Peace be with you | Peace be with you
+Seven last words of Christ | Sayings of Jesus on the cross
+Beauty for ashes | Isaiah 61
+To everything there is a season | Ecclesiastes 3
+Vanity of vanities | Vanity of vanities
+Pride goes before a fall | Pride goes before a fall
+Spare the rod | Spare the rod, spoil the child
+Fall from grace | Fall from grace
+Good fight | Fight the good fight
+Prodigal | Prodigal son
+
+[angels] Name an angel, demon or heavenly being
+Michael | Michael (archangel) | archangel michael;saint michael
+Gabriel | Gabriel | archangel gabriel
+Raphael | Raphael (archangel) | archangel raphael
+Uriel | Uriel
+Satan | Satan | the devil;devil
+Lucifer | Lucifer
+Seraph | Seraph | seraphim;seraphs
+Cherub | Cherub | cherubim;cherubs
+Nephilim | Nephilim
+Metatron | Metatron
+Beelzebub | Beelzebub
+Abaddon | Abaddon | apollyon
+Leviathan | Leviathan
+Behemoth | Behemoth
+Azazel | Azazel
+Asmodeus | Asmodeus
+Raguel | Raguel
+Guardian Angel | Guardian angel | guardian angels
+Archangel | Archangel
+Legion | Legion (demon)
+Belial | Belial
+Mammon | Mammon
+Samael | Samael
+Remiel | Remiel
+Sariel | Sariel
+Jophiel | Jophiel
+Zadkiel | Zadkiel
+Ophanim | Ophanim | thrones;wheels
+
+[translations] Name a Bible translation or ancient manuscript
+King James Version | King James Version | kjv;king james;king james bible
+New International Version | New International Version | niv
+English Standard Version | English Standard Version | esv
+New American Standard Bible | New American Standard Bible | nasb
+Vulgate | Vulgate
+Septuagint | Septuagint | lxx
+Douay–Rheims Bible | Douay–Rheims Bible | douay rheims;douay-rheims
+Revised Standard Version | Revised Standard Version | rsv
+New Revised Standard Version | New Revised Standard Version | nrsv
+Geneva Bible | Geneva Bible
+Tyndale Bible | Tyndale Bible
+Wycliffe's Bible | Wycliffe's Bible | wycliffe bible
+The Message | The Message (Bible) | message
+New Living Translation | New Living Translation | nlt
+Good News Bible | Good News Bible
+Jerusalem Bible | Jerusalem Bible
+New Jerusalem Bible | New Jerusalem Bible
+Peshitta | Peshitta
+Luther Bible | Luther Bible
+Bishops' Bible | Bishops' Bible
+Great Bible | Great Bible
+Gutenberg Bible | Gutenberg Bible
+Codex Sinaiticus | Codex Sinaiticus
+Codex Vaticanus | Codex Vaticanus
+Codex Alexandrinus | Codex Alexandrinus
+Dead Sea Scrolls | Dead Sea Scrolls
+Book of Kells | Book of Kells
+Lindisfarne Gospels | Lindisfarne Gospels
+Textus Receptus | Textus Receptus
+Masoretic Text | Masoretic Text
+Codex Bezae | Codex Bezae
+Codex Ephraemi | Codex Ephraemi Rescriptus
+Vetus Latina | Vetus Latina | old latin
+Gothic Bible | Gothic Bible | wulfila bible
+Ge'ez Bible | Ethiopian Bible | ethiopian bible
+Contemporary English Version | Contemporary English Version | cev
+Amplified Bible | Amplified Bible
+Holman Christian Standard Bible | Christian Standard Bible | csb
+Berean Study Bible | Berean Standard Bible | bsb
+Young's Literal Translation | Young's Literal Translation
+World English Bible | World English Bible
+Darby Bible | Darby Bible
+Matthew's Bible | Matthew Bible
+Coverdale Bible | Coverdale Bible
+Latin Psalter | Psalterium Gallicanum
+Ostrog Bible | Ostrog Bible
+Codex Washingtonianus | Codex Washingtonianus
+Papyrus 52 | Rylands Library Papyrus P52 | p52;rylands papyrus
+Bodmer Papyri | Bodmer Papyri
+Nag Hammadi Library | Nag Hammadi library | nag hammadi
+
+[apocrypha] Name an early Christian or non-canonical text   {noun=title}
+Didache | Didache
+Shepherd of Hermas | Shepherd of Hermas
+Gospel of Thomas | Gospel of Thomas
+Gospel of Judas | Gospel of Judas
+Gospel of Mary | Gospel of Mary
+Epistle of Barnabas | Epistle of Barnabas
+1 Clement | First Epistle of Clement
+Epistle to Diognetus | Epistle to Diognetus
+Protoevangelium of James | Gospel of James
+Acts of Paul and Thecla | Acts of Paul and Thecla
+Apocalypse of Peter | Apocalypse of Peter
+Gospel of Peter | Gospel of Peter
+Gospel of Philip | Gospel of Philip
+Book of Enoch | Book of Enoch
+Book of Jubilees | Book of Jubilees
+Odes of Solomon | Odes of Solomon
+Pistis Sophia | Pistis Sophia
+Apocryphon of John | Apocryphon of John
+Gospel of Truth | Gospel of Truth
+Infancy Gospel of Thomas | Infancy Gospel of Thomas
+Muratorian fragment | Muratorian fragment
+Letter of Aristeas | Letter of Aristeas
+Tobit | Book of Tobit
+Judith | Book of Judith
+Wisdom of Solomon | Book of Wisdom
+Sirach | Sirach
+Baruch | Book of Baruch
+1 Maccabees | First Book of Maccabees
+2 Maccabees | Second Book of Maccabees
+3 Maccabees | Third Book of Maccabees
+4 Maccabees | Fourth Book of Maccabees
+Prayer of Manasseh | Prayer of Manasseh
+1 Esdras | 1 Esdras
+2 Esdras | 2 Esdras
+Bel and the Dragon | Bel and the Dragon
+Susanna | Book of Susanna
+Letter of Jeremiah | Letter of Jeremiah
+Psalm 151 | Psalm 151
+Gospel of the Hebrews | Gospel of the Hebrews
+Gospel of the Ebionites | Gospel of the Ebionites
+Gospel of the Egyptians | Gospel of the Egyptians
+Acts of Peter | Acts of Peter
+Acts of John | Acts of John
+Acts of Andrew | Acts of Andrew
+Acts of Thomas | Acts of Thomas
+Apocalypse of Paul | Apocalypse of Paul
+Gospel of Nicodemus | Gospel of Nicodemus
+Gospel of Barnabas | Gospel of Barnabas
+Epistle of the Apostles | Epistle of the Apostles
+Letter of Peter to Philip | Letter of Peter to Philip
+Dialogue of the Savior | Dialogue of the Savior
+Secret Book of James | Apocryphon of James
+Thunder, Perfect Mind | Thunder, Perfect Mind
+Trimorphic Protennoia | Trimorphic Protennoia
+Hypostasis of the Archons | Hypostasis of the Archons
+Apocalypse of Adam | Apocalypse of Adam
+Letter to Flora | Letter to Flora

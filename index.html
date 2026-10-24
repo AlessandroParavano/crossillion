@@ -8,7 +8,13 @@
 <meta property="og:title" content="Crossillion - The Daily Descent">
 <meta property="og:description" content="Seven prompts. Common answers keep you on the surface. Rare ones carry you down to the Holy of Holies.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23161a3a'/%3E%3Cpath d='M13 4h6v8h8v6h-8v10h-6V18H5v-6h8z' fill='%23f2c14e'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css">
+<!-- styles: see css/ (each file says what it covers) -->
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/world.css">
+<link rel="stylesheet" href="css/ui.css">
+<link rel="stylesheet" href="css/ruler.css">
+<link rel="stylesheet" href="css/effects.css">
+<link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 <!-- the world: a tall cross-section that scrolls upward as you descend -->
@@ -25,7 +31,15 @@
     <svg class="cross sm" viewBox="0 0 32 32" aria-hidden="true"><use href="#crossShape"/></svg>
     <span>Crossillion</span>
   </button>
-  <button class="ghost" id="helpBtn" aria-label="How to play">?</button>
+  <div class="tools">
+    <button class="iconbtn" id="sfxBtn" aria-pressed="true" aria-label="Sound effects">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path class="wave" d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path class="slash" d="M4 4l16 16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+    </button>
+    <button class="iconbtn" id="musicBtn" aria-pressed="true" aria-label="Music">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 17V5l10-2v12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="6.5" cy="17.5" r="2.7" fill="currentColor"/><circle cx="16.5" cy="15.5" r="2.7" fill="currentColor"/><path class="slash" d="M4 4l16 16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+    </button>
+    <button class="ghost" id="helpBtn" aria-label="How to play">?</button>
+  </div>
 </header>
 
 <div id="zoneBanner" aria-live="polite"><small id="zbNum"></small><b id="zbName"></b><em id="zbSub"></em></div>
@@ -38,29 +52,22 @@
 <div id="depthReadout"><b id="depthNum">0 m</b><small>meters deep</small></div>
 
 <main>
-  <!-- START -->
+  <!-- HOME -->
   <section id="screen-start" class="screen panel">
     <svg class="cross hero" id="heroCross" viewBox="0 0 32 32" role="button" tabindex="0" aria-label="Touch the cross for a verse"><title>Touch the cross</title><use href="#crossShape"/></svg>
     <h1>Crossillion</h1>
     <p class="tag">Name something from the faith.<br>The rarer your answer, the deeper you descend.</p>
-    <div class="tiers" aria-label="Rarity tiers">
-      <span class="chip t-plankton">Flock</span>
-      <span class="chip t-clever">Pharisee</span>
-      <span class="chip t-schooler">Sunday Schooler</span>
-      <span class="chip t-rare">Seminarian</span>
-      <span class="chip t-deepcut">Theologian</span>
-      <span class="chip t-crossillion">Burning Bush</span>
-    </div>
+    <div class="tiers" id="tierChips" aria-label="Rarity tiers"></div>   <!-- filled in by js/main.js from js/config.js -->
     <div class="actions">
       <button class="primary" id="dailyBtn">Today's Descent</button>
       <button class="secondary" id="endlessBtn">Endless Mode</button>
     </div>
-    <button class="ghost" id="previewBtn">Preview the five zones</button>
+    <button class="ghost" id="previewBtn">Preview the zones</button>
     <p class="small" id="dailyStatus"></p>
     <p class="small stats" id="statsLine"></p>
   </section>
 
-  <!-- GAME: question plaque at the top, answer dock at the bottom -->
+  <!-- GAME: question plaque at the top; the answer box is the dock below -->
   <section id="screen-game" class="screen hidden">
     <div class="plaque panel sm">
       <div class="meta"><span id="qCount">1 / 7</span><span id="mode"></span></div>
@@ -90,7 +97,6 @@
     <input id="answerInput" type="text" placeholder="Type your answer…" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="go" aria-label="Your answer">
     <button class="primary" type="submit">Descend</button>
   </form>
-
   <div id="reveal" class="reveal panel sm hidden">
     <div class="rv-left"><div class="badge" id="revBadge"></div><div class="gain" id="revGain"></div></div>
     <div class="rv-mid"><div class="ans" id="revAnswer"></div><p class="fact" id="revFact"></p></div>
@@ -100,19 +106,13 @@
 
 <dialog id="help">
   <h3>How to play</h3>
-  <p>Each round gives you <b>7 prompts</b> and <b>25 seconds</b> each (after a 3-second preview). Type one valid answer.</p>
-  <p>Common answers keep you near the surface. Rare answers carry you down through the street, the nave, the crypt and the catacombs toward the <b>Holy of Holies</b>. Seven perfect answers reach <b>7,000 meters</b>. Zones begin at 0, 200, 1,000, 4,000 and 6,000 m.</p>
+  <p>Each round gives you <b id="helpRounds">7</b> questions and <b><span id="helpSeconds">25</span> seconds</b> each (after a <span id="helpPreview">3</span>-second preview). Type one valid answer.</p>
+  <p>Common answers keep you near the surface. Rare answers carry you down through the street, the nave, the crypt and the catacombs toward the <b>Holy of Holies</b>. Perfect answers reach <b><span id="helpDepth">7,000</span> meters</b>. Zones begin at <span id="helpZones"></span> m.</p>
+  <p>Some questions add a rule, like a starting letter or a time period. Answers that break the rule don't count.</p>
   <p>Close, but not perfect? You'll be offered a correction. Press <b>Enter</b> again to accept it.</p>
-  <ul>
-    <li><span class="chip t-plankton">Flock</span> 100 m</li>
-    <li><span class="chip t-clever">Pharisee</span> 150 m</li>
-    <li><span class="chip t-schooler">Sunday Schooler</span> 300 m</li>
-    <li><span class="chip t-rare">Seminarian</span> 600 m</li>
-    <li><span class="chip t-deepcut">Theologian</span> 850 m</li>
-    <li><span class="chip t-crossillion">Burning Bush</span> 1,000 m</li>
-  </ul>
-  <p class="small"><b>How rarity is measured.</b> Every answer in the game was ranked by how many real people looked it up on English Wikipedia over a full 12-month window (human traffic only, bots excluded). Within each prompt, the most-looked-up answers are the commonest tier and the least-looked-up are the rarest. See the README for details.</p>
-  <p class="small">A new Descent unlocks every day at midnight UTC.</p>
+  <ul id="helpTiers"></ul>
+  <p class="small"><b>How rarity is measured.</b> Every answer in the game was ranked by how many real people looked it up on English Wikipedia over a full 12-month window (human traffic only, bots excluded). Within each question, the most-looked-up answers are the commonest tier and the least-looked-up are the rarest. See the README for details.</p>
+  <p class="small">The speaker and note buttons at the top turn sound effects and music on or off. A new Descent unlocks every day at midnight UTC.</p>
   <form method="dialog"><button class="primary">Close</button></form>
 </dialog>
 
@@ -147,9 +147,23 @@
   </defs>
 </svg>
 
-<script src="data/answers.js"></script>
-<script src="data/verses.js"></script>
-<script src="world.js"></script>
-<script src="game.js"></script>
+<!-- scripts: plain files that run in this order (no build step; each adds itself to the shared `CX` object) -->
+<script src="data/answers.js"></script>      <!-- generated: the questions and answers -->
+<script src="data/verses.js"></script>       <!-- generated: the verse pool -->
+<script src="js/config.js"></script>         <!-- settings: tiers, zones, timings -->
+<script src="js/util.js"></script>
+<script src="js/rules.js"></script>
+<script src="js/matching.js"></script>
+<script src="js/rotation.js"></script>
+<script src="js/world.js"></script>
+<script src="js/audio/engine.js"></script>
+<script src="js/audio/sfx.js"></script>
+<script src="js/audio/music.js"></script>
+<script src="js/effects.js"></script>
+<script src="js/verses.js"></script>
+<script src="js/share.js"></script>
+<script src="js/game.js"></script>
+<script src="js/screens.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

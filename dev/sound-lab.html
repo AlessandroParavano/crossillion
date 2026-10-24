@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crossillion - Sound Lab</title>
+<link rel="stylesheet" href="../css/base.css">
+<style>
+  body { padding: 24px 16px 60px; max-width: 760px; margin: 0 auto; }
+  h1 { font-size: 2rem; margin: 0 0 4px; } h2 { font: 700 1.1rem var(--serif); color: var(--gold); margin: 28px 0 10px; }
+  p.note { color: var(--ink-dim); margin: 6px 0 0; line-height: 1.5; }
+  .grid { display: flex; flex-wrap: wrap; gap: 8px; }
+  .grid button { padding: 9px 14px; font-size: .9rem; }
+  label { display: grid; grid-template-columns: 110px 1fr 44px; gap: 10px; align-items: center; margin: 8px 0; color: var(--ink-dim); }
+  .on { outline: 2px solid var(--gold); }
+  code { color: var(--gold); }
+</style>
+</head>
+<body>
+<h1>Sound Lab</h1>
+<p class="note">Click anything to hear it. Every sound in the game is made on the fly from the recipes in <code>js/audio/sfx.js</code> and the themes in <code>js/audio/music.js</code> - edit those files, refresh this page and listen again. (Browsers only allow sound after a click, so press any button first.)</p>
+
+<h2>Levels</h2>
+<label>Sound effects <input id="vSfx" type="range" min="0" max="150" value="100"><span id="vSfxN">100%</span></label>
+<label>Music <input id="vMusic" type="range" min="0" max="150" value="100"><span id="vMusicN">100%</span></label>
+
+<h2>Reward jingles (by tier)</h2>
+<div class="grid" id="tiers"></div>
+
+<h2>Sound effects</h2>
+<div class="grid" id="sfx"></div>
+
+<h2>Music - one theme per zone</h2>
+<div class="grid" id="music"></div>
+<p class="note">The music crossfades when you switch themes, exactly as it does while you sink through the zones in the game.</p>
+
+<script src="../js/config.js"></script>
+<script src="../js/util.js"></script>
+<script src="../js/audio/engine.js"></script>
+<script src="../js/audio/sfx.js"></script>
+<script src="../js/audio/music.js"></script>
+<script>
+(function () {
+  const $ = id => document.getElementById(id), cfg = CX.config;
+  const btn = (host, label, fn, cls) => { const b = document.createElement("button"); b.className = cls || "secondary"; b.textContent = label; b.onclick = () => { CX.audio.unlock({ music: false }); setTimeout(() => fn(b), CX.audio.ready ? 0 : 60); }; $(host).appendChild(b); return b; };
+
+  cfg.tiers.forEach((t, i) => btn("tiers", `${i + 1}. ${t.name} (+${t.meters} m)`, () => CX.sfx.play("tier", i), "primary"));
+  btn("tiers", "Play all six in a row", () => cfg.tiers.forEach((t, i) => setTimeout(() => CX.sfx.play("tier", i), i * 2600)));
+
+  const withArg = { count: [3, 2, 1], lowtime: [5, 3, 1], descend: [100, 500, 1000], zone: [0, 1, 2, 3, 4], end: [1000, 7000] };
+  CX.sfx.names().filter(n => n !== "tier").forEach(n => {
+    if (withArg[n]) withArg[n].forEach(a => btn("sfx", `${n} (${a})`, () => CX.sfx.play(n, a)));
+    else btn("sfx", n, () => CX.sfx.play(n));
+  });
+
+  let playing = -1;
+  cfg.zones.forEach((z, i) => btn("music", `${i + 1}. ${z.name} (${CX.music.themes[i].bpm} bpm)`, b => {
+    if (!CX.audio.musicOn) CX.audio.setMusic(true);
+    if (playing < 0) CX.music.start(i); else CX.music.setZone(i);
+    playing = i;
+    [...$("music").children].forEach(c => c.classList.remove("on")); b.classList.add("on");
+  }));
+  btn("music", "Stop music", b => { CX.music.stop(); playing = -1; [...$("music").children].forEach(c => c.classList.remove("on")); });
+
+  const level = (id, n, get) => { $(id).oninput = () => { const v = $(id).value / 100; $(n).textContent = $(id).value + "%"; const o = CX.audio.out; if (o) get(o).gain.value = v * (id === "vMusic" ? 0.42 : 1); }; };
+  level("vSfx", "vSfxN", o => o.sfx); level("vMusic", "vMusicN", o => o.music);
+})();
+</script>
+</body>
+</html>

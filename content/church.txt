@@ -1,0 +1,1017 @@
+# The church: symbols, buildings, worship, prayers, calendar, orders, institutions, hymns, history.
+# One block per question:   [id] The question text   {options}
+# then one answer per line:  Display name | Wikipedia article | alias;alias
+# (article defaults to the display name; aliases are other ways a player might type it)
+# Edit freely, then run:  python3 tools/build.py        See content/README.md for the full guide.
+
+
+[symbols] Name a Christian symbol   {letters}
+Christian cross | Christian cross | cross
+Crucifix
+Ichthys | Ichthys | fish;jesus fish
+Chi Rho
+Alpha and Omega
+IHS | Christogram | ihs;Sacred monogram
+Triquetra
+Celtic cross
+Jerusalem cross
+Anchor cross | Anchored cross
+Dove | Doves as symbols | holy spirit dove
+Pelican in her piety | Pelican in her piety
+Chalice
+Halo | Halo (religious iconography)
+Rosary
+Sacred Heart
+Shield of the Trinity | Shield of the Trinity
+Labarum
+Tau cross | Tau cross
+Papal cross | Papal cross
+Cross of Lorraine
+Orthodox cross | Eastern Orthodox cross
+Staurogram
+Pectoral cross
+Lamb of God
+Burning bush
+Lily | Madonna lily
+Palm branch | Palm branch
+Crown of thorns
+Maltese cross | Maltese cross
+Cross of Saint Peter | Petrine cross | upside down cross
+Cross of Saint Andrew | Saint Andrew's Cross | saltire
+Armenian cross | Khachkar
+Coptic cross | Coptic cross
+Ethiopian cross | Ethiopian cross
+
+[architecture] Name a part of a church   {letters}
+Nave
+Apse
+Altar
+Pulpit
+Narthex
+Transept
+Chancel
+Baptistery
+Sacristy
+Steeple
+Bell tower | Bell tower | campanile
+Crypt
+Cloister
+Rood screen | Rood screen
+Iconostasis
+Baptismal font | Baptismal font | font
+Lectern
+Pew
+Stained glass | Stained glass
+Rose window
+Buttress
+Flying buttress
+Spire
+Rib vault | Rib vault | vault
+Aisle
+Sanctuary
+Reredos
+Confessional
+Choir | Choir (architecture) | quire
+Chapel
+Ambulatory
+Clerestory
+Triforium
+Gargoyle
+Tympanum
+Lychgate | Lychgate | lych gate
+Chapter house
+Vestry
+Altarpiece
+Organ | Pipe organ
+Misericord
+Sedilia
+Piscina
+Squint | Hagioscope
+Porch | Church porch
+Galilee | Galilee (architecture)
+Retrochoir | Retrochoir
+Westwork | Westwork
+Dome | Dome
+Minster | Minster (church)
+Chantry chapel | Chantry
+Lady chapel | Lady chapel
+Cathedra | Cathedra
+Bema | Bema
+Tabernacle | Tabernacle (Christianity)
+Ciborium (architecture) | Baldachin | Baldachin
+Triumphal arch | Triumphal arch (church)
+
+[cathedrals] Name a famous church or cathedral   {letters}
+St. Peter's Basilica | St. Peter's Basilica | saint peter's basilica;st peters
+Notre-Dame de Paris
+Chartres Cathedral
+Cologne Cathedral
+Canterbury Cathedral
+Westminster Abbey
+Sagrada Família | Sagrada Família | sagrada familia
+Hagia Sophia
+St Paul's Cathedral | St Paul's Cathedral | st pauls
+Milan Cathedral
+Reims Cathedral
+Salisbury Cathedral
+York Minster
+Durham Cathedral
+Saint Basil's Cathedral | Saint Basil's Cathedral | st basils
+Santiago de Compostela Cathedral
+St Mark's Basilica | St Mark's Basilica
+Florence Cathedral | Florence Cathedral | duomo;Santa Maria del Fiore
+Seville Cathedral
+Westminster Cathedral
+Basilica of the Sacred Heart | Sacré-Cœur, Paris | sacre coeur
+Washington National Cathedral
+Cathedral of Christ the Saviour
+Church of the Holy Sepulchre
+Church of the Nativity
+St. Patrick's Cathedral | St. Patrick's Cathedral (Manhattan) | saint patricks cathedral
+Basilica of the Annunciation | Basilica of the Annunciation, Nazareth
+Church of All Nations | Church of All Nations
+Lincoln Cathedral
+Winchester Cathedral
+Ely Cathedral
+Wells Cathedral
+Exeter Cathedral
+Gloucester Cathedral
+Amiens Cathedral
+Bourges Cathedral
+Strasbourg Cathedral
+Ulm Minster
+Speyer Cathedral
+Aachen Cathedral
+Cathedral of Magdeburg | Magdeburg Cathedral
+Burgos Cathedral
+Toledo Cathedral
+León Cathedral
+Pisa Cathedral | Pisa Cathedral
+Siena Cathedral
+Orvieto Cathedral
+Monreale Cathedral
+St. Stephen's Cathedral, Vienna | St. Stephen's Cathedral, Vienna
+St. Vitus Cathedral | Saint Vitus Cathedral
+Basilica of Our Lady of Guadalupe
+Cathedral of Brasília | Cathedral of Brasília
+Cathedral of Saint Sava | Church of Saint Sava
+Alexander Nevsky Cathedral, Sofia | Alexander Nevsky Cathedral, Sofia
+Kazan Cathedral | Kazan Cathedral, Saint Petersburg
+Church of the Savior on Blood | Church of the Savior on Blood
+Lalibela | Lalibela
+Basilica of Saint Francis of Assisi | Basilica of Saint Francis of Assisi
+Santa Maria Maggiore | Basilica of Santa Maria Maggiore
+St. John Lateran | Archbasilica of St. John Lateran
+Church of the Gesù | Church of the Gesù
+Basilica of the National Shrine of the Immaculate Conception | Basilica of the National Shrine of the Immaculate Conception
+
+[holysites] Name a Christian holy site or pilgrimage place   {letters}
+Jerusalem
+Bethlehem
+Lourdes
+Fátima | Fátima, Portugal | fatima
+Santiago de Compostela
+Vatican City
+Canterbury
+Assisi
+Mount Athos
+Holy Land
+Mount of Olives
+Via Dolorosa
+Chartres
+Walsingham | Walsingham
+Our Lady of Guadalupe | Basilica of Our Lady of Guadalupe
+Medjugorje
+Knock Shrine | Knock Shrine
+Jasna Góra Monastery | Jasna Góra Monastery | czestochowa
+Mont-Saint-Michel
+Iona
+Lindisfarne
+Taizé Community | Taizé Community | taize
+Glastonbury | Glastonbury
+Montserrat Abbey | Montserrat Abbey
+Saint Catherine's Monastery | Saint Catherine's Monastery
+Meteora
+Lalibela
+Garden of Gethsemane | Gethsemane
+Sea of Galilee
+Nazareth
+Capernaum
+Mount Sinai
+Mount Tabor
+River Jordan | Jordan River
+Church of the Holy Sepulchre
+Basilica of the Annunciation
+Loreto | Basilica della Santa Casa
+Padua | Basilica of Saint Anthony of Padua
+San Giovanni Rotondo | San Giovanni Rotondo
+Lisieux | Lisieux
+Ars-sur-Formans | Ars-sur-Formans
+Paray-le-Monial | Paray-le-Monial
+Nevers | Nevers
+Kevelaer | Kevelaer
+Altötting | Altötting
+Einsiedeln Abbey | Einsiedeln Abbey
+Santa Maria degli Angeli | Porziuncola
+Camino de Santiago | Camino de Santiago
+Rome | Rome
+Ravenna | Ravenna
+Mount Nebo
+Mar Saba | Mar Saba
+Kiev Pechersk Lavra | Kiev Pechersk Lavra
+Trinity Lavra of St. Sergius | Trinity Lavra of St. Sergius
+Solovetsky Monastery | Solovetsky Monastery
+Valaam Monastery | Valaam Monastery
+Mount Zion
+Bethany
+
+[sacraments] Name a sacrament, service or Christian practice   {letters}
+Baptism
+Confirmation | Confirmation (sacrament)
+Eucharist | Eucharist | Communion
+Confession | Sacrament of Penance | penance;reconciliation
+Anointing of the Sick | Anointing of the Sick | Last rites
+Holy orders | Holy orders
+Matrimony | Christian views on marriage | marriage
+Mass | Mass (liturgy)
+Vespers
+Compline
+Matins
+Lauds
+Prime | Prime (liturgy)
+Terce
+Sext
+Liturgy of the Hours
+Rosary
+Stations of the Cross
+Benediction | Benediction of the Blessed Sacrament
+Novena
+Divine Liturgy
+Evensong
+Midnight Mass
+Requiem | Requiem Mass | requiem mass
+Funeral Mass | Catholic funeral
+Vigil | Vigil
+Lectio Divina
+Eucharistic adoration
+Exorcism | Exorcism in Christianity
+Nuptial Mass | Nuptial Mass
+Tenebrae
+Agape feast | Agape feast
+Love feast | Love feast
+Foot washing | Foot washing
+Pilgrimage | Christian pilgrimage
+Chrismation | Chrismation
+Ordination | Ordination
+Consecration | Consecration
+Churching of women | Churching of women
+Blessing of the animals | Blessing of animals
+Altar call | Altar call
+Camp meeting | Camp meeting
+Revival meeting | Revival meeting
+Prayer meeting | Prayer meeting
+Sunday school | Sunday school
+Vacation Bible School | Vacation Bible School
+Bible study | Bible study (Christianity)
+Quiet time | Quiet time
+Lent | Lent
+Fasting | Fasting in Christianity
+Tithing | Tithe
+
+[prayers] Name a Christian prayer   {letters}
+Lord's Prayer | Lord's Prayer | our father
+Hail Mary
+Glory Be | Gloria Patri | glory be
+Jesus Prayer
+Serenity Prayer
+Act of Contrition
+Prayer of Saint Francis | Peace Prayer of Saint Francis | prayer of st francis
+Angelus
+Magnificat
+Nunc dimittis
+Benedictus | Benedictus (canticle)
+Salve Regina | Salve Regina | Hail Holy Queen
+Memorare
+Anima Christi
+Divine Praises | Divine Praises
+Collect | Collect (prayer)
+Doxology
+Te Deum
+Kyrie | Kyrie
+Agnus Dei | Agnus Dei (liturgy)
+Sanctus
+Veni Creator Spiritus
+Regina Caeli | Regina Caeli
+Ave Maria
+Prayer of St. Michael | Saint Michael Prayer | st michael prayer
+Prayer of Saint Patrick | Saint Patrick's Breastplate | st patricks breastplate;Breastplate of Saint Patrick
+Prayer of Jabez | Jabez (Bible)
+Sinner's prayer | Sinner's prayer
+Grace | Grace (prayer) | Grace before meals;saying grace
+Confiteor | Confiteor
+Gloria in excelsis Deo | Gloria in excelsis Deo
+Credo | Credo
+Our Lady of Fátima prayer | Fátima prayers
+Evening Prayer | Evening Prayer (Anglican)
+Morning Prayer | Morning Prayer (Anglican)
+Litany | Litany
+Litany of the Saints | Litany of the Saints
+Chaplet of Divine Mercy | Chaplet of the Divine Mercy
+Prayer of Saint Ignatius | Suscipe (prayer)
+Prayer of humble access | Prayer of Humble Access
+Prayer of the Heart | Hesychasm
+Collect for Purity | Collect for Purity
+
+[vestments] Name a liturgical object or vestment   {letters}
+Chalice
+Paten
+Thurible | Thurible | censer
+Monstrance
+Ciborium
+Crosier | Crosier
+Mitre
+Chasuble
+Alb
+Stole | Stole (vestment)
+Cassock
+Surplice
+Pallium
+Zucchetto
+Biretta
+Cope
+Dalmatic
+Tabernacle | Tabernacle (Christianity)
+Aspergillum
+Votive candle | Votive candle
+Paschal candle
+Missal | Missal
+Lectionary
+Breviary
+Scapular
+Icon
+Reliquary
+Holy water
+Cincture
+Maniple
+Humeral veil
+Pectoral cross
+Episcopal ring | Episcopal ring | fisherman's ring
+Chrism
+Omophorion
+Epitrachelion
+Phelonion
+Sticharion
+Kamilavka
+Klobuk
+Mantle | Mantle (clothing)
+Rochet | Rochet
+Mozzetta
+Tunicle | Tunicle
+Amice | Amice
+Corporal | Corporal (liturgy)
+Purificator | Purificator
+Pall | Pall (Christian)
+Burse | Burse
+Sanctuary lamp | Sanctuary lamp
+Sanctus bell | Sanctus bell
+Altar rail | Altar rail
+Kneeler | Kneeler
+Hymnal | Hymnal
+Church bell | Church bell
+
+[clergy] Name a church role or title   {letters}
+Pope | Pope | Bishop of Rome
+Cardinal | Cardinal (Catholic Church)
+Archbishop
+Bishop
+Priest
+Deacon
+Abbot
+Monk
+Nun
+Friar
+Pastor
+Vicar
+Rector | Rector (ecclesiastical)
+Curate
+Canon | Canon (priest)
+Dean | Dean (Christianity)
+Chaplain
+Elder | Elder (Christianity)
+Patriarch | Patriarch
+Metropolitan bishop
+Archdeacon
+Subdeacon
+Acolyte
+Lector
+Sexton | Sexton (office)
+Verger
+Monsignor
+Prior
+Abbess
+Archimandrite
+Primate | Primate (bishop)
+Moderator | Moderator of the General Assembly of the Church of Scotland
+Catechist
+Missionary
+Deaconess
+Prelate
+Presbyter
+Hegumen
+Sacristan
+Churchwarden
+Beadle
+Cantor | Cantor (Christianity)
+Chorister | Chorister
+Evangelist | Evangelism
+Apostle
+Catholicos | Catholicos
+Exarch | Exarch
+Protopresbyter | Protopresbyter
+Archpriest | Archpriest
+Novice | Novice
+Postulant | Postulant
+Oblate | Oblate
+Lay brother | Lay brother
+Anchorite | Anchorite
+Hermit | Hermit
+Stylite | Stylite
+
+[feasts] Name a Christian holiday, feast or season   {letters}
+Christmas | Christmas
+Easter | Easter
+Good Friday | Good Friday
+Palm Sunday | Palm Sunday
+Ash Wednesday | Ash Wednesday
+Lent | Lent
+Advent | Advent
+Pentecost | Pentecost | whitsun
+Epiphany | Epiphany (holiday) | epiphany;three kings day
+Ascension Day | Feast of the Ascension | ascension;ascension thursday
+Maundy Thursday | Maundy Thursday | holy thursday
+Holy Saturday | Holy Saturday
+Holy Week | Holy Week
+Easter Vigil | Easter Vigil
+Corpus Christi | Corpus Christi (feast)
+All Saints' Day | All Saints' Day | all saints day;all saints
+All Souls' Day | All Souls' Day | all souls day;all souls
+Annunciation | Annunciation | feast of the annunciation
+Candlemas | Candlemas
+Trinity Sunday | Trinity Sunday
+Transfiguration | Feast of the Transfiguration | feast of the transfiguration
+Assumption of Mary | Assumption of Mary | assumption
+Immaculate Conception | Immaculate Conception
+Christ the King | Christ the King | feast of christ the king
+Michaelmas | Michaelmas
+Martinmas | Saint Martin's Day | st martin's day
+Shrove Tuesday | Shrove Tuesday | pancake day;mardi gras;fat tuesday
+Twelfth Night | Twelfth Night (holiday) | twelfth night
+Reformation Day | Reformation Day
+Rogation Days | Rogation days | rogation
+Ember Days | Ember days | ember
+Septuagesima | Septuagesima
+Laetare Sunday | Laetare Sunday | laetare
+Gaudete Sunday | Gaudete Sunday | gaudete
+Theophany | Theophany
+Dormition | Dormition of the Mother of God | dormition of the theotokos
+Holy Innocents | Massacre of the Innocents | feast of the holy innocents;childermas
+Candlemas Day | Presentation of Jesus at the Temple | presentation of the lord
+Easter Monday | Easter Monday
+Pentecost Monday | Whit Monday | whit monday
+Rood Day | Feast of the Cross | feast of the holy cross;holy cross day
+Sexagesima | Sexagesima
+Quinquagesima | Quinquagesima
+Low Sunday | Octave of Easter | divine mercy sunday
+Plough Monday | Plough Monday
+Lammas | Lammas
+Holy Name of Jesus | Holy Name of Jesus
+Feast of Fools | Feast of Fools
+
+[christmas] Name a Christmas symbol or tradition   {letters}
+Nativity scene | Nativity scene | creche
+Advent calendar
+Advent wreath
+Christmas tree
+Yule log
+Midnight Mass | Midnight Mass | Misa de Gallo
+Christmas carol
+Santa Claus
+Star of Bethlehem
+Poinsettia
+Christingle
+Las Posadas | Las Posadas | posadas
+Twelve Days of Christmas
+Christmas cracker
+Christmas ornament
+Christmas pudding
+Mistletoe
+Christmas stocking
+Christmas Eve
+Saint Nicholas Day | Saint Nicholas Day
+Wassailing | Wassailing
+Christmas market
+Krampus
+Gingerbread house | Gingerbread house
+Nutcracker
+Mince pie
+Yule
+Candy cane
+Christmas lights
+Christmas truce | Christmas truce
+Christmas ham | Christmas ham
+Eggnog
+Mulled wine | Mulled wine
+Stollen
+Panettone
+Holly | Holly
+Ivy | Ivy
+Yule goat | Yule goat
+Christmas gift | Christmas gift
+Christmas card | Christmas card
+Reindeer | Rudolph the Red-Nosed Reindeer
+Elf on the Shelf
+Gift exchange | Secret Santa
+Noche Buena | Nochebuena
+
+[easter] Name an Easter or Lent tradition
+Easter egg | Easter egg | Easter egg hunt;Resurrection eggs
+Easter Bunny
+Hot cross bun | Hot cross bun | Hot cross buns
+Paschal candle
+Easter lily
+Passion play
+Stations of the Cross
+Tenebrae
+Paschal Triduum | Paschal Triduum | triduum
+Holy Fire
+Pysanka
+Simnel cake
+Easter Vigil
+Ash Wednesday
+Shrove Tuesday
+Mardi Gras
+Fasting | Fasting in Christianity
+Lent
+Good Friday
+Palm Sunday
+Maundy Thursday
+Easter basket | Easter basket
+Easter parade
+Sunrise service | Sunrise service
+Easter Monday
+Holy Week
+Easter ham | Easter ham
+Paska | Paska (bread)
+Kulich | Kulich
+Pascha | Pascha
+Egg rolling | Egg rolling
+Lenten fast | Fasting during Lent
+Ashes | Ashes (liturgical)
+Palm cross | Palm cross
+Veneration of the cross | Adoration of the Cross
+Foot washing | Foot washing
+Seven Churches Visitation | Seven Churches Visitation
+Matzo | Matzo
+
+[saintdays] Name a saint's feast day or festival
+St. Patrick's Day | Saint Patrick's Day
+Valentine's Day
+Saint Nicholas Day
+Saint Stephen's Day | Saint Stephen's Day
+Saint George's Day
+Saint Andrew's Day
+Saint David's Day
+Saint Lucy's Day | Saint Lucy's Day
+Saint Martin's Day
+Saint Joseph's Day
+Saint John's Eve | Saint John's Eve | midsummer
+Saint Anthony's Day | Feast of Saint Anthony of Padua
+Michaelmas
+Saint Barbara's Day | Saint Barbara's Day
+Saint Catherine's Day | Saint Catherine's Day
+Saint Crispin's Day | Saint Crispin's Day
+Saint Swithin's Day | Saint Swithin's Day
+Saint Cecilia's Day | Saint Cecilia's Day
+Saint Brigid's Day | Imbolc
+Saint Piran's Day | Saint Piran's Day
+Saint Columba's Day | Columba
+Feast of Saints Peter and Paul | Feast of Saints Peter and Paul
+Saint Francis Day | Feast of St. Francis of Assisi
+Saint Blaise Day | Feast of Saint Blaise
+Saint Agnes' Eve | Saint Agnes' Eve
+Saint Sylvester's Day | Saint Sylvester's Day
+Saint Wenceslas Day | Wenceslas
+Feast of St. Anne | Saint Anne | Saint Anne's Day
+Saint Rita's Day | Rita of Cascia
+Saint Casimir's Day | Casimir
+Saint Olaf's Day | Saint Olaf's Day
+Saint Sava's Day | Saint Sava
+Saint Dominic's Day | Saint Dominic
+Saint Margaret's Day | Margaret of Antioch
+
+[orders] Name a religious order or monastic movement   {letters}
+Benedictines | Benedictines | benedictine order
+Franciscans | Franciscans | franciscan order
+Dominicans | Dominican Order | Order of Preachers
+Jesuits | Society of Jesus
+Carmelites
+Cistercians
+Carthusians
+Augustinians | Order of Saint Augustine
+Trappists
+Capuchins | Capuchin
+Salesians | Salesians of Don Bosco
+Opus Dei | Opus Dei
+Premonstratensians | Premonstratensians
+Poor Clares
+Ursulines
+Missionaries of Charity
+Order of Saint Basil | Basilian monks
+Knights Templar
+Knights Hospitaller | Knights Hospitaller | Hospitallers
+Teutonic Order | Teutonic Order
+Cluny Abbey | Cluny Abbey
+Camaldolese | Camaldolese
+Cluniacs | Cluniac Reforms
+Servites | Servite Order
+Redemptorists
+Passionists
+Oratorians | Oratory of Saint Philip Neri
+Maryknoll | Maryknoll
+Sisters of Mercy
+Daughters of Charity | Daughters of Charity of Saint Vincent de Paul
+Vincentians | Congregation of the Mission | Lazarists
+Marists | Marists
+Mercedarians | Mercedarians
+Trinitarians | Trinitarian Order
+Barnabites | Barnabites
+Theatines | Theatines
+Piarists | Piarists
+Beguines | Beguines
+Bridgettines | Bridgettines | Brigittines
+Order of the Holy Sepulchre | Order of the Holy Sepulchre
+Order of Malta | Sovereign Military Order of Malta
+Little Sisters of the Poor | Little Sisters of the Poor
+Sisters of Charity | Sisters of Charity
+Community of the Resurrection | Community of the Resurrection
+Iona Community | Iona Community
+Taizé Community | Taizé Community
+L'Arche | L'Arche
+Focolare Movement | Focolare Movement
+Neocatechumenal Way | Neocatechumenal Way
+Legionaries of Christ | Legionaries of Christ
+Communion and Liberation | Communion and Liberation
+Sant'Egidio | Community of Sant'Egidio
+
+[universities] Name a Christian university or college   {letters}
+University of Notre Dame | University of Notre Dame | notre dame
+Liberty University
+Baylor University | Baylor University | Baylor
+Wheaton College | Wheaton College (Illinois)
+Georgetown University
+Boston College
+Fordham University
+Villanova University
+Southern Methodist University
+Pepperdine University
+Biola University
+Calvin University | Calvin University
+Gordon College | Gordon College (Massachusetts)
+Azusa Pacific University
+Samford University
+Oral Roberts University
+Regent University
+Taylor University
+Westmont College
+Concordia University | Concordia University Wisconsin
+Loyola University Chicago
+Santa Clara University
+Marquette University
+DePaul University
+Catholic University of America | The Catholic University of America
+Pontifical Gregorian University
+University of Navarra
+KU Leuven | KU Leuven
+Hope College | Hope College
+Messiah University | Messiah University
+Houghton University | Houghton University
+Cedarville University | Cedarville University
+Grove City College | Grove City College
+Franciscan University of Steubenville | Franciscan University of Steubenville
+Thomas Aquinas College | Thomas Aquinas College
+Christendom College | Christendom College
+Belmont University | Belmont University
+Abilene Christian University | Abilene Christian University
+Seattle Pacific University | Seattle Pacific University
+Trinity Evangelical Divinity School | Trinity Evangelical Divinity School
+Princeton Theological Seminary | Princeton Theological Seminary
+Fuller Theological Seminary | Fuller Theological Seminary
+Dallas Theological Seminary | Dallas Theological Seminary
+Union Theological Seminary | Union Theological Seminary
+Yale Divinity School | Yale Divinity School
+Harvard Divinity School | Harvard Divinity School
+Westminster Theological Seminary | Westminster Theological Seminary
+Southern Baptist Theological Seminary | Southern Baptist Theological Seminary
+Gateway Seminary | Gateway Seminary
+Moody Bible Institute | Moody Bible Institute
+Bethel University | Bethel University (Minnesota)
+
+[orgs] Name a Christian organization or charity   {letters}
+Salvation Army | The Salvation Army
+World Vision International | World Vision International
+Compassion International
+Samaritan's Purse
+Habitat for Humanity
+Caritas Internationalis
+Catholic Relief Services
+Gideons International
+Focus on the Family
+Young Life
+InterVarsity Christian Fellowship
+Cru | Cru (organization)
+YMCA
+YWCA
+Alpha course | Alpha course
+Operation Christmas Child | Operation Christmas Child
+Christian Aid
+Tearfund
+Mercy Ships
+Wycliffe Bible Translators
+Billy Graham Evangelistic Association
+Knights of Columbus
+Saint Vincent de Paul Society | Society of St. Vincent de Paul
+Catholic Charities USA | Catholic Charities USA
+Bread for the World | Bread for the World
+Prison Fellowship | Prison Fellowship
+Fellowship of Christian Athletes | Fellowship of Christian Athletes
+Youth for Christ | Youth for Christ
+Navigators | The Navigators (organization)
+Open Doors | Open Doors (organization)
+Voice of the Martyrs | Voice of the Martyrs
+Christian Broadcasting Network
+Trinity Broadcasting Network
+Liberty Counsel | Liberty Counsel
+Alliance Defending Freedom
+Family Research Council | Family Research Council
+Christian Coalition | Christian Coalition of America
+Moral Majority
+World Council of Churches
+National Council of Churches
+Lutheran World Federation
+Anglican Communion
+World Evangelical Alliance
+Community of Sant'Egidio
+Jesuit Refugee Service | Jesuit Refugee Service
+Aid to the Church in Need | Aid to the Church in Need
+
+[media] Name a Christian magazine, publisher or media outlet
+Christianity Today
+Charisma | Charisma (magazine)
+Sojourners | Sojourners (magazine)
+First Things
+America | America (Jesuit magazine)
+National Catholic Reporter
+The Christian Century | The Christian Century
+World | World (magazine)
+Relevant | Relevant (magazine)
+The Catholic Herald | Catholic Herald
+The Tablet | The Tablet
+National Catholic Register
+Our Daily Bread | Our Daily Bread Ministries
+EWTN | Eternal Word Television Network
+Trinity Broadcasting Network
+Christian Broadcasting Network
+Daystar Television Network | Daystar Television Network
+K-LOVE | K-Love
+Salem Media Group
+Moody Radio | Moody Radio
+Vatican News | Vatican News
+Vatican Radio
+Radio Maria | Radio Maria
+Pure Flix | Pure Flix
+Crossway | Crossway (publisher)
+Zondervan
+Thomas Nelson | Thomas Nelson (publisher)
+InterVarsity Press | InterVarsity Press
+Eerdmans | Wm. B. Eerdmans Publishing Company
+Baker Publishing Group | Baker Publishing Group
+Tyndale House Publishers | Tyndale House Publishers
+Ignatius Press | Ignatius Press
+Our Sunday Visitor | Our Sunday Visitor
+Paulist Press | Paulist Press
+Orbis Books | Orbis Books
+Concordia Publishing House | Concordia Publishing House
+Premier Christian Radio | Premier Christian Radio
+Premier Christian Media | Premier Christian Media
+Church Times | Church Times
+Christian Today | Christian Today
+Christian Post | The Christian Post
+Baptist Press | Baptist Press
+Catholic News Agency | Catholic News Agency
+Catholic World Report | Catholic World Report
+Crux | Crux (website)
+Aleteia | Aleteia
+
+[hymns] Name a hymn or carol   {letters, noun=title}
+Amazing Grace | Amazing Grace
+Silent Night | Silent Night
+O Come, All Ye Faithful | O Come, All Ye Faithful | adeste fideles;o come all ye faithful
+Hark! The Herald Angels Sing | Hark! The Herald Angels Sing | hark the herald angels sing;hark the herald
+Joy to the World | Joy to the World | joy to the world
+Away in a Manger | Away in a Manger
+O Holy Night | O Holy Night | cantique de noel
+The First Noel | The First Noel | first noel;the first nowell
+O Little Town of Bethlehem | O Little Town of Bethlehem
+Be Thou My Vision | Be Thou My Vision
+How Great Thou Art | How Great Thou Art
+Holy, Holy, Holy | Holy, Holy, Holy! Lord God Almighty | holy holy holy lord god almighty
+A Mighty Fortress Is Our God | A Mighty Fortress Is Our God | ein feste burg;mighty fortress
+Rock of Ages | Rock of Ages (Christian hymn)
+It Is Well with My Soul | It Is Well with My Soul | it is well
+Nearer, My God, to Thee | Nearer, My God, to Thee | nearer my god to thee
+Abide with Me | Abide with Me
+Come Thou Fount of Every Blessing | Come Thou Fount of Every Blessing | come thou fount
+Crown Him with Many Crowns | Crown Him with Many Crowns
+All Hail the Power of Jesus' Name | All Hail the Power of Jesus' Name | all hail the power
+Onward, Christian Soldiers | Onward, Christian Soldiers | onward christian soldiers
+What a Friend We Have in Jesus | What a Friend We Have in Jesus
+Blessed Assurance | Blessed Assurance
+Just As I Am | Just as I Am (hymn) | just as i am
+Lead, Kindly Light | Lead, Kindly Light
+Faith of Our Fathers | Faith of Our Fathers (hymn)
+O Sacred Head, Sore Wounded | O Sacred Head, Sore Wounded | o sacred head now wounded
+Dies Irae | Dies irae
+Veni Creator Spiritus | Veni Creator Spiritus
+Te Deum | Te Deum
+Ave Maria | Ave Maria
+Salve Regina | Salve Regina
+Gloria in Excelsis Deo | Gloria in excelsis Deo | gloria
+Magnificat | Magnificat
+Stabat Mater | Stabat Mater
+Agnus Dei | Agnus Dei (liturgy) | agnus dei
+Pange Lingua | Pange lingua | pange lingua
+Veni Sancte Spiritus | Veni Sancte Spiritus
+Ubi Caritas | Ubi caritas | ubi caritas
+Christ the Lord Is Risen Today | Christ the Lord Is Risen Today
+O Come, O Come, Emmanuel | O Come, O Come, Emmanuel | veni emmanuel
+Let All Mortal Flesh Keep Silence | Let All Mortal Flesh Keep Silence
+Christ Is Made the Sure Foundation | Christ Is Made the Sure Foundation
+Of the Father's Love Begotten | Of the Father's Love Begotten | corde natus ex parentis
+Ding Dong Merrily on High | Ding Dong Merrily on High
+In the Bleak Midwinter | In the Bleak Midwinter
+Good Christian Men, Rejoice | Good Christian Men, Rejoice | in dulci jubilo
+Once in Royal David's City | Once in Royal David's City
+Angels We Have Heard on High | Angels We Have Heard on High
+God Rest Ye Merry, Gentlemen | God Rest Ye Merry, Gentlemen
+We Three Kings | We Three Kings
+
+[councils] Name a council, creed or turning point in Christian history   {letters}
+Council of Nicaea | First Council of Nicaea | nicaea;first council of nicaea
+Nicene Creed | Nicene Creed
+Apostles' Creed | Apostles' Creed | apostles creed
+Council of Chalcedon | Council of Chalcedon | chalcedon
+Council of Ephesus | Council of Ephesus
+Council of Constantinople | First Council of Constantinople | first council of constantinople
+Council of Trent | Council of Trent | trent
+First Vatican Council | First Vatican Council | vatican i;vatican 1
+Second Vatican Council | Second Vatican Council | vatican ii;vatican 2
+Council of Constance | Council of Constance
+Council of Jerusalem | Council of Jerusalem
+Edict of Milan | Edict of Milan
+East–West Schism | East–West Schism | great schism;schism of 1054
+Protestant Reformation | Reformation | reformation;the reformation
+Ninety-five Theses | Ninety-five Theses | 95 theses
+Diet of Worms | Diet of Worms
+Peace of Augsburg | Peace of Augsburg
+Synod of Whitby | Synod of Whitby
+The Crusades | Crusades | crusades
+Spanish Inquisition | Spanish Inquisition | inquisition
+Counter-Reformation | Counter-Reformation | catholic reformation
+Great Awakening | First Great Awakening | first great awakening
+Azusa Street Revival | Azusa Street Revival
+Athanasian Creed | Athanasian Creed
+Chalcedonian Definition | Chalcedonian Definition
+Edict of Thessalonica | Edict of Thessalonica
+Investiture Controversy | Investiture Controversy
+Avignon Papacy | Avignon Papacy
+Western Schism | Western Schism
+Synod of Dort | Synod of Dort
+Westminster Confession | Westminster Confession of Faith | westminster confession of faith
+Augsburg Confession | Augsburg Confession
+Heidelberg Catechism | Heidelberg Catechism
+Book of Common Prayer | Book of Common Prayer
+Second Council of Nicaea | Second Council of Nicaea
+Iconoclasm | Byzantine Iconoclasm | byzantine iconoclasm
+Photian Schism | Photian schism
+Council of Orange | Second Council of Orange
+Council of Carthage | Council of Carthage
+Fourth Lateran Council | Fourth Council of the Lateran | lateran iv
+Council of Florence | Council of Florence | council of ferrara-florence
+Council of Hippo | Synod of Hippo
+Council of Laodicea | Council of Laodicea
+Barmen Declaration | Barmen Declaration
+Lausanne Covenant | Lausanne Covenant
+Edict of Nantes | Edict of Nantes
+Acts of Supremacy | Acts of Supremacy | act of supremacy
+Pilgrimage of Grace | Pilgrimage of Grace
+Peasants' War | German Peasants' War | peasants war
+Münster Rebellion | Münster rebellion | munster rebellion
+Scopes Trial | Scopes Trial | scopes monkey trial
+Great Disappointment | Great Disappointment
+
+[denominations] Name a Christian denomination or tradition   {letters}
+Catholic | Catholic Church | roman catholic;catholicism;roman catholic church
+Eastern Orthodox | Eastern Orthodox Church | orthodox;eastern orthodoxy
+Baptist | Baptists | baptists;southern baptist
+Methodist | Methodism | methodists
+Lutheran | Lutheranism | lutherans
+Anglican | Anglicanism | church of england;episcopal;episcopalian
+Presbyterian | Presbyterianism | presbyterians
+Pentecostal | Pentecostalism | pentecostals
+Calvinist | Calvinism | reformed;calvinism
+Seventh-day Adventist | Seventh-day Adventist Church | adventist;adventists
+Quaker | Quakers | quakers;society of friends
+Mennonite | Mennonites | mennonites
+Amish | Amish
+Moravian | Moravian Church | moravians
+Coptic Orthodox | Coptic Orthodox Church of Alexandria | coptic;copts
+Oriental Orthodox | Oriental Orthodoxy
+Assyrian Church of the East | Assyrian Church of the East
+Armenian Apostolic | Armenian Apostolic Church | armenian church
+Ethiopian Orthodox | Ethiopian Orthodox Tewahedo Church | ethiopian church
+Syriac Orthodox | Syriac Orthodox Church
+Maronite | Maronite Church | maronites
+Church of the Nazarene | Church of the Nazarene | nazarene
+Assemblies of God | Assemblies of God
+Salvation Army | The Salvation Army | salvationist
+Hutterite | Hutterites | hutterites
+Waldensian | Waldensians | waldensians;waldenses
+Hussite | Hussites | hussites
+Lollard | Lollardy | lollards
+Anabaptist | Anabaptism | anabaptists
+Plymouth Brethren | Plymouth Brethren | brethren
+Congregationalist | Congregationalist polity | congregational;congregationalism
+Evangelical | Evangelicalism | evangelicalism;evangelicals
+Non-denominational | Nondenominational Christianity | nondenominational
+Old Believers | Old Believers
+Greek Orthodox | Greek Orthodox Church | greek orthodoxy
+Russian Orthodox | Russian Orthodox Church
+Church of Scotland | Church of Scotland
+Disciples of Christ | Christian Church (Disciples of Christ) | christian church
+Church of God in Christ | Church of God in Christ | cogic
+African Methodist Episcopal | African Methodist Episcopal Church | ame
+Mar Thoma | Mar Thoma Syrian Church | mar thoma
+Old Catholic | Old Catholic Church | old catholics
+Plain Christians | Plain people
+Christadelphian | Christadelphians | christadelphians
+Free Methodist | Free Methodist Church
+Pietism | Pietism | pietist
+Puritan | Puritans | puritans;puritanism
+Hesychasm | Hesychasm
+Shakers | Shakers | shaker
+
+[heresies] Name a heresy or early theological dispute   {letters}
+Arianism
+Gnosticism
+Pelagianism
+Nestorianism
+Docetism
+Montanism
+Marcionism | Marcionism
+Monophysitism
+Donatism | Donatism | Donatist controversy
+Sabellianism | Sabellianism | modalism
+Adoptionism
+Manichaeism
+Apollinarism | Apollinarism
+Monothelitism | Monothelitism
+Catharism
+Iconoclasm | Byzantine Iconoclasm
+Jansenism
+Quietism | Quietism (Christian philosophy)
+Antinomianism
+Socinianism | Socinianism
+Gallicanism
+Semipelagianism | Semipelagianism
+Ebionites | Ebionites
+Valentinianism | Valentinianism
+Paulicianism | Paulicianism
+Bogomilism | Bogomilism
+Hussitism | Hussites
+Lollardy
+Filioque | Filioque
+Trinitarian controversy | Arian controversy
+Christological controversy | Christological controversies
+Easter controversy | Easter controversy
+Monarchianism | Monarchianism
+Priscillianism | Priscillianism
+Patripassianism | Patripassianism
+Eutychianism | Eutychianism
+Miaphysitism | Miaphysitism
+Dyophysitism | Dyophysitism
+Theopaschism | Theopaschism
+Origenism | Origenism
+Chiliasm | Millenarianism
+Encratism | Encratites
+Novatianism | Novatianism
+Messalianism | Messalianism

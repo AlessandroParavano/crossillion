@@ -1,0 +1,28 @@
+/* ruler.css - the depth ruler with the YOU marker, the depth readout and the zone title banner. */
+/* zone banner */
+#zoneBanner { position: fixed; z-index: 6; top: 24vh; left: 50%; translate: -50% 0; text-align: center; pointer-events: none; opacity: 0;
+  padding: 26px 46px; background: radial-gradient(ellipse, rgba(6, 6, 20, .85), rgba(6, 6, 20, 0) 70%); }
+#zoneBanner small { display: block; font-size: .75rem; letter-spacing: .3em; text-transform: uppercase; color: var(--gold); }
+#zoneBanner b { display: block; font: 700 clamp(1.7rem, 7vw, 2.6rem) var(--serif); margin: 4px 0; text-shadow: 0 2px 18px #000; white-space: nowrap; }
+#zoneBanner em { display: block; color: var(--ink-dim); font-size: .95rem; white-space: nowrap; }
+#zoneBanner.on { animation: banner 3.8s ease forwards .5s; }
+@keyframes banner { 0% { opacity: 0; transform: translateY(14px); } 15%, 75% { opacity: 1; transform: none; } 100% { opacity: 0; transform: translateY(-10px); } }
+
+/* ---- depth ruler, in the style of Krillion: YOU marker on the left, ruler line, ticks and labels to the right ---- */
+#ruler { position: fixed; z-index: 4; right: 6px; top: 70px; bottom: 16px; width: calc(var(--rw) - 14px); overflow: hidden; pointer-events: none;
+  -webkit-mask-image: linear-gradient(transparent, #000 10%, #000 90%, transparent); mask-image: linear-gradient(transparent, #000 10%, #000 90%, transparent); }
+#ruler .scale { position: absolute; top: 0; left: var(--sl); width: 2px; background: rgba(170, 195, 255, .7);
+  transform: translateY(calc(var(--ruler) + 38vh - 70px)); transition: transform var(--dive) var(--ease); }
+.tick { position: absolute; left: 2px; width: 7px; height: 1px; margin-top: -.5px; background: rgba(170, 195, 255, .55); }
+.tick.mid { width: 12px; }
+.tick.major { width: 20px; height: 2px; margin-top: -1px; background: #d6e4ff; }
+.lab { position: absolute; left: 28px; transform: translateY(-50%); font: 600 10.5px/1 ui-monospace, "SF Mono", Menlo, Consolas, monospace; color: #8fb0e8; white-space: nowrap; text-shadow: 0 1px 4px #000; }
+.rz { position: absolute; left: -34px; width: 34px; height: 0; border-top: 3px dotted #fff; margin-top: -1.5px; filter: drop-shadow(0 0 3px #000); }
+#ruler .you { position: absolute; left: 0; right: 0; top: calc(38vh - 70px); height: 0; }
+.you span { position: absolute; left: 0; top: -8px; font: 700 11px/16px ui-monospace, "SF Mono", Menlo, Consolas, monospace; letter-spacing: .06em; color: #ff5a7a; text-shadow: 0 0 8px rgba(255, 90, 122, .8); }
+.you .yline { position: absolute; left: 32px; width: calc(var(--sl) - 32px - 12px); top: -1px; height: 2px; background: #ff5a7a; box-shadow: 0 0 8px rgba(255, 90, 122, .9); }
+.you .yarrow { position: absolute; left: calc(var(--sl) - 13px); top: -8px; width: 0; height: 0; border-left: 13px solid #ff5a7a; border-top: 8px solid transparent; border-bottom: 8px solid transparent; filter: drop-shadow(0 0 6px rgba(255, 90, 122, .9)); }
+#depthReadout { position: fixed; z-index: 4; top: 14px; right: 6px; width: calc(var(--rw) - 14px); text-align: center; pointer-events: none; text-shadow: 0 1px 6px #000; }
+#depthReadout b { display: block; font: 700 1.05rem var(--serif); color: #fff; white-space: nowrap; }
+#depthReadout small { font-size: .6rem; color: var(--ink-dim); }
+#ruler.hidden ~ #depthReadout { display: none; }

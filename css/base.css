@@ -1,0 +1,61 @@
+/* base.css - colours, fonts, reset, headings, buttons, tier chips. Loaded first. */
+:root {
+  --ink: #f4efe2;
+  --ink-dim: #bdbacd;
+  --card: rgba(255, 255, 255, .08);
+  --line: rgba(255, 255, 255, .18);
+  --gold: #f2c14e;
+  --t-schooler: #9fb3c8;
+  --t-churchgoer: #5fd0b8;
+  --t-seminarian: #f0b24a;
+  --t-desert: #ff7a55;
+  --t-crossillion: #d09bff;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --cam: 0px;      /* world scroll (set by JS) */
+  --ruler: 0px;    /* ruler scroll (set by JS) */
+  --ease: cubic-bezier(.45, 0, .2, 1);
+  --rw: 152px;     /* width reserved on the right for the depth ruler */
+  --sl: 64px;      /* x of the ruler line inside the ruler */
+  --dive: 1.8s;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body { font-family: var(--sans); color: var(--ink); background: #0c0f2b; min-height: 100vh; min-height: 100dvh; overflow-x: hidden; }
+.hidden { display: none !important; }
+
+.cross { filter: drop-shadow(0 0 10px rgba(242, 193, 78, .6)); }
+.cross.sm { width: 22px; height: 22px; }
+.cross.hero { width: 84px; height: 84px; margin: 2px auto 0; display: block; animation: bob 4s ease-in-out infinite; }
+@keyframes bob { 50% { transform: translateY(10px) rotate(4deg); } }
+@keyframes fade { from { opacity: 0; transform: translateY(6px); } }
+
+h1 { font: 700 clamp(2.4rem, 9vw, 3.6rem)/1.05 var(--serif); margin: 10px 0 6px; letter-spacing: .04em;
+  background: linear-gradient(#fff7da, #f2c14e 70%, #c8872a); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.tag { color: var(--ink-dim); font-size: 1.05rem; line-height: 1.5; margin: 0 0 18px; }
+h2 { font: 600 clamp(1.5rem, 6vw, 2rem)/1.25 var(--serif); margin: 18px 0 22px; text-wrap: balance; }
+h2.big { font-size: clamp(3rem, 14vw, 4.6rem); margin: 6px 0 0; color: var(--gold); text-shadow: 0 2px 20px rgba(0, 0, 0, .45); }
+h2.big small { font-size: .35em; color: var(--ink-dim); }
+.small { font-size: .85rem; color: var(--ink-dim); line-height: 1.5; }
+
+button { font: inherit; cursor: pointer; }
+button:focus-visible, input:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.primary, .secondary { border: 0; border-radius: 0; padding: 13px 26px; font-weight: 700; font-size: 1rem; letter-spacing: .03em; transition: transform .12s, filter .12s;
+  clip-path: polygon(11px 0, 100% 0, 100% calc(100% - 11px), calc(100% - 11px) 100%, 0 100%, 0 11px); }
+.primary { background: linear-gradient(#ffe08a, #f2c14e 55%, #d99a2b); color: #2a1b04; }
+.secondary { background: rgba(255, 255, 255, .08); color: var(--ink); box-shadow: inset 0 0 0 1.5px rgba(242, 193, 78, .6); }
+.primary:hover, .secondary:hover { transform: translateY(-1px); filter: brightness(1.1); }
+.primary:focus-visible { outline: none; filter: brightness(1.1); box-shadow: inset 0 0 0 2px rgba(42, 27, 4, .4); }
+.secondary:focus-visible { outline: none; filter: brightness(1.2); box-shadow: inset 0 0 0 2px rgba(242, 193, 78, .9); }
+.ghost { background: rgba(8, 7, 22, .6); border: 1px solid rgba(242, 193, 78, .35); color: var(--ink-dim); border-radius: 999px; padding: 6px 14px; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 8px 0 14px; }
+
+/* ---- rarity tier chips: the colour comes from js/config.js through --c ---- */
+.tiers { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 0 0 22px; }
+.chip { display: inline-block; padding: 4px 11px; border-radius: 999px; font-size: .8rem; font-weight: 600; color: var(--c, var(--ink-dim)); border: 1px solid currentColor; background: rgba(0, 0, 0, .35); }
+.chip.apex { filter: drop-shadow(0 0 6px currentColor); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  #zoneBanner.on { opacity: 1; }
+}

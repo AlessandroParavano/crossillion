@@ -1,0 +1,158 @@
+# Hand-made "fact" questions. Each one picks answers from questions that already exist.
+#
+#   [fact:some_id] The question text
+#   from: id1, id2          <- which questions in bible/church/people/culture to take answers from
+#   Name; Name; Name        <- the display names of the answers that fit (can span several lines)
+#
+# A name ending in ?  is optional (no warning if it is missing). A question needs at least 9 answers.
+# The answers are re-ranked among themselves, so rarity is measured inside this smaller group.
+# Run:  python3 tools/build.py
+
+[fact:minor_prophets] Name one of the twelve Minor Prophets
+from: ot_books
+Hosea; Joel; Amos; Obadiah; Jonah; Micah; Nahum; Habakkuk; Zephaniah; Haggai; Zechariah; Malachi
+
+[fact:pauline] Name a letter written by the apostle Paul
+from: nt_books
+Romans; Corinthians; Galatians; Ephesians; Philippians; Colossians; Thessalonians; Timothy; Titus; Philemon
+
+[fact:ot_history] Name a historical book of the Old Testament (Joshua through Esther)
+from: ot_books
+Joshua; Judges; Ruth; Samuel; Kings; Chronicles; Ezra; Nehemiah; Esther
+
+[fact:nt_letters] Name a letter (epistle) in the New Testament
+from: nt_books
+Romans; Corinthians; Galatians; Ephesians; Philippians; Colossians; Thessalonians; Timothy; Titus; Philemon
+Hebrews; James; Peter; 1 John; 2 John; 3 John; Jude
+
+[fact:female_saints] Name a female saint
+from: saints
+Mother Teresa; Thérèse of Lisieux; Joan of Arc; Catherine of Siena; Teresa of Ávila; Clare of Assisi; Hildegard of Bingen
+Bernadette Soubirous; Rita of Cascia; Saint Cecilia; Saint Lucy; Agnes of Rome; Agatha of Sicily; Saint Barbara
+Monica of Hippo; Perpetua and Felicity; Brigid of Kildare; Rose of Lima; Kateri Tekakwitha; Edith Stein; Genevieve
+
+[fact:modern_popes] Name a pope from the last 125 years (since 1900)
+from: popes
+Pope Pius X; Pope Benedict XV; Pope Pius XI; Pope Pius XII; Pope John XXIII; Pope Paul VI
+Pope John Paul I; Pope John Paul II; Pope Benedict XVI; Pope Francis; Pope Leo XIV
+
+[fact:early_popes] Name a pope from before the year 1000
+from: popes
+Saint Peter; Pope Linus; Pope Clement I; Pope Leo I; Pope Damasus I; Pope Gregory I; Pope Zachary
+Pope Sergius I; Pope Vigilius; Pope Honorius I; Pope Anastasius I; Pope Stephen VI; Pope Formosus
+
+[fact:renaissance_popes] Name a Renaissance pope (1447 to 1590)
+from: popes
+Pope Nicholas V; Pope Callixtus III; Pope Pius II; Pope Sixtus IV; Pope Innocent VIII; Pope Alexander VI
+Pope Julius II; Pope Leo X; Pope Clement VII; Pope Paul III; Pope Pius V; Pope Gregory XIII; Pope Sixtus V
+
+[fact:saint_popes] Name a pope who has been declared a saint
+from: popes
+Saint Peter; Pope Linus; Pope Clement I; Pope Leo I; Pope Damasus I; Pope Gregory I; Pope Gregory VII
+Pope Celestine V; Pope Pius V; Pope Pius X; Pope John XXIII; Pope John Paul II; Pope Paul VI
+
+[fact:christmas_hymns] Name a Christmas carol
+from: hymns
+O Come, All Ye Faithful; Hark! The Herald Angels Sing; Joy to the World; Away in a Manger; O Holy Night
+The First Noel; O Little Town of Bethlehem; Silent Night; O Come, O Come, Emmanuel; In the Bleak Midwinter
+Ding Dong Merrily on High; Good Christian Men, Rejoice; Once in Royal David's City; Angels We Have Heard on High
+God Rest Ye Merry, Gentlemen; We Three Kings; Of the Father's Love Begotten
+
+[fact:latin_chants] Name a hymn or chant that is sung in Latin
+from: hymns
+Dies Irae; Veni Creator Spiritus; Te Deum; Ave Maria; Salve Regina; Gloria in Excelsis Deo; Magnificat
+Stabat Mater; Agnus Dei; Pange Lingua; Veni Sancte Spiritus; Ubi Caritas
+
+[fact:paul_cities] Name a city the apostle Paul visited
+from: nt_cities
+Ephesus; Corinth; Philippi; Thessalonica; Colossae; Antioch; Damascus; Tarsus; Lystra; Derbe; Berea; Troas
+Miletus; Cenchreae; Perga; Salamis; Paphos; Iconium; Puteoli; Syracuse; Jerusalem
+
+[fact:turkey_places] Name a Bible place in modern-day Turkey
+from: nt_cities, ot_cities, mountains, places
+Ephesus; Smyrna; Pergamon; Sardis; Thyatira; Colossae; Laodicea; Tarsus; Lystra; Derbe; Iconium; Antioch
+Perga; Troas; Miletus; Philadelphia; Mount Ararat; Haran; Berea?
+
+[fact:israel_places] Name a Bible place in modern Israel or Palestine
+from: nt_cities, ot_cities, places, mountains, waters
+Jerusalem; Bethlehem; Nazareth; Capernaum; Cana; Jericho; Bethany; Emmaus; Tiberias; Magdala; Nain; Bethsaida
+Caesarea Maritima; Joppa; Sychar; Megiddo; Hazor; Dan; Hebron; Beersheba; Shiloh; Shechem; Samaria; Bethel
+Gaza; Ashkelon; Ashdod; Gibeon?; Lachish; Galilee; Mount Carmel; Mount Tabor; Mount of Olives; Sea of Galilee
+Dead Sea; Garden of Gethsemane; Golgotha; Mount Zion; Jordan River; Mount Gerizim
+
+[fact:jesus_places] Name a place where Jesus is recorded as having been
+from: nt_cities, places, mountains, waters
+Bethlehem; Nazareth; Capernaum; Cana; Jericho; Bethany; Emmaus; Jerusalem; Bethsaida; Gadara; Nain; Tyre; Sidon
+Caesarea Philippi; Sychar; Magdala; Mount of Olives; Garden of Gethsemane; Sea of Galilee; Jordan River
+Mount of Beatitudes; Mount Tabor; Galilee; Samaria; Golgotha; Pool of Siloam; Pool of Bethesda; Mount Hermon
+Mount of Temptation; Egypt?
+
+[fact:nt_women] Name a woman from the New Testament
+from: women
+Mary; Elizabeth; Anna; Mary Magdalene; Martha; Mary of Bethany; Salome; Herodias; Joanna; Lydia; Priscilla
+Phoebe; Eunice; Lois; Sapphira; Rhoda
+
+[fact:ot_women] Name a woman from the Old Testament
+from: women
+Eve; Sarah; Hagar; Rebecca; Rachel; Leah; Dinah; Tamar; Miriam; Zipporah; Rahab; Deborah; Jael; Delilah; Ruth
+Naomi; Hannah; Bathsheba; Abigail; Michal; Jezebel; Queen of Sheba; Esther; Vashti; Abishag; Athaliah; Huldah
+Lot's wife; Potiphar's wife; Gomer; Jochebed; Keturah; Bilhah; Zilpah; Orpah; Noah's wife; Susanna
+
+[fact:israel_kings] Name a king of the northern kingdom of Israel
+from: kings
+Jeroboam; Nadab; Baasha?; Elah?; Zimri; Omri; Ahab; Ahaziah of Israel; Jehoram of Israel; Jehu; Jehoahaz of Israel
+Jehoash; Jeroboam II; Zechariah of Israel; Shallum; Menahem; Pekahiah; Pekah; Hoshea
+
+[fact:judah_kings] Name a king or queen of the southern kingdom of Judah
+from: kings
+Rehoboam; Abijah; Asa; Jehoshaphat; Jehoram; Ahaziah; Athaliah; Joash; Amaziah; Uzziah; Jotham; Ahaz; Hezekiah
+Manasseh; Amon; Josiah; Jehoahaz; Jehoiakim; Jehoiachin; Zedekiah
+
+[fact:prophet_books] Name a prophet who has a book of the Bible named after them
+from: prophets
+Isaiah; Jeremiah; Ezekiel; Daniel; Hosea; Joel; Amos; Obadiah; Jonah; Micah; Nahum; Habakkuk; Zephaniah; Haggai
+Zechariah; Malachi
+
+[fact:greek_fathers] Name a Greek-speaking Church Father
+from: fathers
+Ignatius of Antioch; Polycarp; Justin Martyr; Irenaeus; Origen; Athanasius; Basil the Great; Gregory of Nazianzus
+Gregory of Nyssa; John Chrysostom; Cyril of Alexandria; Eusebius; Clement of Alexandria; Cyril of Jerusalem
+John of Damascus; Maximus the Confessor; Hippolytus; Melito of Sardis; Athenagoras of Athens; Tatian; Theophilus of Antioch
+
+[fact:latin_fathers] Name a Latin-speaking Church Father
+from: fathers
+Tertullian; Cyprian; Ambrose; Jerome; Augustine of Hippo; Gregory the Great; Hilary of Poitiers; Lactantius
+Leo the Great; Isidore of Seville; Rufinus; John Cassian; Paulinus of Nola; Prudentius; Arnobius; Minucius Felix
+Ambrosiaster; Vincent of Lérins
+
+[fact:reformers] Name a Protestant Reformer
+from: thinkers, founders
+Martin Luther; John Calvin; Huldrych Zwingli; John Knox; Jan Hus; John Wycliffe; William Tyndale; Thomas Cranmer
+Menno Simons; Philip Melanchthon; Martin Bucer; Theodore Beza; Conrad Grebel; Thomas Müntzer; Balthasar Hubmaier
+
+[fact:modern_thinkers] Name a Christian thinker from the 1900s or later
+from: thinkers
+Karl Barth; Dietrich Bonhoeffer; C. S. Lewis; G. K. Chesterton; Reinhold Niebuhr; Paul Tillich; Karl Rahner
+Hans Urs von Balthasar; Thomas Merton; Dorothy Day; Desmond Tutu; Oscar Romero; Martin Luther King Jr.
+Billy Graham; Francis Schaeffer; Tim Keller; John Piper; N. T. Wright; Corrie ten Boom; Brother Lawrence?; William Booth
+
+[fact:medieval_thinkers] Name a Christian thinker from before the year 1500
+from: thinkers
+Tertullian; Origen; Pelagius; Arius; Marcion; Nestorius; Thomas à Kempis; Anselm; Peter Abelard; Duns Scotus
+William of Ockham; Cyprian; Hippolytus; Clement of Alexandria; Eusebius; Gregory of Nyssa; Maximus the Confessor
+Evagrius Ponticus; Gregory Palamas; Julian of Norwich; Meister Eckhart; Jan Hus; John Wycliffe
+
+[fact:money_parables] Name a parable of Jesus about money or possessions
+from: parables
+The Talents; The Rich Fool; The Rich Man and Lazarus; The Dishonest Steward; The Hidden Treasure; The Pearl
+The Lost Coin; The Workers in the Vineyard; The Two Debtors; The Unforgiving Servant; The Wicked Tenants
+
+[fact:farm_parables] Name a parable of Jesus about farming or growing things
+from: parables
+The Sower; The Mustard Seed; The Wheat and the Tares; The Barren Fig Tree; The Workers in the Vineyard
+The Wicked Tenants; The Growing Seed; The Budding Fig Tree; The Leaven; The Net
+
+[fact:december_feasts] Name a Christian feast or holiday celebrated in December
+from: feasts, saintdays, christmas
+Christmas; Immaculate Conception; Saint Nicholas Day; Saint Lucy's Day; Saint Stephen's Day; Boxing Day?
+Holy Innocents; Saint Sylvester's Day; Christmas Eve; Saint Barbara's Day; Advent; Gaudete Sunday
