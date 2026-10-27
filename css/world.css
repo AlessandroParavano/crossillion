@@ -88,4 +88,3 @@ body.ruler-on .zline { right: var(--rw); }
 @keyframes bob { 50% { transform: translateY(10px) rotate(4deg); } }
 body:not(.playing):not(.preview) #diver { display: none; }
 body.preview main { display: none; }
-@media (max-width: 960px) { #diver { display: none; } }

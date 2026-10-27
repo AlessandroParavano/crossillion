@@ -43,12 +43,10 @@
     const cats = window.CROSSILLION_DATA.categories;
     $("endList").innerHTML = out.results.map(r => {
       const tier = typeof r.tier === "number" ? cfg.tiers[r.tier] : null;
-      const cat = cats.find(c => c.id === r.cat);
-      const rarest = cat ? cat.entries[cat.entries.length - 1] : null;
       return `<li><span class="q">${esc(r.prompt)}</span>
         <span class="a">${r.entry ? esc(r.entry) : "—"}</span>
         <span class="p" style="--c:${tier ? tier.color : "var(--ink-dim)"}">${tier ? esc(tier.name) + " · +" + fmt(r.gain) + " m" : "No answer"}</span>
-        <span class="d">${r.entry ? `#${r.rank} of ${r.total} · ~${fmt(r.views)} yearly lookups` : ""}${rarest ? ` · Deepest: ${esc(rarest.n)}` : ""}</span></li>`;
+        <span class="d">${r.entry ? `#${r.rank} of ${r.total} · ~${fmt(r.views)} yearly lookups` : ""}</span></li>`;
     }).join("");
     $("shareMsg").textContent = replay ? "You've already descended today — come back tomorrow, or try Endless Mode." : "";
     CX.sfx.play("end", out.height);
