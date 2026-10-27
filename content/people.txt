@@ -78,6 +78,7 @@ Saint Swithun | Swithun | swithin
 Saint Aidan | Aidan of Lindisfarne | aidan
 Saint Cuthbert | Cuthbert
 Bede | Bede | venerable bede
+Carlo Acutis | Carlo Acutis | acutis;carlo
 
 [popes] Name a pope   {letters, strip=pope, roman}
 Pope Francis | Pope Francis | francis;jorge bergoglio
@@ -305,15 +306,13 @@ Maurice | Saint Maurice
 George | Saint George
 Vitus | Saint Vitus
 Valentine | Saint Valentine
-Denis | Saint Denis
 Ursula | Saint Ursula
-Pancras | Saint Pancras
+Pancras | Pancras of Rome
 Eulalia of Barcelona | Eulalia of Barcelona
 Forty Martyrs of Sebaste | Forty Martyrs of Sebaste
 Martyrs of Lyon | Martyrs of Lyon
 Martyrs of Japan | Twenty-Six Martyrs of Japan
 Uganda Martyrs | Uganda Martyrs
-Coptic martyrs of Libya | 21 Coptic Orthodox Christians
 
 [canterbury] Name an Archbishop of Canterbury   {letters}
 Augustine of Canterbury
@@ -347,10 +346,10 @@ George Carey
 Rowan Williams
 Justin Welby
 Sarah Mullally
-Thomas Bourchier | Thomas Bourchier
+Thomas Bourchier | Thomas Bourchier (cardinal)
 John Morton | John Morton (cardinal)
 William Warham
-William Courtenay | William Courtenay
+William Courtenay | William Courtenay (bishop)
 Simon Sudbury | Simon Sudbury
 Thomas Arundel | Thomas Arundel
 Henry Chichele | Henry Chichele
@@ -371,7 +370,7 @@ Sigeric the Serious | Sigeric the Serious
 Theodore of Tarsus | Theodore of Tarsus
 Laurence of Canterbury | Laurence of Canterbury
 Mellitus | Mellitus
-Justus | Justus (archbishop of Canterbury)
+Justus | Justus
 
 [missionaries] Name a Christian missionary   {letters}
 Patrick | Saint Patrick
@@ -416,7 +415,7 @@ Johannes Rebmann | Johannes Rebmann
 Robert Morrison | Robert Morrison (missionary)
 Karl Gützlaff | Karl Gützlaff
 Alexander Duff | Alexander Duff (missionary)
-Alexander Mackay | Alexander Mackay (missionary)
+Alexander Mackay | Alexander Murdoch Mackay
 Bishop Hannington | James Hannington
 David Brainerd
 Ann Hasseltine Judson | Ann Hasseltine Judson
@@ -445,7 +444,7 @@ Joyce Meyer
 Kenneth Copeland
 Franklin Graham
 Max Lucado
-John MacArthur
+John MacArthur | John F. MacArthur
 R. C. Sproul
 Ravi Zacharias
 Tim Keller | Tim Keller (pastor)
@@ -482,7 +481,7 @@ Billy Sunday
 Aimee Semple McPherson
 Kathryn Kuhlman | Kathryn Kuhlman
 Smith Wigglesworth | Smith Wigglesworth
-William J. Seymour | William Seymour
+William J. Seymour | William J. Seymour
 Reinhard Bonnke
 Rodney Howard-Browne | Rodney Howard-Browne
 Bishop Fulton Sheen | Fulton J. Sheen | Fulton Sheen
@@ -505,7 +504,6 @@ Kay Arthur | Kay Arthur
 Martin Luther
 John Calvin
 John Wesley
-John Smyth | John Smyth (Baptist)
 George Fox
 Menno Simons
 Jakob Ammann
@@ -539,13 +537,12 @@ Teresa of Ávila
 Henry VIII | Henry VIII
 Roger Williams | Roger Williams (theologian)
 William Penn
-Robert Browne | Robert Browne (Puritan)
 Isaac Backus | Isaac Backus
 Jacobus Arminius
 Philip Melanchthon
 Thomas Müntzer | Thomas Müntzer
 John Wycliffe
-Brother Roger | Roger Schütz
+Brother Roger | Brother Roger
 Chiara Lubich | Chiara Lubich
 Jean Vanier | Jean Vanier
 Josemaría Escrivá
@@ -658,7 +655,6 @@ Anne Askew
 Jane Grey | Lady Jane Grey
 Mary I of England
 Elizabeth I | Elizabeth I
-Mary Magdalene Dominici
 Lilias Trotter | Lilias Trotter
 Gladys Aylward
 Ruth Bell Graham | Ruth Graham
@@ -701,7 +697,7 @@ Edward the Confessor
 Henry IV | Henry IV, Holy Roman Emperor
 Frederick Barbarossa | Frederick Barbarossa
 Helena | Helena, mother of Constantine I | saint helena
-Theodora | Empress Theodora (wife of Justinian I)
+Theodora | Theodora (wife of Justinian I)
 Irene of Athens | Irene of Athens
 Basil II | Basil II
 Alexios I Komnenos | Alexios I Komnenos
@@ -761,13 +757,12 @@ Melisende | Melisende, Queen of Jerusalem
 Sibylla of Jerusalem | Sibylla of Jerusalem
 Eleanor of Aquitaine | Eleanor of Aquitaine
 Leopold V | Leopold V, Duke of Austria
-Imad ad-Din Zengi | Zengi
+Imad ad-Din Zengi | Imad al-Din Zengi
 Baibars | Baibars
 Fulcher of Chartres | Fulcher of Chartres
 Adhemar of Le Puy | Adhemar of Le Puy
 Stephen of Blois | Stephen, Count of Blois
 Robert Curthose | Robert Curthose
-Hugh of Vermandois | Hugh of Vermandois
 Bertrand de Blanchefort | Bertrand de Blanchefort
 Gerard of Ridefort | Gerard of Ridefort
 Jacques de Molay | Jacques de Molay
@@ -841,3 +836,269 @@ Richard Swinburne | Richard Swinburne
 Stephen Meyer | Stephen C. Meyer
 Michael Behe | Michael Behe
 Hugh Ross | Hugh Ross (creationist)
+
+
+# ---------------------------------------------------------------- more people lists
+[nuns] Name a nun or woman religious
+Mother Teresa
+Thérèse of Lisieux
+Teresa of Ávila
+Hildegard of Bingen
+Clare of Assisi
+Catherine of Siena
+Bernadette Soubirous
+Faustina Kowalska | Faustina Kowalska | faustina
+Julian of Norwich
+Scholastica
+Brigid of Kildare
+Edith Stein
+Elizabeth Ann Seton
+Katharine Drexel
+Rose of Lima
+Angela Merici
+Mary MacKillop
+Frances Xavier Cabrini | Frances Xavier Cabrini | mother cabrini
+Wendy Beckett | Wendy Beckett | sister wendy
+Helen Prejean | Helen Prejean | sister helen prejean
+Joan Chittister
+Thea Bowman
+Mother Angelica
+Hilda of Whitby | Hilda of Whitby | hilda
+Bridget of Sweden | Bridget of Sweden | birgitta
+Gertrude the Great | Gertrude the Great
+Mechthild of Magdeburg | Mechthild of Magdeburg
+Thérèse Couderc | Thérèse Couderc
+Jeanne Jugan
+Marguerite Bourgeoys
+Louise de Marillac
+Mary Ward | Mary Ward (nun) | mary ward
+Pascalina Lehnert | Pascalina Lehnert | pascalina
+Maria Goretti
+
+[monks_friars] Name a monk or friar
+Francis of Assisi
+Benedict of Nursia
+Dominic
+Thomas Aquinas
+Martin Luther
+Thomas Merton
+Bernard of Clairvaux
+Anselm of Canterbury
+Bede
+Gregor Mendel
+Girolamo Savonarola
+Bonaventure
+John Duns Scotus | Duns Scotus | duns scotus
+William of Ockham
+Roger Bacon
+Albertus Magnus
+Maximilian Kolbe
+Padre Pio
+Anthony of Padua
+John of the Cross
+Pachomius
+Anthony the Great
+Bruno of Cologne
+Romuald
+Columba
+Aelred of Rievaulx
+Peter the Hermit
+Thomas à Kempis
+Desiderius Erasmus
+Giordano Bruno
+Tommaso Campanella
+Martin of Tours
+Jerome
+Gregory Palamas
+Seraphim of Sarov
+Sergius of Radonezh
+Francisco de Vitoria
+Matteo Ricci
+Peter Damian
+Brother Lawrence
+Brother Roger | Brother Roger | brother roger
+Jean Vanier
+Henri Nouwen
+Basil Hume
+Thomas Keating
+Bede Griffiths
+Teilhard de Chardin
+Rabanus Maurus | Rabanus Maurus | hrabanus
+Alcuin
+Boniface
+
+[condemned_heretics] Name a person condemned as a heretic
+Arius
+Pelagius
+Nestorius
+Marcion of Sinope | Marcion of Sinope | marcion
+Valentinus | Valentinus (Gnostic) | valentinus
+Montanus
+Sabellius
+Apollinaris of Laodicea | Apollinaris of Laodicea | apollinaris
+Eutyches
+Donatus Magnus | Donatus Magnus | donatus
+Paul of Samosata
+Basilides
+Cerinthus
+Simon Magus
+Mani | Mani (prophet) | mani
+Priscillian
+Origen
+Jovinian
+Berengar of Tours
+Peter Waldo
+Arnold of Brescia
+Peter Abelard
+Jan Hus
+John Wycliffe
+Girolamo Savonarola
+Michael Servetus
+Faustus Socinus
+Giordano Bruno
+Galileo Galilei | Galileo Galilei | galileo
+Joan of Arc
+Jacques de Molay
+William Tyndale
+Thomas Müntzer | Thomas Müntzer | muntzer
+Hans Denck
+Balthasar Hubmaier | Balthasar Hubmaier | hubmaier
+Meister Eckhart
+Marguerite Porete | Marguerite Porete | porete
+Fra Dolcino | Fra Dolcino | dolcino
+Joachim of Fiore | Joachim of Fiore | joachim
+Ramon Llull
+Hans Küng
+Pierre Teilhard de Chardin
+
+[global_leaders] Name a Christian leader from Africa, Asia or Latin America
+Desmond Tutu
+Óscar Romero | Óscar Romero | oscar romero
+Samuel Ajayi Crowther
+Simon Kimbangu
+Janani Luwum
+Apolo Kivebulaya
+Sundar Singh | Sadhu Sundar Singh | sadhu sundar singh
+Pandita Ramabai
+Watchman Nee
+Wang Mingdao
+Toyohiko Kagawa
+Kanzō Uchimura | Uchimura Kanzō | uchimura kanzo
+David Yonggi Cho | David Yonggi Cho | yonggi cho
+Hélder Câmara | Hélder Câmara | helder camara
+Gustavo Gutiérrez | Gustavo Gutiérrez | gustavo gutierrez
+Leonardo Boff
+Camilo Torres Restrepo | Camilo Torres Restrepo | camilo torres
+Paulo Evaristo Arns | Paulo Evaristo Arns
+Ernesto Cardenal
+Robert Sarah
+Peter Turkson
+Francis Arinze
+Laurent Monsengwo | Laurent Monsengwo Pasinya | monsengwo
+Luis Antonio Tagle | Luis Antonio Tagle | cardinal tagle;chito tagle
+Jaime Sin | Jaime Sin | cardinal sin
+Joseph Zen | Joseph Zen | cardinal zen
+Peter Akinola
+Emmanuel Milingo
+Benedict Daswa
+Bernard Mizeki
+Juan Diego
+Allan Boesak
+Beyers Naudé | Beyers Naudé | beyers naude
+Trevor Huddleston
+Oswald Gracias | Oswald Gracias | cardinal gracias
+Pope Francis
+Alexander Crummell
+Daniel Comboni
+Cheng Jingyi
+John Sung | John Sung | song shangjie
+Ding Guangxun | Ding Guangxun | k h ting
+
+[catholic_theologians] Name a Catholic theologian or thinker from the 1900s onwards
+Karl Rahner
+Hans Urs von Balthasar
+Henri de Lubac
+Yves Congar
+Joseph Ratzinger | Pope Benedict XVI | benedict xvi;ratzinger
+Hans Küng
+Edward Schillebeeckx
+Bernard Lonergan
+Karol Wojtyła | Pope John Paul II | john paul ii;wojtyla
+Thomas Merton
+Pierre Teilhard de Chardin | Pierre Teilhard de Chardin | teilhard
+Gustavo Gutiérrez
+Romano Guardini
+Étienne Gilson | Étienne Gilson | etienne gilson
+Jacques Maritain
+John Courtney Murray
+Avery Dulles
+Raymond E. Brown | Raymond E. Brown | raymond brown
+Joseph Fitzmyer
+Scott Hahn
+Peter Kreeft
+Robert Barron | Robert Barron | bishop barron
+Edith Stein
+Dorothy Day
+G. K. Chesterton
+Hilaire Belloc
+Flannery O'Connor
+Graham Greene
+Walker Percy
+Josef Pieper
+Dietrich von Hildebrand | Dietrich von Hildebrand | von hildebrand
+Louis Bouyer
+Jean Daniélou | Jean Daniélou | danielou
+Marie-Dominique Chenu | Marie-Dominique Chenu | chenu
+Karl Adam | Karl Adam (theologian)
+Ronald Knox
+Fulton J. Sheen | Fulton J. Sheen | fulton sheen
+Elizabeth Anscombe
+Alasdair MacIntyre
+Charles Taylor | Charles Taylor (philosopher) | charles taylor
+Walter Kasper
+Henri Nouwen
+Richard Rohr
+
+[protestant_theologians] Name a Protestant theologian from the 1900s onwards
+Karl Barth
+Dietrich Bonhoeffer
+Paul Tillich
+Reinhold Niebuhr
+H. Richard Niebuhr | H. Richard Niebuhr | richard niebuhr
+Emil Brunner
+Rudolf Bultmann
+Jürgen Moltmann | Jürgen Moltmann | jurgen moltmann
+Wolfhart Pannenberg
+N. T. Wright
+Stanley Hauerwas
+John Stott
+Francis Schaeffer
+Carl F. H. Henry | Carl F. H. Henry | carl henry
+J. I. Packer
+R. C. Sproul
+John Piper | John Piper (theologian)
+Tim Keller | Tim Keller (pastor)
+Albert Schweitzer
+Oscar Cullmann | Oscar Cullmann | cullmann
+Thomas F. Torrance | Thomas F. Torrance | torrance
+Cornelius Van Til | Cornelius Van Til | van til
+Martyn Lloyd-Jones | Martyn Lloyd-Jones | lloyd jones
+John Howard Yoder
+James H. Cone | James H. Cone | james cone
+Miroslav Volf
+Alister McGrath
+D. A. Carson | D. A. Carson | don carson
+Wayne Grudem
+Walter Brueggemann
+Jacques Ellul
+Helmut Thielicke
+Gerhard von Rad
+Ernst Käsemann | Ernst Käsemann | kasemann
+Hans Frei
+George Lindbeck
+Gustaf Aulén | Gustaf Aulén | aulen
+Anders Nygren
+Nathan Söderblom | Nathan Söderblom | soderblom
+Abraham Kuyper
+Herman Bavinck
+Rowan Williams

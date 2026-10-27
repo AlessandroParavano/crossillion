@@ -27,7 +27,7 @@ Labarum
 Tau cross | Tau cross
 Papal cross | Papal cross
 Cross of Lorraine
-Orthodox cross | Eastern Orthodox cross
+Orthodox cross | Russian Orthodox cross
 Staurogram
 Pectoral cross
 Lamb of God
@@ -36,8 +36,7 @@ Lily | Madonna lily
 Palm branch | Palm branch
 Crown of thorns
 Maltese cross | Maltese cross
-Cross of Saint Peter | Petrine cross | upside down cross
-Cross of Saint Andrew | Saint Andrew's Cross | saltire
+Cross of Saint Peter | Cross of Saint Peter | upside down cross
 Armenian cross | Khachkar
 Coptic cross | Coptic cross
 Ethiopian cross | Ethiopian cross
@@ -77,7 +76,7 @@ Ambulatory
 Clerestory
 Triforium
 Gargoyle
-Tympanum
+Tympanum | Tympanum (architecture)
 Lychgate | Lychgate | lych gate
 Chapter house
 Vestry
@@ -88,7 +87,6 @@ Sedilia
 Piscina
 Squint | Hagioscope
 Porch | Church porch
-Galilee | Galilee (architecture)
 Retrochoir | Retrochoir
 Westwork | Westwork
 Dome | Dome
@@ -97,9 +95,8 @@ Chantry chapel | Chantry
 Lady chapel | Lady chapel
 Cathedra | Cathedra
 Bema | Bema
-Tabernacle | Tabernacle (Christianity)
 Ciborium (architecture) | Baldachin | Baldachin
-Triumphal arch | Triumphal arch (church)
+Triumphal arch | Triumphal arch
 
 [cathedrals] Name a famous church or cathedral   {letters}
 St. Peter's Basilica | St. Peter's Basilica | saint peter's basilica;st peters
@@ -128,7 +125,7 @@ Cathedral of Christ the Saviour
 Church of the Holy Sepulchre
 Church of the Nativity
 St. Patrick's Cathedral | St. Patrick's Cathedral (Manhattan) | saint patricks cathedral
-Basilica of the Annunciation | Basilica of the Annunciation, Nazareth
+Basilica of the Annunciation | Basilica of the Annunciation
 Church of All Nations | Church of All Nations
 Lincoln Cathedral
 Winchester Cathedral
@@ -259,7 +256,7 @@ Nuptial Mass | Nuptial Mass
 Tenebrae
 Agape feast | Agape feast
 Love feast | Love feast
-Foot washing | Foot washing
+Foot washing | Maundy (foot washing)
 Pilgrimage | Christian pilgrimage
 Chrismation | Chrismation
 Ordination | Ordination
@@ -285,7 +282,7 @@ Glory Be | Gloria Patri | glory be
 Jesus Prayer
 Serenity Prayer
 Act of Contrition
-Prayer of Saint Francis | Peace Prayer of Saint Francis | prayer of st francis
+Prayer of Saint Francis | Prayer of Saint Francis | prayer of st francis
 Angelus
 Magnificat
 Nunc dimittis
@@ -294,7 +291,7 @@ Salve Regina | Salve Regina | Hail Holy Queen
 Memorare
 Anima Christi
 Divine Praises | Divine Praises
-Collect | Collect (prayer)
+Collect | Collect
 Doxology
 Te Deum
 Kyrie | Kyrie
@@ -303,7 +300,7 @@ Sanctus
 Veni Creator Spiritus
 Regina Caeli | Regina Caeli
 Ave Maria
-Prayer of St. Michael | Saint Michael Prayer | st michael prayer
+Prayer of St. Michael | Prayer to Saint Michael | st michael prayer
 Prayer of Saint Patrick | Saint Patrick's Breastplate | st patricks breastplate;Breastplate of Saint Patrick
 Prayer of Jabez | Jabez (Bible)
 Sinner's prayer | Sinner's prayer
@@ -317,7 +314,7 @@ Morning Prayer | Morning Prayer (Anglican)
 Litany | Litany
 Litany of the Saints | Litany of the Saints
 Chaplet of Divine Mercy | Chaplet of the Divine Mercy
-Prayer of Saint Ignatius | Suscipe (prayer)
+Prayer of Saint Ignatius | Suscipe
 Prayer of humble access | Prayer of Humble Access
 Prayer of the Heart | Hesychasm
 Collect for Purity | Collect for Purity
@@ -327,7 +324,7 @@ Chalice
 Paten
 Thurible | Thurible | censer
 Monstrance
-Ciborium
+Ciborium | Ciborium (container)
 Crosier | Crosier
 Mitre
 Chasuble
@@ -340,7 +337,6 @@ Zucchetto
 Biretta
 Cope
 Dalmatic
-Tabernacle | Tabernacle (Christianity)
 Aspergillum
 Votive candle | Votive candle
 Paschal candle
@@ -352,7 +348,6 @@ Icon
 Reliquary
 Holy water
 Cincture
-Maniple
 Humeral veil
 Pectoral cross
 Episcopal ring | Episcopal ring | fisherman's ring
@@ -370,10 +365,8 @@ Tunicle | Tunicle
 Amice | Amice
 Corporal | Corporal (liturgy)
 Purificator | Purificator
-Pall | Pall (Christian)
 Burse | Burse
 Sanctuary lamp | Sanctuary lamp
-Sanctus bell | Sanctus bell
 Altar rail | Altar rail
 Kneeler | Kneeler
 Hymnal | Hymnal
@@ -403,11 +396,9 @@ Metropolitan bishop
 Archdeacon
 Subdeacon
 Acolyte
-Lector
 Sexton | Sexton (office)
 Verger
 Monsignor
-Prior
 Abbess
 Archimandrite
 Primate | Primate (bishop)
@@ -538,7 +529,6 @@ Easter egg | Easter egg | Easter egg hunt;Resurrection eggs
 Easter Bunny
 Hot cross bun | Hot cross bun | Hot cross buns
 Paschal candle
-Easter lily
 Passion play
 Stations of the Cross
 Tenebrae
@@ -560,18 +550,14 @@ Easter parade
 Sunrise service | Sunrise service
 Easter Monday
 Holy Week
-Easter ham | Easter ham
 Paska | Paska (bread)
 Kulich | Kulich
-Pascha | Pascha
 Egg rolling | Egg rolling
 Lenten fast | Fasting during Lent
-Ashes | Ashes (liturgical)
-Palm cross | Palm cross
 Veneration of the cross | Adoration of the Cross
-Foot washing | Foot washing
+Foot washing | Maundy (foot washing)
 Seven Churches Visitation | Seven Churches Visitation
-Matzo | Matzo
+Matzo | Matzah
 
 [saintdays] Name a saint's feast day or festival
 St. Patrick's Day | Saint Patrick's Day
@@ -585,7 +571,6 @@ Saint Lucy's Day | Saint Lucy's Day
 Saint Martin's Day
 Saint Joseph's Day
 Saint John's Eve | Saint John's Eve | midsummer
-Saint Anthony's Day | Feast of Saint Anthony of Padua
 Michaelmas
 Saint Barbara's Day | Saint Barbara's Day
 Saint Catherine's Day | Saint Catherine's Day
@@ -596,7 +581,6 @@ Saint Brigid's Day | Imbolc
 Saint Piran's Day | Saint Piran's Day
 Saint Columba's Day | Columba
 Feast of Saints Peter and Paul | Feast of Saints Peter and Paul
-Saint Francis Day | Feast of St. Francis of Assisi
 Saint Blaise Day | Feast of Saint Blaise
 Saint Agnes' Eve | Saint Agnes' Eve
 Saint Sylvester's Day | Saint Sylvester's Day
@@ -604,7 +588,7 @@ Saint Wenceslas Day | Wenceslas
 Feast of St. Anne | Saint Anne | Saint Anne's Day
 Saint Rita's Day | Rita of Cascia
 Saint Casimir's Day | Casimir
-Saint Olaf's Day | Saint Olaf's Day
+Saint Olaf's Day | Olsok
 Saint Sava's Day | Saint Sava
 Saint Dominic's Day | Saint Dominic
 Saint Margaret's Day | Margaret of Antioch
@@ -619,7 +603,7 @@ Cistercians
 Carthusians
 Augustinians | Order of Saint Augustine
 Trappists
-Capuchins | Capuchin
+Capuchins | Order of Friars Minor Capuchin
 Salesians | Salesians of Don Bosco
 Opus Dei | Opus Dei
 Premonstratensians | Premonstratensians
@@ -649,7 +633,6 @@ Theatines | Theatines
 Piarists | Piarists
 Beguines | Beguines
 Bridgettines | Bridgettines | Brigittines
-Order of the Holy Sepulchre | Order of the Holy Sepulchre
 Order of Malta | Sovereign Military Order of Malta
 Little Sisters of the Poor | Little Sisters of the Poor
 Sisters of Charity | Sisters of Charity
@@ -728,7 +711,7 @@ Gideons International
 Focus on the Family
 Young Life
 InterVarsity Christian Fellowship
-Cru | Cru (organization)
+Cru | Cru (Christian organization)
 YMCA
 YWCA
 Alpha course | Alpha course
@@ -746,7 +729,7 @@ Prison Fellowship | Prison Fellowship
 Fellowship of Christian Athletes | Fellowship of Christian Athletes
 Youth for Christ | Youth for Christ
 Navigators | The Navigators (organization)
-Open Doors | Open Doors (organization)
+Open Doors | Open Doors
 Voice of the Martyrs | Voice of the Martyrs
 Christian Broadcasting Network
 Trinity Broadcasting Network
@@ -789,7 +772,7 @@ Vatican News | Vatican News
 Vatican Radio
 Radio Maria | Radio Maria
 Pure Flix | Pure Flix
-Crossway | Crossway (publisher)
+Crossway | Crossway
 Zondervan
 Thomas Nelson | Thomas Nelson (publisher)
 InterVarsity Press | InterVarsity Press
@@ -802,14 +785,13 @@ Paulist Press | Paulist Press
 Orbis Books | Orbis Books
 Concordia Publishing House | Concordia Publishing House
 Premier Christian Radio | Premier Christian Radio
-Premier Christian Media | Premier Christian Media
 Church Times | Church Times
 Christian Today | Christian Today
 Christian Post | The Christian Post
 Baptist Press | Baptist Press
 Catholic News Agency | Catholic News Agency
 Catholic World Report | Catholic World Report
-Crux | Crux (website)
+Crux | Crux
 Aleteia | Aleteia
 
 [hymns] Name a hymn or carol   {letters, noun=title}
@@ -1015,3 +997,356 @@ Chiliasm | Millenarianism
 Encratism | Encratites
 Novatianism | Novatianism
 Messalianism | Messalianism
+
+
+# ---------------------------------------------------------------- more church lists
+[arch_styles] Name an architectural style used for churches
+Romanesque | Romanesque architecture | romanesque
+Gothic | Gothic architecture | gothic
+Byzantine | Byzantine architecture | byzantine
+Baroque | Baroque architecture | baroque
+Renaissance | Renaissance architecture | renaissance
+Neoclassical | Neoclassical architecture | neoclassical
+Gothic Revival | Gothic Revival architecture | gothic revival;neo gothic
+Early Christian | Early Christian art and architecture | early christian
+Carolingian | Carolingian architecture | carolingian
+Ottonian | Ottonian architecture | ottonian
+Norman | Norman architecture | norman
+Rococo | Rococo | rococo
+Art Nouveau | Art Nouveau | art nouveau
+Brutalist | Brutalist architecture | brutalist
+Modernist | Modern architecture | modernist;modern
+Mudéjar | Mudéjar style | mudejar
+Plateresque | Plateresque | plateresque
+Churrigueresque | Churrigueresque | churrigueresque
+Perpendicular Gothic | Perpendicular Gothic | perpendicular
+Decorated Gothic | Decorated Gothic | decorated
+Early English Gothic | Early English Gothic | early english
+Flamboyant Gothic | Flamboyant | flamboyant
+Manueline | Manueline | manueline
+Palladian | Palladian architecture | palladian
+Romanesque Revival | Romanesque Revival architecture | romanesque revival
+Russian Revival | Russian Revival architecture | russian revival
+Ukrainian Baroque | Ukrainian Baroque | ukrainian baroque
+Spanish Colonial | Spanish Colonial architecture | spanish colonial;mission style
+Anglo-Saxon | Anglo-Saxon architecture | anglo saxon
+Basilica | Basilica | basilican
+
+[monasteries] Name a famous monastery or abbey
+Monte Cassino | Monte Cassino | montecassino
+Cluny Abbey
+Mount Athos
+Mont-Saint-Michel
+Westminster Abbey
+Melk Abbey
+Saint Catherine's Monastery | Saint Catherine's Monastery | st catherines
+Meteora
+Glastonbury Abbey
+Fountains Abbey
+Rievaulx Abbey
+Tintern Abbey
+Iona Abbey
+Lindisfarne Priory | Lindisfarne Priory | lindisfarne
+Abbey of Saint Gall | Abbey of Saint Gall | st gall;saint gall
+Montserrat Abbey
+Grande Chartreuse | Grande Chartreuse | la grande chartreuse
+Clairvaux Abbey | Clairvaux Abbey | clairvaux
+Cîteaux Abbey | Cîteaux Abbey | citeaux
+Solesmes Abbey | Solesmes Abbey | solesmes
+Bobbio Abbey
+Kykkos Monastery | Kykkos Monastery | kykkos
+Rila Monastery
+Kiev Pechersk Lavra
+Trinity Lavra of St. Sergius | Trinity Lavra of St. Sergius
+Valaam Monastery
+Solovetsky Monastery
+Mar Saba
+Hosios Loukas
+Visoki Dečani | Visoki Dečani | decani
+Studenica Monastery | Studenica Monastery | studenica
+Einsiedeln Abbey
+Ettal Abbey
+Skellig Michael
+Clonmacnoise | Clonmacnoise | clonmacnoise
+Bec Abbey | Bec Abbey
+Jumièges Abbey | Jumièges Abbey | jumieges
+Abbey of Fulda | Fulda Abbey | fulda
+Gethsemani Abbey | Abbey of Gethsemani | gethsemani
+Nitrian Desert | Nitrian Desert | wadi natrun
+
+[marian_titles] Name a title, apparition or doctrine of the Virgin Mary
+Our Lady of Guadalupe | Our Lady of Guadalupe | guadalupe
+Our Lady of Fátima | Our Lady of Fátima | fatima
+Our Lady of Lourdes | Our Lady of Lourdes | lourdes
+Our Lady of Sorrows | Our Lady of Sorrows | seven sorrows
+Our Lady of Mount Carmel | Our Lady of Mount Carmel | mount carmel
+Our Lady of Czestochowa | Black Madonna of Częstochowa | czestochowa;black madonna
+Immaculate Conception
+Assumption of Mary
+Theotokos
+Our Lady of Perpetual Help | Our Lady of Perpetual Help | perpetual help
+Our Lady of Knock | Knock Shrine | knock
+Our Lady of La Salette | Our Lady of La Salette | la salette
+Our Lady of Kazan | Our Lady of Kazan | kazan
+Our Lady of Vladimir | Theotokos of Vladimir | vladimir icon
+Our Lady of Aparecida | Our Lady of Aparecida | aparecida
+Our Lady of Charity | Our Lady of Charity | caridad del cobre
+Our Lady of the Rosary | Our Lady of the Rosary | lady of the rosary
+Queen of Heaven | Queen of Heaven (Christianity) | queen of heaven
+Our Lady of Walsingham | Our Lady of Walsingham | walsingham
+Our Lady of Loreto | Holy House of Loreto | loreto
+Our Lady of Banneux | Our Lady of Banneux | banneux
+Our Lady of Pontmain | Our Lady of Pontmain | pontmain
+Our Lady of Montserrat | Our Lady of Montserrat | black virgin of montserrat
+Our Lady of Zeitoun | Our Lady of Zeitoun | zeitoun
+Our Lady of Akita | Our Lady of Akita | akita
+Mary, Help of Christians | Mary, Help of Christians | help of christians
+Perpetual virginity of Mary | Perpetual virginity of Mary | perpetual virginity
+Marian apparition | Marian apparition | apparition
+
+[persecution_wars] Name a war, persecution or massacre in Christian history
+Great Persecution | Diocletianic Persecution | diocletian persecution
+Albigensian Crusade
+Hussite Wars
+French Wars of Religion | French Wars of Religion | wars of religion
+Thirty Years' War | Thirty Years' War | thirty years war
+Eighty Years' War | Eighty Years' War
+English Civil War
+Spanish Inquisition
+Salem witch trials | Salem witch trials | salem
+Armenian genocide
+Boxer Rebellion
+Taiping Rebellion
+Reconquista
+Northern Crusades
+Irish Rebellion of 1641
+The Troubles | The Troubles | troubles
+German Peasants' War | German Peasants' War | peasants war
+Saint Bartholomew's Day massacre | Saint Bartholomew's Day massacre | st bartholomews day massacre
+Gunpowder Plot
+Massacre of Vassy | Massacre of Vassy
+Persecution of Christians in the Roman Empire | Persecution of Christians in the Roman Empire | roman persecution
+Crusade of 1101 | Crusade of 1101
+Fall of Constantinople | Fall of Constantinople | 1453
+Sack of Rome (1527) | Sack of Rome (1527) | sack of rome
+Siege of Vienna | Battle of Vienna | battle of vienna
+Battle of Lepanto | Battle of Lepanto | lepanto
+Battle of Tours | Battle of Tours | tours
+Battle of Milvian Bridge | Battle of the Milvian Bridge | milvian bridge
+Wars of Kappel | Wars of Kappel | kappel
+Münster rebellion | Münster rebellion | munster rebellion
+Cristero War | Cristero War | cristeros
+
+[vatican_rome] Name a place in Vatican City or Rome tied to the Church
+St. Peter's Basilica | St. Peter's Basilica | saint peters basilica
+Sistine Chapel
+Vatican Museums
+Vatican Library | Vatican Apostolic Library | apostolic library
+St. Peter's Square | St. Peter's Square | saint peters square
+Apostolic Palace
+St. John Lateran | Archbasilica of St. John Lateran | lateran
+Santa Maria Maggiore | Basilica of Saint Mary Major | saint mary major
+Basilica of Saint Paul Outside the Walls | Basilica of Saint Paul Outside the Walls | st paul outside the walls
+Castel Sant'Angelo
+Catacombs of Rome | Catacombs of Rome | catacombs
+Colosseum
+Pantheon, Rome | Pantheon, Rome | pantheon
+Scala Sancta
+Il Gesù | Church of the Gesù | gesu
+Santa Croce in Gerusalemme | Santa Croce in Gerusalemme
+Basilica of San Clemente | Basilica of San Clemente | san clemente
+Vatican Apostolic Archive | Vatican Apostolic Archive | secret archives;vatican secret archives
+Domus Sanctae Marthae | Domus Sanctae Marthae | casa santa marta
+Vatican Observatory
+Vatican Gardens
+Swiss Guard | Pontifical Swiss Guard | swiss guard
+Tomb of Saint Peter | Tomb of Saint Peter
+Mamertine Prison | Mamertine Prison | mamertine
+Basilica of Santa Maria in Trastevere | Santa Maria in Trastevere | trastevere
+Santa Sabina | Santa Sabina
+Basilica of Sant'Agnese fuori le mura | Sant'Agnese fuori le mura
+Pauline Chapel | Cappella Paolina | cappella paolina
+Church of San Luigi dei Francesi | San Luigi dei Francesi | san luigi
+
+[art_forms] Name a type of Christian art or religious art object
+Icon
+Stained glass
+Fresco
+Mosaic
+Illuminated manuscript | Illuminated manuscript | illuminated manuscripts
+Triptych
+Altarpiece
+Crucifix
+Pietà | Pietà | pieta
+Madonna | Madonna (art) | madonna
+Nativity scene | Nativity scene | crib;creche
+Reliquary
+Iconostasis
+Rood screen | Rood screen | rood
+Tapestry | Tapestry | tapestries
+Sarcophagus | Sarcophagus | sarcophagi
+Ivory carving | Ivory carving | ivory
+Rose window | Rose window | rose windows
+Gargoyle
+Misericord
+Retablo | Retablo | retablos
+Ex-voto | Ex-voto | ex voto
+Santos | Santos (art) | santos
+Mandorla | Mandorla
+Deësis | Deësis | deesis
+Pantocrator | Christ Pantocrator | christ pantocrator
+Book of Hours
+Diptych | Diptych | diptychs
+Polyptych | Polyptych | polyptychs
+Predella | Predella
+Calvary | Calvary (sculpture) | calvary
+Pulpit | Pulpit
+Baptismal font | Baptismal font | font
+
+[music_styles] Name a style of Christian music
+Gregorian chant | Gregorian chant | plainchant;plainsong
+Byzantine chant | Byzantine music | byzantine music
+Anglican chant | Anglican chant
+Gospel music | Gospel music | gospel
+Negro spiritual | Spiritual (music) | spirituals;spiritual
+Contemporary worship music | Contemporary worship music | worship music
+Southern gospel | Southern gospel | southern gospel
+Christian rock | Christian rock | christian rock
+Christian hip hop | Christian hip hop | christian rap
+Christian metal | Christian metal | christian metal
+Taizé chant | Taizé Community | taize
+Requiem | Requiem | requiem
+Oratorio
+Cantata
+Motet
+Anthem
+Chorale
+Psalmody | Psalmody | psalm singing
+Antiphon
+Organum
+Mass | Mass (music) | mass setting
+Passion | Passion (music) | passion setting
+Plainchant | Plainchant
+Carol | Christmas carol | carols
+Hymn
+Shape note | Shape note | sacred harp;shaped note
+Celtic worship | Celtic Christianity | celtic worship
+Ambrosian chant | Ambrosian chant | ambrosian
+Mozarabic chant | Mozarabic chant | mozarabic
+Responsorial psalm | Responsorial psalm | responsorial
+Gospel choir | Gospel choir | gospel choir
+Contemporary Christian music | Contemporary Christian music | ccm
+Christian country | Christian country music | country gospel
+
+[doctors] Name a Doctor of the Church
+Augustine of Hippo
+Jerome
+Ambrose
+Gregory the Great
+Athanasius
+Basil the Great
+Gregory of Nazianzus
+John Chrysostom
+Cyril of Alexandria
+Cyril of Jerusalem
+Hilary of Poitiers
+Leo the Great
+Peter Chrysologus
+Isidore of Seville
+John of Damascus
+Bede
+Ephrem the Syrian
+Anselm of Canterbury
+Bernard of Clairvaux
+Peter Damian
+Thomas Aquinas
+Bonaventure
+Albertus Magnus
+Anthony of Padua
+Catherine of Siena
+Teresa of Ávila
+John of the Cross
+Peter Canisius
+Robert Bellarmine
+Francis de Sales
+Lawrence of Brindisi
+Alphonsus Liguori
+Thérèse of Lisieux
+Hildegard of Bingen
+Gregory of Narek
+John of Ávila
+Irenaeus
+
+[orthodox_terms] Name something from Eastern Orthodox Christianity
+Iconostasis
+Theosis | Theosis (Eastern Christian theology)
+Hesychasm
+Divine Liturgy | Divine Liturgy | liturgy
+Jesus Prayer
+Philokalia
+Akathist
+Troparion
+Kontakion
+Chrismation
+Typikon
+Theotokos
+Panagia
+Trisagion
+Epitaphios | Epitaphios (liturgical)
+Orthros | Orthros | matins
+Great Entrance | Great Entrance | entrance
+Holy Fire
+Paschal troparion | Paschal troparion | christ is risen
+Proskomedia | Proskomedia | prothesis
+Ecumenical Patriarch of Constantinople | Ecumenical Patriarch of Constantinople | ecumenical patriarch
+Mount Athos
+Autocephaly | Autocephaly | autocephalous
+Archimandrite
+Hegumen | Hegumen | igumen
+Staretz | Starets | starets;elder
+Fool for Christ | Fool for Christ | holy fool;yurodivy
+Sign of the cross | Sign of the cross
+Royal Doors | Royal Doors | holy doors
+Prosphora | Prosphora | prosphoron
+Great Lent | Great Lent
+Menaion | Menaion
+Octoechos | Octoechos
+
+[liturgical_books] Name a liturgical or famous church book
+Book of Common Prayer
+Roman Missal
+Breviary
+Liturgy of the Hours
+Lectionary
+Book of Hours
+Psalter
+Missal
+Roman Pontifical | Pontifical | pontifical
+Roman Ritual | Rituale Romanum | ritual
+Hymnal | Hymnal | hymn book
+Common Worship
+Book of Kells
+Lindisfarne Gospels
+Codex Sinaiticus
+Gutenberg Bible
+Book of Durrow
+Book of Armagh
+Luttrell Psalter
+Très Riches Heures du Duc de Berry | Très Riches Heures du Duc de Berry | tres riches heures
+Codex Vaticanus
+Codex Alexandrinus
+Codex Bezae | Codex Bezae
+Codex Amiatinus
+Vulgate | Vulgate
+Septuagint
+Peshitta
+Geneva Bible
+Great Bible
+Bishops' Bible | Bishops' Bible
+Rheims-Douai Bible | Douay–Rheims Bible | douay rheims
+Aberdeen Breviary | Aberdeen Breviary
+Sarum Rite | Sarum Use | sarum missal
+Euchologion | Euchologion
+Horologion | Horologion
+Graduale Romanum | Graduale Romanum | graduale
+Liber Usualis | Liber Usualis

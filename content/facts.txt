@@ -156,3 +156,368 @@ The Wicked Tenants; The Growing Seed; The Budding Fig Tree; The Leaven; The Net
 from: feasts, saintdays, christmas
 Christmas; Immaculate Conception; Saint Nicholas Day; Saint Lucy's Day; Saint Stephen's Day; Boxing Day?
 Holy Innocents; Saint Sylvester's Day; Christmas Eve; Saint Barbara's Day; Advent; Gaudete Sunday
+
+
+# ---------------------------------------------------------------- more sub-group questions
+# places
+[fact:english_churches] Name a cathedral or abbey in England
+from: cathedrals
+Canterbury Cathedral; Westminster Abbey; St Paul's Cathedral; Salisbury Cathedral; York Minster; Durham Cathedral
+Westminster Cathedral; Lincoln Cathedral; Winchester Cathedral; Ely Cathedral; Wells Cathedral; Exeter Cathedral; Gloucester Cathedral
+
+[fact:french_places] Name a famous church or abbey in France
+from: cathedrals, holysites, orders
+Notre-Dame de Paris; Chartres Cathedral; Reims Cathedral; Basilica of the Sacred Heart; Amiens Cathedral; Bourges Cathedral
+Strasbourg Cathedral; Mont-Saint-Michel; Cluny Abbey
+
+[fact:italian_churches] Name a famous church in Italy
+from: cathedrals
+St. Peter's Basilica; Milan Cathedral; St Mark's Basilica; Florence Cathedral; Pisa Cathedral; Siena Cathedral
+Orvieto Cathedral; Monreale Cathedral; Basilica of Saint Francis of Assisi; Santa Maria Maggiore; St. John Lateran; Church of the Gesù
+
+[fact:german_places] Name a church or shrine in Germany, Austria or Switzerland
+from: cathedrals, holysites
+Cologne Cathedral; Ulm Minster; Speyer Cathedral; Aachen Cathedral; Cathedral of Magdeburg; St. Stephen's Cathedral, Vienna
+Altötting; Kevelaer; Einsiedeln Abbey
+
+[fact:orthodox_places] Name an Orthodox church or monastery
+from: cathedrals, holysites
+Saint Basil's Cathedral; Cathedral of Christ the Saviour; Kazan Cathedral; Church of the Savior on Blood; Hagia Sophia
+Trinity Lavra of St. Sergius; Kiev Pechersk Lavra; Solovetsky Monastery; Valaam Monastery; Cathedral of Saint Sava
+Alexander Nevsky Cathedral, Sofia; Mount Athos; Meteora; Mar Saba
+
+[fact:pilgrim_france] Name a Christian pilgrimage place in France
+from: holysites, cathedrals
+Lourdes; Chartres; Mont-Saint-Michel; Lisieux; Ars-sur-Formans; Paray-le-Monial; Nevers; Taizé Community; Notre-Dame de Paris
+
+# worship
+[fact:daily_hours] Name an hour of daily prayer in the church
+from: sacraments, prayers
+Vespers; Compline; Matins; Lauds; Prime; Terce; Sext; Evensong; Liturgy of the Hours; Evening Prayer; Morning Prayer; Vigil; Tenebrae
+
+[fact:devotions] Name a Catholic devotion
+from: sacraments, prayers
+Rosary; Stations of the Cross; Benediction; Novena; Eucharistic adoration; Lectio Divina; Angelus; Chaplet of Divine Mercy
+Litany of the Saints; Divine Praises; Memorare; Pilgrimage
+
+[fact:latin_prayers] Name a prayer or canticle with Latin words
+from: prayers
+Ave Maria; Salve Regina; Memorare; Anima Christi; Regina Caeli; Veni Creator Spiritus; Te Deum; Magnificat; Nunc dimittis
+Benedictus; Kyrie; Agnus Dei; Sanctus; Gloria in excelsis Deo; Credo; Confiteor; Angelus
+
+[fact:mass_parts] Name a part of the Mass
+from: prayers, councils
+Kyrie; Gloria in excelsis Deo; Credo; Sanctus; Agnus Dei; Collect; Confiteor; Nicene Creed; Lord's Prayer; Benedictus
+
+[fact:old_hymns_1700_1800] Name a hymn or carol written in the 1700s or 1800s
+from: hymns
+Amazing Grace; Joy to the World; Hark! The Herald Angels Sing; Silent Night; O Holy Night; Rock of Ages; Come Thou Fount of Every Blessing
+All Hail the Power of Jesus' Name; It Is Well with My Soul; Onward, Christian Soldiers; What a Friend We Have in Jesus
+Blessed Assurance; Just As I Am; Lead, Kindly Light; Nearer, My God, to Thee; Abide with Me; Holy, Holy, Holy
+O Little Town of Bethlehem; Crown Him with Many Crowns; We Three Kings; Away in a Manger
+
+[fact:medieval_hymns] Name a hymn or chant with ancient or medieval roots
+from: hymns
+Dies Irae; Veni Creator Spiritus; Te Deum; Ave Maria; Salve Regina; Stabat Mater; Pange Lingua; Veni Sancte Spiritus; Ubi Caritas
+Of the Father's Love Begotten; Gloria in Excelsis Deo; Magnificat; Agnus Dei; Be Thou My Vision; O Come, O Come, Emmanuel
+
+[fact:lent_to_pentecost] Name a day or season from Lent to Pentecost
+from: feasts
+Ash Wednesday; Lent; Palm Sunday; Maundy Thursday; Good Friday; Holy Saturday; Holy Week; Easter Vigil; Easter; Easter Monday
+Shrove Tuesday; Low Sunday; Laetare Sunday; Septuagesima; Sexagesima; Quinquagesima; Ascension Day; Pentecost
+
+[fact:advent_to_candlemas] Name a day or season from Advent to Candlemas
+from: feasts
+Advent; Gaudete Sunday; Christmas; Holy Innocents; Holy Name of Jesus; Epiphany; Theophany; Twelfth Night; Candlemas
+
+[fact:english_calendar] Name a traditional day in the English church calendar
+from: feasts
+Michaelmas; Martinmas; Lammas; Plough Monday; Twelfth Night; Rood Day; Candlemas; Rogation Days; Ember Days; Feast of Fools
+
+[fact:cross_types] Name a type of cross
+from: symbols
+Christian cross; Crucifix; Celtic cross; Jerusalem cross; Anchor cross; Tau cross; Papal cross; Cross of Lorraine; Orthodox cross
+Pectoral cross; Maltese cross; Cross of Saint Peter; Cross of Saint Andrew; Armenian cross; Coptic cross; Ethiopian cross
+
+# orders and groups
+[fact:monastic_orders] Name a monastic order
+from: orders
+Benedictines; Cistercians; Carthusians; Trappists; Camaldolese; Cluniacs; Premonstratensians; Bridgettines; Carmelites; Poor Clares
+
+[fact:friar_orders] Name an order of friars or mendicants
+from: orders
+Franciscans; Dominicans; Carmelites; Augustinians; Capuchins; Servites; Trinitarians; Mercedarians; Poor Clares
+
+[fact:modern_communities] Name a modern Christian community or lay movement
+from: orders
+Taizé Community; L'Arche; Focolare Movement; Neocatechumenal Way; Legionaries of Christ; Communion and Liberation; Sant'Egidio
+Iona Community; Opus Dei; Community of the Resurrection; Missionaries of Charity
+
+[fact:sisters_orders] Name an order of religious sisters
+from: orders
+Poor Clares; Ursulines; Missionaries of Charity; Sisters of Mercy; Daughters of Charity; Little Sisters of the Poor; Sisters of Charity
+Beguines; Bridgettines
+
+[fact:protestant_denoms] Name a Protestant denomination
+from: denominations
+Baptist; Methodist; Lutheran; Anglican; Presbyterian; Pentecostal; Calvinist; Quaker; Mennonite; Congregationalist; Church of Scotland
+Moravian; Assemblies of God; Salvation Army; Seventh-day Adventist; Church of the Nazarene; Disciples of Christ
+
+[fact:eastern_churches] Name an Eastern or Oriental church
+from: denominations
+Eastern Orthodox; Coptic Orthodox; Oriental Orthodox; Assyrian Church of the East; Armenian Apostolic; Ethiopian Orthodox
+Syriac Orthodox; Maronite; Greek Orthodox; Russian Orthodox; Mar Thoma; Old Believers
+
+[fact:medieval_dissent] Name a medieval reform or dissenting movement
+from: denominations, heresies, orders
+Waldensian; Hussite; Lollard; Catharism; Bogomilism; Paulicianism; Beguines; Hesychasm; Cluniacs
+
+# history
+[fact:early_heresies] Name a heresy from the first five centuries
+from: heresies
+Arianism; Gnosticism; Pelagianism; Nestorianism; Docetism; Montanism; Marcionism; Monophysitism; Donatism; Sabellianism
+Adoptionism; Manichaeism; Apollinarism; Monothelitism
+
+[fact:christology_disputes] Name a dispute about the nature of Christ
+from: heresies
+Docetism; Nestorianism; Monophysitism; Adoptionism; Apollinarism; Monothelitism; Eutychianism; Arianism; Miaphysitism; Dyophysitism
+
+[fact:church_councils] Name a church council
+from: councils
+Council of Nicaea; Council of Constantinople; Council of Ephesus; Council of Chalcedon; Second Council of Nicaea; Council of Trent
+First Vatican Council; Second Vatican Council; Council of Constance; Council of Florence; Fourth Lateran Council; Council of Jerusalem
+
+[fact:creeds] Name a creed, confession or statement of faith
+from: councils
+Nicene Creed; Apostles' Creed; Athanasian Creed; Chalcedonian Definition; Westminster Confession; Augsburg Confession
+Heidelberg Catechism; Barmen Declaration; Lausanne Covenant; Book of Common Prayer
+
+[fact:reformation_events] Name an event or document of the Reformation era
+from: councils
+Ninety-five Theses; Diet of Worms; Peace of Augsburg; Protestant Reformation; Counter-Reformation; Synod of Dort; Acts of Supremacy
+Pilgrimage of Grace; Peasants' War; Münster Rebellion; Edict of Nantes; Augsburg Confession; Heidelberg Catechism; Council of Trent
+
+[fact:church_crises] Name a major split or crisis in church history
+from: councils
+East–West Schism; Western Schism; Photian Schism; Avignon Papacy; Iconoclasm; Investiture Controversy; Protestant Reformation
+Spanish Inquisition; Münster Rebellion; Peasants' War
+
+# saints and people
+[fact:martyr_saints] Name a saint who was martyred
+from: saints, canterbury, thinkers
+Saint Peter; Saint Paul; Joan of Arc; Saint Cecilia; Saint Lucy; Agnes of Rome; Agatha of Sicily; Saint Barbara; Perpetua and Felicity
+Polycarp; Ignatius of Antioch; Justin Martyr; Saint Stephen; Maximilian Kolbe; Edith Stein; Saint George; Saint Valentine; Thomas Becket
+
+[fact:italian_saints] Name a saint from Italy
+from: saints
+Francis of Assisi; Thomas Aquinas; Anthony of Padua; Catherine of Siena; Benedict of Nursia; Padre Pio; Clare of Assisi
+Saint Cecilia; Saint Lucy; Agatha of Sicily; Bonaventure; Ambrose; Rita of Cascia; Agnes of Rome; Gregory the Great
+
+[fact:iberian_saints] Name a saint from Spain or Latin America
+from: saints, missionaries
+Teresa of Ávila; John of the Cross; Ignatius of Loyola; Francis Xavier; Dominic; Josemaría Escrivá; Juan Diego; Rose of Lima
+Martin de Porres; Junípero Serra
+
+[fact:british_saints] Name a saint from Britain or Ireland
+from: saints, canterbury
+Saint Patrick; Columba; Brigid of Kildare; Saint David; Saint Swithun; Saint Aidan; Saint Cuthbert; Bede; Boniface; Thomas Becket
+
+[fact:mystics] Name a Christian mystic
+from: thinkers, saints, orthodox
+Julian of Norwich; Meister Eckhart; Brother Lawrence; Teresa of Ávila; John of the Cross; Hildegard of Bingen; Catherine of Siena
+Thérèse of Lisieux; Evagrius Ponticus; Gregory Palamas; Silouan the Athonite; Simeon the New Theologian; Isaac the Syrian
+
+[fact:early_writers] Name a Christian writer from before the year 325
+from: thinkers, saints
+Tertullian; Origen; Cyprian; Hippolytus; Clement of Alexandria; Irenaeus; Justin Martyr; Polycarp; Ignatius of Antioch; Marcion
+
+[fact:german_theologians] Name a German or Swiss theologian
+from: thinkers
+Martin Luther; Karl Barth; Dietrich Bonhoeffer; Karl Rahner; Hans Urs von Balthasar; Philip Melanchthon; Albertus Magnus
+Meister Eckhart; Nicolaus Zinzendorf; Paul Tillich; Martin Bucer; Huldrych Zwingli
+
+[fact:british_thinkers] Name a British Christian thinker or preacher
+from: thinkers
+John Wycliffe; William Tyndale; Thomas Cranmer; John Knox; John Wesley; Charles Wesley; George Whitefield; Charles Spurgeon
+C. S. Lewis; G. K. Chesterton; John Bunyan; John Newton; William Booth; N. T. Wright; Julian of Norwich
+
+[fact:american_thinkers] Name a Christian thinker or preacher from the United States
+from: thinkers, evangelists
+Jonathan Edwards; Billy Graham; Martin Luther King Jr.; Reinhold Niebuhr; Paul Tillich; Francis Schaeffer; Dwight L. Moody
+Charles Finney; Thomas Merton; Dorothy Day; Tim Keller; John Piper
+
+[fact:social_justice] Name a Christian known for serving the poor or fighting injustice
+from: thinkers, missionaries, evangelists
+Martin Luther King Jr.; Dietrich Bonhoeffer; Dorothy Day; Desmond Tutu; Oscar Romero; Corrie ten Boom; William Booth; Mother Teresa
+Shane Claiborne; Tony Campolo; Albert Schweitzer; Bartolomé de las Casas; Toyohiko Kagawa; Maximilian Kolbe
+
+[fact:canterbury_early] Name an Archbishop of Canterbury from before 1066
+from: canterbury
+Augustine of Canterbury; Laurence of Canterbury; Mellitus; Justus; Theodore of Tarsus; Dunstan; Sigeric the Serious; Ælfheah; Æthelgar
+
+[fact:canterbury_medieval] Name a medieval Archbishop of Canterbury (1066 to 1450)
+from: canterbury
+Lanfranc; Anselm of Canterbury; Thomas Becket; Stephen Langton; Hubert Walter; Edmund Rich; John Peckham; Robert Winchelsey
+Thomas Arundel; Henry Chichele; Simon Sudbury; William Courtenay; Baldwin of Forde; Theobald of Bec
+
+[fact:canterbury_tudor_stuart] Name an Archbishop of Canterbury between 1450 and 1650
+from: canterbury
+Thomas Cranmer; Reginald Pole; Matthew Parker; John Whitgift; Edmund Grindal; George Abbot; William Laud; William Warham
+Thomas Bourchier; John Morton
+
+[fact:canterbury_modern] Name an Archbishop of Canterbury since 1900
+from: canterbury
+Randall Davidson; Cosmo Gordon Lang; William Temple; Geoffrey Fisher; Michael Ramsey; Donald Coggan; Robert Runcie
+George Carey; Rowan Williams; Justin Welby; Sarah Mullally
+
+[fact:missionaries_africa] Name a missionary to Africa
+from: missionaries
+David Livingstone; Mary Slessor; Robert Moffat; Samuel Ajayi Crowther; Alexander Mackay; Bishop Hannington; Albert Schweitzer
+Lillian Trasher; Helen Roseveare; Johannes Rebmann
+
+[fact:missionaries_asia] Name a missionary to Asia
+from: missionaries
+William Carey; Hudson Taylor; Adoniram Judson; Francis Xavier; Lottie Moon; Gladys Aylward; Eric Liddell; Matteo Ricci
+Robert Morrison; Karl Gützlaff; Henry Martyn; Alexander Duff; Amy Carmichael; Ida Scudder; Ann Hasseltine Judson; Alopen
+Jonathan Goforth; C. T. Studd; Paul Brand
+
+[fact:missionaries_americas] Name a missionary to the Americas
+from: missionaries
+Jim Elliot; Nate Saint; Elisabeth Elliot; Junípero Serra; Bartolomé de las Casas; John Eliot; Marcus Whitman; Pierre-Jean De Smet
+Jean de Brébeuf; Isaac Jogues; David Brainerd; Bruce Olson; Hans Egede
+
+[fact:female_missionaries] Name a female missionary
+from: missionaries
+Amy Carmichael; Lottie Moon; Mary Slessor; Gladys Aylward; Elisabeth Elliot; Helen Roseveare; Ida Scudder; Ann Hasseltine Judson
+Lillian Trasher; Mother Teresa; Pandita Ramabai
+
+[fact:televangelists] Name a televangelist or TV preacher
+from: evangelists
+Joel Osteen; T. D. Jakes; Joyce Meyer; Kenneth Copeland; Pat Robertson; Jerry Falwell; Oral Roberts; Jimmy Swaggart; Benny Hinn
+Creflo Dollar; Robert H. Schuller; Bishop Fulton Sheen; Mother Angelica; Kathryn Kuhlman; Reinhard Bonnke
+
+[fact:revival_preachers] Name a famous revival preacher
+from: evangelists
+Billy Sunday; Dwight L. Moody; Charles Finney; Charles Spurgeon; George Whitefield; John Wesley; Jonathan Edwards; Billy Graham
+Aimee Semple McPherson; William J. Seymour; Smith Wigglesworth; Oral Roberts
+
+[fact:megachurch_pastors] Name a megachurch pastor
+from: evangelists
+Rick Warren; Joel Osteen; Bill Hybels; Louie Giglio; Steven Furtick; Craig Groeschel; Andy Stanley; T. D. Jakes; Brian Houston
+Francis Chan; Tony Evans; Robert H. Schuller
+
+[fact:russian_orthodox_people] Name a Russian Orthodox saint or leader
+from: orthodox
+Seraphim of Sarov; Sergius of Radonezh; Nicholas II; Tikhon of Moscow; Dmitry Donskoy; Alexander Nevsky; Vladimir the Great
+Olga of Kiev; Cyril of Turov; John of Kronstadt; Ambrose of Optina; Stephen of Perm; Andrei Rublev; Herman of Alaska
+Innocent of Alaska; Theophan the Recluse
+
+[fact:modern_orthodox] Name a modern Orthodox figure
+from: orthodox
+Alexander Schmemann; Georges Florovsky; Vladimir Lossky; Sergei Bulgakov; John Zizioulas; Kallistos Ware; Mother Maria of Paris
+Bartholomew I of Constantinople; Patriarch Kirill; Paisios of Mount Athos; Elder Porphyrios; Elder Joseph the Hesychast
+Athenagoras I of Constantinople
+
+[fact:desert_monks] Name a desert or early monastic figure
+from: orthodox
+Anthony the Great; Pachomius; Paul of Thebes; Mary of Egypt; Macarius of Egypt; John Climacus; Evagrius Ponticus; Isaac the Syrian
+Ephrem the Syrian; Theodore the Studite
+
+[fact:crusade_kings] Name a king or emperor who went on crusade
+from: crusades
+Richard I of England; Louis VII of France; Conrad III; Frederick Barbarossa; Philip II of France; Louis IX of France
+Edward I of England; Frederick II; Baldwin I of Jerusalem
+
+# music, art, books, film
+[fact:baroque_composers] Name a Baroque composer of sacred music
+from: composers
+Johann Sebastian Bach; George Frideric Handel; Antonio Vivaldi; Claudio Monteverdi; Heinrich Schütz; Henry Purcell
+Dietrich Buxtehude; Georg Philipp Telemann; Giovanni Gabrieli; Gregorio Allegri
+
+[fact:early_composers] Name a composer from before 1650
+from: composers
+Hildegard of Bingen; Guillaume de Machaut; Pérotin; Léonin; Guido of Arezzo; Ambrose; Gregory the Great
+Giovanni Pierluigi da Palestrina; Thomas Tallis; William Byrd; Josquin des Prez; Claudio Monteverdi
+
+[fact:hymn_writers] Name a hymn writer
+from: composers
+Isaac Watts; Charles Wesley; Fanny Crosby; John Newton; Martin Luther; Joseph Mohr; Philip Bliss; William Cowper; Horatius Bonar
+Augustus Toplady; Henry Francis Lyte; Frances Havergal; Ira D. Sankey; Thomas A. Dorsey; Thomas Ken
+
+[fact:english_composers] Name an English composer of church music
+from: composers
+Thomas Tallis; William Byrd; Henry Purcell; John Rutter; Ralph Vaughan Williams; Gustav Holst; Edward Elgar; Benjamin Britten
+Charles Villiers Stanford
+
+[fact:gospel_artists] Name a gospel singer or group
+from: ccm
+Kirk Franklin; CeCe Winans; Mandisa; Andraé Crouch; Mahalia Jackson; Sister Rosetta Tharpe; Maverick City Music
+Gaither Vocal Band; Bill Gaither; Thomas A. Dorsey
+
+[fact:worship_leaders] Name a worship band or worship leader
+from: ccm
+Hillsong Worship; Elevation Worship; Bethel Music; Hillsong United; Maverick City Music; Housefires; Passion; Sovereign Grace Music
+Planetshakers; Jesus Culture; Hillsong Young & Free; Rend Collective; Chris Tomlin; Matt Redman; Darlene Zschech; Don Moen
+Kari Jobe; Phil Wickham; Cody Carnes; Brandon Lake
+
+[fact:christian_rock] Name a Christian rock band
+from: ccm
+Skillet; Switchfoot; Newsboys; DC Talk; Stryper; Petra; Third Day; Jars of Clay; Relient K; Hawk Nelson; Needtobreathe
+Audio Adrenaline; Building 429
+
+[fact:female_singers] Name a female Christian singer
+from: ccm
+Amy Grant; Lauren Daigle; Sandi Patty; Twila Paris; Francesca Battistelli; Natalie Grant; Kari Jobe; CeCe Winans; Mandisa
+Darlene Zschech; Mahalia Jackson; Sister Rosetta Tharpe
+
+[fact:jesus_films] Name a film or show about the life of Jesus
+from: films
+The Passion of the Christ; Jesus of Nazareth; The Chosen; Son of God; The Gospel of John; The Greatest Story Ever Told; King of Kings
+The Last Temptation of Christ; The Gospel According to St. Matthew; Jesus; The Young Messiah; Jesus Christ Superstar; Godspell
+
+[fact:faith_films_modern] Name a modern faith-based film
+from: films
+God's Not Dead; Fireproof; Facing the Giants; Courageous; War Room; I Can Only Imagine; Unplanned; The Case for Christ
+October Baby; Do You Believe?; Soul Surfer; The Star; Heaven Is for Real; Left Behind; The Shack
+
+[fact:classic_films] Name a classic Christian or Bible film from before 1970
+from: films
+Ben-Hur; The Ten Commandments; The Robe; Quo Vadis; King of Kings; The Greatest Story Ever Told; Going My Way
+The Bells of St. Mary's; The Song of Bernadette; Samson and Delilah; Barabbas; The Seventh Seal; The Gospel According to St. Matthew
+
+[fact:renaissance_artists] Name an Italian Renaissance artist
+from: artists
+Michelangelo; Leonardo da Vinci; Raphael; Fra Angelico; Sandro Botticelli; Titian; Perugino; Tintoretto; Paolo Veronese
+Giovanni Bellini; Masaccio; Piero della Francesca; Donatello; Lorenzo Ghiberti
+
+[fact:northern_artists] Name a Northern European religious painter
+from: artists
+Jan van Eyck; Albrecht Dürer; Hieronymus Bosch; Matthias Grünewald; Rogier van der Weyden; Hans Memling; Lucas Cranach the Elder
+Hans Holbein the Younger; Peter Bruegel the Elder; Rembrandt; Peter Paul Rubens; Anthony van Dyck
+
+[fact:baroque_artists] Name a Baroque artist
+from: artists
+Caravaggio; Gian Lorenzo Bernini; Peter Paul Rubens; Rembrandt; Bartolomé Esteban Murillo; Diego Velázquez; Francisco de Zurbarán
+Anthony van Dyck; Nicolas Poussin; Georges de La Tour; Artemisia Gentileschi; Guido Reni; Annibale Carracci
+Giovanni Battista Tiepolo
+
+[fact:spiritual_classics] Name a classic work of Christian spirituality
+from: books_christian
+Dark Night of the Soul; Interior Castle; The Imitation of Christ; The Cloud of Unknowing; Revelations of Divine Love
+The Book of Margery Kempe; Spiritual Exercises; Philokalia; The Way of a Pilgrim; Dialogue of Saint Catherine of Siena
+Story of a Soul; The Practice of the Presence of God; Introduction to the Devout Life
+
+[fact:modern_bestsellers] Name a bestselling modern Christian book
+from: books_christian
+Jesus Calling; Streams in the Desert; My Utmost for His Highest; The Purpose Driven Life; The Prayer of Jabez; Boundaries
+Desiring God; Wild at Heart; Hind's Feet on High Places; The Late Great Planet Earth; Left Behind; Heaven Is for Real; The Shack
+
+[fact:christian_novels] Name a novel with Christian themes
+from: books_christian
+The Pilgrim's Progress; The Brothers Karamazov; Ben-Hur; Left Behind; The Shack; Quo Vadis; The Robe; Silence; Gilead
+In His Steps; The Chronicles of Narnia
+
+[fact:big_theology] Name a major work of theology or philosophy
+from: books_christian
+Summa Theologica; Institutes of the Christian Religion; Church Dogmatics; The Cost of Discipleship; Pensées; The Theology of Hope
+The Courage to Be; Fear and Trembling; The City of God; Confessions

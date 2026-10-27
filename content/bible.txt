@@ -228,7 +228,7 @@ Paul | Paul the Apostle | saul of tarsus;saul
 Barnabas | Barnabas
 Silas | Silas
 Timothy | Saint Timothy
-Titus | Titus (disciple)
+Titus | Saint Titus
 Luke | Luke the Evangelist
 Stephen | Saint Stephen
 Philip the Evangelist | Philip the Evangelist
@@ -403,7 +403,7 @@ Jehoiakim
 Jehoiachin
 Zedekiah
 Nadab | Nadab of Israel
-Baasha
+Baasha | Baasha of Israel
 Elah | Elah of Israel
 Zimri | Zimri (king)
 Omri
@@ -502,7 +502,7 @@ Arameans
 Hyksos
 Herodians
 Scribe | Scribes
-Publican | Publican (ancient Rome) | publicans;tax collectors
+Publican | Publicani | publicans;tax collectors
 Magi | Biblical Magi | wise men
 Ishmaelites
 Phoenicians
@@ -632,7 +632,6 @@ Brook Cherith | Cherith
 Wadi Qelt | Wadi Qelt
 Waters of Merom | Lake Huleh
 Pishon | Pishon
-Gihon | Gihon (Bible)
 
 [ot_cities] Name a city from the Old Testament   {letters}
 Babylon
@@ -812,7 +811,7 @@ Raising of Lazarus
 Triumphal entry into Jerusalem | Triumphal entry into Jerusalem | palm sunday
 Cleansing of the Temple | Cleansing of the Temple
 Last Supper
-Washing of the feet | Foot washing
+Washing of the feet | Maundy (foot washing)
 Agony in the Garden
 Arrest of Jesus | Arrest of Jesus | betrayal of jesus
 Trial of Jesus
@@ -866,7 +865,7 @@ Root of Jesse
 Son of David
 Lion of Judah
 Jesus of Nazareth | Jesus
-Lord | Lord (Christianity)
+Lord | Lord
 Bridegroom | Bridegroom of Christ
 Rock | Rock (metaphor)
 
@@ -984,7 +983,7 @@ Hell | Hell in Christianity
 New heaven and new earth | New Heaven and New Earth
 Sea of glass | Sea of glass
 Four living creatures | Four Living Creatures
-Twenty-four elders | Twenty-four Elders
+Twenty-four elders | Twenty-Four Elders
 Second death | Second death
 Bema | Judgment seat of Christ
 
@@ -1173,3 +1172,342 @@ Trimorphic Protennoia | Trimorphic Protennoia
 Hypostasis of the Archons | Hypostasis of the Archons
 Apocalypse of Adam | Apocalypse of Adam
 Letter to Flora | Letter to Flora
+
+
+# ---------------------------------------------------------------- more Bible lists
+[pre_kings] Name a leader of Israel before it had kings
+Moses
+Aaron
+Joshua
+Caleb
+Miriam
+Eleazar
+Phinehas
+Othniel
+Ehud
+Shamgar
+Deborah
+Barak
+Jael
+Gideon
+Abimelech
+Jephthah
+Samson
+Eli | Eli (biblical figure) | eli the priest
+Samuel
+Hur | Hur (Bible)
+Hannah | Hannah (biblical figure)
+Sisera
+
+[priests] Name a priest or Levite from the Bible
+Aaron
+Eli | Eli (biblical figure)
+Zadok
+Abiathar
+Ezra
+Melchizedek
+Phinehas
+Eleazar
+Ithamar
+Nadab and Abihu | Nadab and Abihu | nadab;abihu
+Korah | Korah
+Caiaphas
+Annas
+Barnabas
+Levi | Levi
+Jehoiada
+Hilkiah
+Zechariah | Zechariah (New Testament figure) | father of john the baptist
+Samuel
+Ahimelech
+Hophni and Phinehas | Hophni and Phinehas | hophni
+
+[paul_companions] Name a companion or co-worker of the apostle Paul
+Barnabas
+Silas
+Timothy | Saint Timothy
+Titus
+Luke the Evangelist | Luke the Evangelist | luke
+John Mark | John Mark | mark
+Priscilla and Aquila | Priscilla and Aquila | priscilla;aquila
+Apollos
+Phoebe | Phoebe (biblical figure) | phebe
+Lydia of Thyatira | Lydia of Thyatira | lydia
+Epaphras
+Epaphroditus
+Onesimus
+Philemon | Philemon (biblical figure)
+Tychicus
+Trophimus
+Demas
+Erastus | Erastus of Corinth
+Gaius | Gaius (biblical figure)
+Aristarchus | Aristarchus of Thessalonica
+Sosthenes
+Stephanas
+Tertius | Tertius of Iconium
+Dionysius the Areopagite | Dionysius the Areopagite | dionysius
+
+[met_jesus] Name a person who met Jesus (not one of the twelve)
+Zacchaeus
+Bartimaeus
+Nicodemus
+Joseph of Arimathea
+Lazarus of Bethany | Lazarus of Bethany | lazarus
+Martha
+Mary of Bethany | Mary of Bethany
+Mary Magdalene
+Jairus
+Simon of Cyrene
+Barabbas
+Pontius Pilate
+Caiaphas
+Herod Antipas
+Simeon | Simeon (Gospel of Luke)
+Anna the Prophetess | Anna the Prophetess | anna
+Samaritan woman at the well | Samaritan woman at the well | woman at the well;samaritan woman
+Malchus
+Joanna | Joanna, wife of Chuza
+Cleopas
+Rich young ruler | Rich young ruler
+Veronica | Saint Veronica
+Longinus | Longinus
+Legion | Legion (demons) | gerasene demoniac
+Salome | Salome (disciple)
+
+[psalms] Name a Psalm
+Psalm 23 | Psalm 23 | the lord is my shepherd
+Psalm 51 | Psalm 51 | miserere
+Psalm 91 | Psalm 91
+Psalm 137 | Psalm 137 | by the rivers of babylon
+Psalm 22 | Psalm 22
+Psalm 119 | Psalm 119
+Psalm 130 | Psalm 130 | de profundis
+Psalm 150 | Psalm 150
+Psalm 100 | Psalm 100
+Psalm 121 | Psalm 121
+Psalm 1 | Psalm 1
+Psalm 8 | Psalm 8
+Psalm 19 | Psalm 19
+Psalm 46 | Psalm 46
+Psalm 90 | Psalm 90
+Psalm 139 | Psalm 139
+Psalm 110 | Psalm 110
+Psalm 2 | Psalm 2
+Psalm 42 | Psalm 42
+Psalm 95 | Psalm 95
+Psalm 117 | Psalm 117
+Psalm 136 | Psalm 136
+Psalm 148 | Psalm 148
+Psalm 27 | Psalm 27
+Psalm 133 | Psalm 133
+
+[temple_objects] Name something from the Tabernacle or the Temple
+Ark of the Covenant
+Menorah | Temple menorah
+Holy of Holies
+Tabernacle
+Solomon's Temple
+Second Temple
+Herod's Temple | Herod's Temple | herodian temple
+Table of Showbread | Showbread | showbread
+Mercy seat | Mercy seat
+Altar of incense | Altar of incense | incense altar
+Veil of the Temple | Veil of the Temple | temple veil;curtain of the temple
+Urim and Thummim | Urim and Thummim
+Ephod
+Hoshen | Hoshen | breastplate of the high priest
+Cherubim | Cherub
+Court of the Gentiles | Court of the Gentiles
+Sanhedrin
+Temple Mount
+Western Wall
+Shekhinah
+Brazen Serpent | Nehushtan | bronze serpent
+Golden calf
+Manna
+Aaron's rod | Aaron's rod
+Tablets of Stone | Ten Commandments | tablets;ten commandments
+
+[holy_week] Name an event from Holy Week or after the Resurrection
+Palm Sunday
+Cleansing of the Temple | Cleansing of the Temple
+Last Supper
+Foot washing | Maundy (foot washing) | washing of the feet
+Agony in the Garden | Agony in the Garden
+Betrayal of Jesus | Betrayal of Jesus | kiss of judas
+Arrest of Jesus | Arrest of Jesus
+Peter's denial of Jesus | Denial of Peter | peters denial
+Trial of Jesus | Trial of Jesus
+Flagellation of Christ | Flagellation of Christ | scourging
+Crown of thorns
+Crucifixion of Jesus | Crucifixion of Jesus | crucifixion
+Seven Last Words of Christ | Seven Last Words of Christ | seven last words
+Burial of Jesus | Burial of Jesus | entombment
+Empty tomb
+Resurrection of Jesus | Resurrection of Jesus | resurrection
+Noli me tangere
+Road to Emmaus | Road to Emmaus | walk to emmaus
+Doubting Thomas | Doubting Thomas
+Great Commission
+Ascension of Jesus | Ascension of Jesus | ascension
+Pentecost
+Harrowing of Hell | Harrowing of Hell
+Stations of the Cross
+
+[nativity] Name something from the Nativity story
+Annunciation
+Visitation | Visitation (Christian)
+Magnificat
+Census of Quirinius | Census of Quirinius | census
+Bethlehem
+Star of Bethlehem
+Magi | Biblical Magi | three wise men;wise men;three kings
+Adoration of the Magi | Adoration of the Magi
+Herod the Great
+Massacre of the Innocents | Massacre of the Innocents | slaughter of the innocents
+Flight into Egypt | Flight into Egypt
+Presentation of Jesus at the Temple | Presentation of Jesus at the Temple | presentation
+Simeon | Simeon (Gospel of Luke) | nunc dimittis
+Anna the Prophetess | Anna the Prophetess
+Gabriel
+Joseph | Saint Joseph | joseph the carpenter
+Virgin birth of Jesus | Virgin birth of Jesus | virgin birth
+Shepherds | Adoration of the shepherds | the shepherds
+Manger
+Nativity of Jesus | Nativity of Jesus | birth of jesus
+Elizabeth | Elizabeth (biblical figure) | mother of john the baptist
+Zechariah | Zechariah (New Testament figure)
+Quirinius | Publius Sulpicius Quirinius
+Caesar Augustus | Augustus | augustus
+
+[roman_officials] Name a Roman emperor, official or writer from the New Testament world
+Pontius Pilate
+Herod the Great
+Herod Antipas
+Herod Agrippa I
+Herod Agrippa II
+Augustus
+Tiberius
+Caligula
+Claudius
+Nero
+Vespasian
+Titus | Titus
+Domitian
+Trajan
+Hadrian
+Antoninus Pius
+Marcus Aurelius
+Decius
+Diocletian
+Constantine the Great | Constantine the Great | constantine
+Antonius Felix | Marcus Antonius Felix | felix
+Porcius Festus | Porcius Festus | festus
+Gallio | Lucius Junius Gallio Annaeanus | gallio
+Sergius Paulus
+Pliny the Younger
+Julian the Apostate | Julian (emperor) | julian
+Galerius
+Licinius
+Quirinius | Publius Sulpicius Quirinius
+Tacitus
+Josephus
+
+[bible_scholars] Name someone who translated or studied the Bible
+Jerome
+William Tyndale
+John Wycliffe
+Erasmus | Desiderius Erasmus | erasmus
+Martin Luther
+Miles Coverdale
+Ulfilas
+Cyril and Methodius | Saints Cyril and Methodius
+Origen
+Constantin von Tischendorf | Constantin von Tischendorf | tischendorf
+Bruce Metzger
+Brooke Foss Westcott
+Fenton John Anthony Hort | Fenton J. A. Hort | hort
+F. F. Bruce
+Stephen Langton
+Robert Estienne | Robert Estienne | stephanus
+Johannes Gutenberg | Johannes Gutenberg | gutenberg
+Lancelot Andrewes
+Bede
+Eugene Peterson
+Kenneth N. Taylor | Kenneth N. Taylor
+Rashi
+Saadia Gaon
+Eusebius
+Lorenzo Valla
+Samuel Prideaux Tregelles | Samuel Prideaux Tregelles | tregelles
+Wilhelm Gesenius | Wilhelm Gesenius | gesenius
+Bart D. Ehrman | Bart D. Ehrman | bart ehrman
+Julius Wellhausen | Julius Wellhausen | wellhausen
+Rudolf Bultmann
+
+[jerusalem] Name a place in Jerusalem tied to the Bible
+Church of the Holy Sepulchre | Church of the Holy Sepulchre | holy sepulchre
+Temple Mount
+Western Wall | Western Wall | wailing wall
+Dome of the Rock
+Mount of Olives
+Garden of Gethsemane | Garden of Gethsemane | gethsemane
+Via Dolorosa
+Garden Tomb
+Church of All Nations
+Pool of Bethesda | Pool of Bethesda | bethesda
+Pool of Siloam | Pool of Siloam | siloam
+Church of the Dormition | Dormition Abbey | dormition abbey
+Cenacle | Cenacle | upper room;room of the last supper
+Golgotha | Calvary | calvary
+Kidron Valley | Kidron Valley | kidron
+Damascus Gate
+Zion Gate
+Lions' Gate | Lions' Gate | st stephens gate
+Golden Gate | Golden Gate (Jerusalem) | golden gate
+Hezekiah's Tunnel | Hezekiah's Tunnel | siloam tunnel
+Antonia Fortress | Antonia Fortress | fortress antonia
+Mount Zion
+Tomb of the Virgin Mary | Tomb of the Virgin Mary | tomb of mary
+Church of the Pater Noster | Church of the Pater Noster | pater noster church
+Dominus Flevit Church | Dominus Flevit Church | dominus flevit
+Armenian Quarter | Armenian Quarter
+
+[patriarchs] Name a patriarch or matriarch, or one of their children
+Adam
+Eve
+Seth
+Enoch | Enoch (ancestor of Noah)
+Methuselah
+Noah
+Shem
+Ham | Ham (son of Noah)
+Japheth
+Abraham
+Sarah
+Hagar
+Ishmael
+Isaac
+Rebekah | Rebecca (biblical figure)
+Esau
+Jacob
+Leah
+Rachel
+Dinah
+Joseph | Joseph (Genesis)
+Judah | Judah (son of Jacob)
+Reuben
+Simeon | Simeon (son of Jacob)
+Levi | Levi
+Benjamin
+Dan | Dan (son of Jacob)
+Naphtali
+Gad | Gad (son of Jacob)
+Asher
+Issachar
+Zebulun
+Ephraim | Ephraim
+Lot | Lot (biblical person)
+Terah
+Cain | Cain and Abel | cain and abel

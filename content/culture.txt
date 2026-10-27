@@ -24,13 +24,10 @@ The Chronicles of Narnia | The Chronicles of Narnia
 The Brothers Karamazov
 Ben-Hur | Ben-Hur: A Tale of the Christ
 Left Behind | Left Behind | Left Behind: A Novel of the Earth's Last Days
-The Shack | The Shack
 Heaven Is for Real | Heaven Is for Real
 The Rule of Saint Benedict | Rule of Saint Benedict
 Dark Night of the Soul | Dark Night of the Soul
-Interior Castle | Interior Castle
 Introduction to the Devout Life | Introduction to the Devout Life
-Letters from Prison | Letters and Papers from Prison
 Orthodoxy | Orthodoxy (book)
 The Everlasting Man | The Everlasting Man
 The Problem of Pain | The Problem of Pain
@@ -40,13 +37,11 @@ Miracles | Miracles (book)
 Surprised by Joy | Surprised by Joy
 The Seven Storey Mountain | The Seven Storey Mountain
 Life Together | Life Together
-Knowing God | Knowing God (book)
+Knowing God | Knowing God
 Prayer: Finding the Heart's True Home | Prayer
-The Hiding Place | The Hiding Place (book)
 Through Gates of Splendor | Through Gates of Splendor
 In His Steps | In His Steps
 Quo Vadis | Quo Vadis (novel)
-The Robe | The Robe (novel)
 Silence | Silence (Endō novel)
 Gilead | Gilead (novel)
 Pensées | Pensées
@@ -54,15 +49,12 @@ The Theology of Hope | Theology of Hope
 Church Dogmatics | Church Dogmatics
 The Courage to Be | The Courage to Be
 Fear and Trembling | Fear and Trembling
-Evidence That Demands a Verdict | Evidence That Demands a Verdict
 The Case for Christ | The Case for Christ
 Streams in the Desert | Streams in the Desert
 My Utmost for His Highest | My Utmost for His Highest
 Jesus Calling | Jesus Calling
-Boundaries | Boundaries (book)
-Desiring God | Desiring God
 The Prayer of Jabez | The Prayer of Jabez
-Wild at Heart | Wild at Heart (book)
+Wild at Heart | Wild at Heart (Eldredge book)
 The Late Great Planet Earth | The Late Great Planet Earth
 Hind's Feet on High Places | Hinds' Feet on High Places
 The Cloud of Unknowing | The Cloud of Unknowing
@@ -74,7 +66,6 @@ The Way of a Pilgrim | The Way of a Pilgrim
 Dialogue of Saint Catherine of Siena | The Dialogue of Saint Catherine of Siena
 The Little Flowers of St. Francis | Fioretti di San Francesco
 Story of a Soul | Story of a Soul
-The Life of Saint Anthony | Life of Antony
 The Sayings of the Desert Fathers | Apophthegmata Patrum
 
 [composers] Name a composer or hymn writer   {letters}
@@ -186,7 +177,7 @@ Sandi Patty
 Twila Paris
 Rich Mullins
 Point of Grace | Point of Grace
-Avalon | Avalon (band)
+Avalon | Avalon (American group)
 Audio Adrenaline
 Relient K
 Hawk Nelson
@@ -209,12 +200,11 @@ Johnny Cash
 Lecrae
 Trip Lee
 Andy Mineo
-Propaganda | Propaganda (rapper)
 Sho Baraka
 Hillsong Young & Free | Hillsong Young & Free
 Planetshakers | Planetshakers
 Jesus Culture | Jesus Culture
-Gungor | Gungor (band)
+Gungor | Gungor
 Sufjan Stevens | Sufjan Stevens
 Over the Rhine | Over the Rhine (band)
 
@@ -239,7 +229,6 @@ King of Kings | King of Kings (1961 film)
 Jesus Christ Superstar | Jesus Christ Superstar (film)
 Godspell | Godspell (film)
 The Last Temptation of Christ | The Last Temptation of Christ (film)
-Left Behind | Left Behind (2000 film)
 Heaven Is for Real | Heaven Is for Real (film)
 Courageous | Courageous (film)
 War Room | War Room (film)
@@ -257,23 +246,19 @@ Samson and Delilah | Samson and Delilah (1949 film)
 Barabbas | Barabbas (1961 film)
 The Gospel According to St. Matthew | The Gospel According to St. Matthew (film)
 Jesus | Jesus (1979 film)
-The Miracle of Our Lady of Fatima | The Miracle of Our Lady of Fátima
-The Song of Bernadette | The Song of Bernadette
+The Song of Bernadette | The Song of Bernadette (film)
 Going My Way | Going My Way
 The Bells of St. Mary's | The Bells of St. Mary's
 Sister Act | Sister Act
-The Shack | The Shack (film)
 Unplanned | Unplanned
-The Case for Christ | The Case for Christ (film)
 Paul, Apostle of Christ | Paul, Apostle of Christ
 Mary Magdalene | Mary Magdalene (2018 film)
 The Young Messiah | The Young Messiah
 Last Days in the Desert | Last Days in the Desert
 A.D. The Bible Continues | A.D. The Bible Continues
 The Bible | The Bible (miniseries)
-Superbook | Superbook
+Superbook | Superbook (1981 TV series)
 The Book of Life | The Book of Life (2014 film)
-The Apostle | The Apostle (film)
 Amazing Grace | Amazing Grace (2006 film)
 End of the Spear | End of the Spear
 Soul Surfer | Soul Surfer
@@ -300,18 +285,16 @@ Salvator Mundi | Salvator Mundi (Leonardo)
 Christ the Redeemer | Christ the Redeemer (statue)
 The Calling of Saint Matthew
 The Transfiguration | Transfiguration (Raphael)
-Descent from the Cross | Descent from the Cross (van der Weyden)
+Descent from the Cross | Descent from the Cross
 Christ of Saint John of the Cross | Christ of Saint John of the Cross
 The Sacrament of the Last Supper | The Sacrament of the Last Supper
 Madonna of the Rosary | Madonna of the Rosary (Caravaggio)
 The Garden of Earthly Delights | The Garden of Earthly Delights
 The Annunciation | Annunciation (Leonardo)
-The Deposition | Deposition (Caravaggio)
 The Entombment of Christ | The Entombment of Christ (Caravaggio)
-The Conversion of Saint Paul | Conversion of Saint Paul (Caravaggio)
+The Conversion of Saint Paul | Conversion on the Way to Damascus
 Christ in the Storm on the Sea of Galilee | The Storm on the Sea of Galilee
-The Raising of Lazarus | Raising of Lazarus (Rembrandt)
-The Crucifixion | Crucifixion (Grünewald)
+The Raising of Lazarus | The Raising of Lazarus (Rembrandt)
 The Book of Kells | Book of Kells
 Lindisfarne Gospels
 The Trinity | Trinity (Rublev) | rublev trinity
@@ -319,22 +302,19 @@ David | David (Michelangelo)
 Moses | Moses (Michelangelo)
 Ecstasy of Saint Teresa | Ecstasy of Saint Teresa
 The Holy Trinity | Holy Trinity (Masaccio)
-The Tribute Money | The Tribute Money
+The Tribute Money | Tribute Money
 Christ Pantocrator | Christ Pantocrator
 The Virgin of the Rocks | Virgin of the Rocks
 Madonna and Child | Madonna (art)
 The Adoration of the Magi | Adoration of the Magi (Leonardo)
 The Tower of Babel | The Tower of Babel (Bruegel)
 The Fall of Man | The Fall of Man
-Christ Carrying the Cross | Christ Carrying the Cross (Bosch)
 The Prodigal Son | The Prodigal Son (Rembrandt)
-Saint Jerome in His Study | Saint Jerome in His Study
 Praying Hands | Praying Hands (Dürer)
 The Four Apostles | The Four Apostles
 The Resurrection | Resurrection (Piero della Francesca)
-The Baptism of Christ | Baptism of Christ (Verrocchio)
+The Baptism of Christ | The Baptism of Christ (Verrocchio and Leonardo)
 The Flagellation | The Flagellation of Christ (Piero della Francesca)
-Lamentation | Lamentation of Christ (Giotto)
 The Scrovegni Chapel | Scrovegni Chapel
 The Wilton Diptych | Wilton Diptych
 
@@ -395,10 +375,152 @@ Henry Ossawa Tanner | Henry Ossawa Tanner
 Stanley Spencer | Stanley Spencer
 Henri Matisse | Henri Matisse
 Emil Nolde | Emil Nolde
-Bezalel | Bezalel (Bible)
-Sieger Köder | Sieger Köder
+Bezalel | Bezalel
 Theophanes the Greek | Theophanes the Greek
 Dionisius | Dionisius
 Simon Ushakov | Simon Ushakov
 Viktor Vasnetsov | Viktor Vasnetsov
 Mikhail Nesterov | Mikhail Nesterov
+
+
+# ---------------------------------------------------------------- more culture lists
+[authors] Name a Christian author or poet
+C. S. Lewis
+J. R. R. Tolkien
+G. K. Chesterton
+John Milton
+John Donne
+George Herbert
+Dante Alighieri | Dante Alighieri | dante
+John Bunyan
+Fyodor Dostoevsky
+Flannery O'Connor
+T. S. Eliot
+Gerard Manley Hopkins
+Graham Greene
+Evelyn Waugh
+Madeleine L'Engle
+Dorothy L. Sayers
+Charles Williams | Charles Williams (British writer) | charles williams
+Walker Percy
+Marilynne Robinson
+Frederick Buechner
+Henri Nouwen
+Thomas Merton
+Søren Kierkegaard
+Leo Tolstoy
+Alexander Solzhenitsyn
+Christina Rossetti
+William Blake
+Wendell Berry
+Anne Lamott
+Eugene Peterson
+Max Lucado
+Philip Yancey
+Lee Strobel
+Francine Rivers
+Corrie ten Boom
+Elisabeth Elliot
+Randy Alcorn
+Tim LaHaye
+Frank Peretti | Frank E. Peretti | frank peretti
+Karen Kingsbury
+Ted Dekker
+Joni Eareckson Tada | Joni Eareckson Tada | joni tada
+Isaac Watts
+William Cowper
+Alfred, Lord Tennyson | Alfred, Lord Tennyson | tennyson
+John Greenleaf Whittier | John Greenleaf Whittier | whittier
+Henry Wadsworth Longfellow | Henry Wadsworth Longfellow | longfellow
+Victor Hugo
+Nikolai Gogol
+Georges Bernanos
+François Mauriac
+Paul Claudel
+Charles Péguy
+Shūsaku Endō | Shūsaku Endō | shusaku endo
+
+[apologists] Name a Christian apologist
+William Lane Craig
+Ravi Zacharias
+Josh McDowell
+Lee Strobel
+Alvin Plantinga
+Norman Geisler
+Francis Schaeffer
+J. P. Moreland
+Frank Turek
+Gary Habermas
+Michael Licona
+Tim Keller | Tim Keller (pastor)
+N. T. Wright
+John Lennox
+Hugh Ross | Hugh Ross (creationist) | hugh ross
+Francis Collins
+Justin Martyr
+Tertullian
+Athenagoras of Athens | Athenagoras of Athens | athenagoras
+Blaise Pascal
+Thomas Aquinas
+G. K. Chesterton
+C. S. Lewis
+Cornelius Van Til
+Richard Swinburne
+Peter Kreeft
+Dinesh D'Souza | Dinesh D'Souza | dinesh
+Alister McGrath
+John Warwick Montgomery | John Warwick Montgomery | montgomery
+Os Guinness
+Eric Metaxas
+Stephen C. Meyer | Stephen C. Meyer | stephen meyer
+Michael Behe
+William Dembski
+Paul Copan
+Craig Keener
+Ben Witherington III | Ben Witherington III | ben witherington
+Darrell Bock
+Dallas Willard
+
+[sacred_works] Name a famous piece of sacred classical music
+Messiah | Messiah (Handel) | handel's messiah;the messiah
+Mass in B minor | Mass in B minor | b minor mass
+St Matthew Passion | St Matthew Passion | matthew passion
+St John Passion | St John Passion | john passion
+Requiem | Requiem (Mozart) | mozart requiem
+Requiem (Verdi) | Requiem (Verdi) | verdi requiem
+Ave Maria | Ave Maria (Schubert) | schubert ave maria
+Stabat Mater (Pergolesi) | Stabat Mater (Pergolesi) | pergolesi
+Miserere | Miserere (Allegri) | allegri miserere
+Spem in alium
+Christmas Oratorio | Christmas Oratorio (Bach) | bach christmas oratorio
+Missa solemnis | Missa solemnis (Beethoven) | beethoven missa solemnis
+Elijah | Elijah (oratorio) | mendelssohn elijah
+The Creation | The Creation (Haydn) | haydn creation
+Gloria | Gloria (Vivaldi) | vivaldi gloria
+Te Deum | Te Deum (Charpentier) | charpentier te deum
+Requiem (Fauré) | Requiem (Fauré) | faure requiem
+A German Requiem | Ein deutsches Requiem | ein deutsches requiem;brahms requiem
+All-Night Vigil | All-Night Vigil (Rachmaninoff) | rachmaninoff vespers;vespers
+Great Mass in C minor | Great Mass in C minor | mozart mass in c minor
+Dixit Dominus | Dixit Dominus (Handel) | handel dixit dominus
+Stabat Mater (Dvořák) | Stabat Mater (Dvořák) | dvorak stabat mater
+Stabat Mater (Rossini) | Stabat Mater (Rossini) | rossini stabat mater
+The Dream of Gerontius | The Dream of Gerontius | gerontius
+Magnificat | Magnificat in D major, BWV 243 | bach magnificat
+Mass in G major | Mass No. 2 (Schubert) | schubert mass
+Missa Papae Marcelli | Missa Papae Marcelli | pope marcellus mass
+Messe de Nostre Dame | Messe de Nostre Dame | machaut mass
+Lux aeterna | Lux Aeterna (Ligeti) | lux aeterna
+Requiem (Duruflé) | Requiem (Duruflé) | durufle requiem
+War Requiem | War Requiem | britten war requiem
+Chichester Psalms | Chichester Psalms | bernstein chichester
+Symphony of Psalms | Symphony of Psalms | stravinsky symphony of psalms
+Mass (Bernstein) | Mass (Bernstein) | bernstein mass
+Vespro della Beata Vergine | Vespro della Beata Vergine | monteverdi vespers
+Exsultate, jubilate | Exsultate, jubilate | exsultate jubilate
+Cantique de Jean Racine | Cantique de Jean Racine | cantique
+Ave verum corpus | Ave verum corpus (Mozart) | ave verum
+Hallelujah Chorus | Hallelujah Chorus | hallelujah chorus
+Zadok the Priest | Zadok the Priest | zadok
+Saul | Saul (Handel) | handel saul
+Israel in Egypt | Israel in Egypt | israel in egypt

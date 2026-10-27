@@ -5,7 +5,7 @@
 <div align="center">
 
 [![Play](https://img.shields.io/badge/PLAY-live%20demo-f2c14e?style=for-the-badge&logo=githubpages&logoColor=black&labelColor=1C1C1F)](https://alessandroparavano.github.io/crossillion/)
-![Questions](https://img.shields.io/badge/questions-132-b8842a?style=for-the-badge&labelColor=1C1C1F)
+![Questions](https://img.shields.io/badge/questions-235-b8842a?style=for-the-badge&labelColor=1C1C1F)
 ![Dependencies](https://img.shields.io/badge/dependencies-0-5fd0b8?style=for-the-badge&labelColor=1C1C1F)
 ![Top language](https://img.shields.io/github/languages/top/AlessandroParavano/crossillion?style=for-the-badge&labelColor=1C1C1F&color=f2c14e)
 [![Last commit](https://img.shields.io/github/last-commit/AlessandroParavano/crossillion?style=for-the-badge&logo=git&logoColor=white&labelColor=1C1C1F&color=d99a2b)](https://github.com/AlessandroParavano/crossillion/commits/main)
@@ -89,7 +89,7 @@ Google search volume has no public API, so Crossillion uses the **Wikimedia Page
 
 ## <img src="docs/images/icons/book.svg" width="24" height="24" align="top"> What is in it
 
-**132 questions and about 3,100 answers.** Plain categories (popes, parables, hymns, church architecture, Bible places, composers, films...) plus questions with a rule, the way Krillion does it:
+**235 questions and over 4,200 answers.** Plain categories (popes, parables, hymns, church architecture, Bible places, composers, films...) plus questions with a rule, the way Krillion does it:
 
 | Kind | Example | How it is made |
 | :-- | :-- | :-- |
